@@ -2,54 +2,46 @@
 EdgeVision Surveillance System
 """
 
+import time
+
 import cv2
 
 from src.camera import CameraService
-from src.detector import DetectorService
 from src.config import config
+from src.renderer import RendererService
 
 
 class SurveillanceSystem:
+    """
+    Main application controller.
+    """
 
     def __init__(self):
+
         self.camera = CameraService()
-        self.detector = DetectorService()
+        self.renderer = RendererService()
+
         self.running = False
 
+        self.previous_time = time.time()
+
     def initialize(self):
+
         self.camera.initialize()
-        self.detector.initialize()
 
         self.running = True
 
-        print("[INFO] Surveillance System Started")
+        print("[INFO] EdgeVision Started")
 
     def process_frame(self, frame):
 
-        detections = self.detector.detect(frame)
+        current_time = time.time()
 
-        for det in detections:
+        fps = 1 / (current_time - self.previous_time)
 
-            x1, y1, x2, y2 = det["bbox"]
-            confidence = det["confidence"]
+        self.previous_time = current_time
 
-            cv2.rectangle(
-                frame,
-                (x1, y1),
-                (x2, y2),
-                (0, 255, 0),
-                2
-            )
-
-            cv2.putText(
-                frame,
-                f"{confidence:.2f}",
-                (x1, y1 - 10),
-                cv2.FONT_HERSHEY_SIMPLEX,
-                0.6,
-                (0, 255, 0),
-                2
-            )
+        frame = self.renderer.draw_fps(frame, fps)
 
         return frame
 
@@ -62,14 +54,19 @@ class SurveillanceSystem:
             ret, frame = self.camera.read()
 
             if not ret:
-                print("[ERROR] Failed to read frame.")
+                print("[ERROR] Camera read failed.")
                 break
 
             frame = self.process_frame(frame)
 
-            cv2.imshow(config.display["window_name"], frame)
+            self.renderer.show(
+                config.display["window_name"],
+                frame
+            )
 
-            if cv2.waitKey(1) & 0xFF == ord("q"):
+            key = cv2.waitKey(1) & 0xFF
+
+            if key == ord("q"):
                 break
 
         self.shutdown()
@@ -77,6 +74,7 @@ class SurveillanceSystem:
     def shutdown(self):
 
         self.running = False
+
         self.camera.release()
 
-        print("[INFO] Surveillance System Stopped")
+        print("[INFO] EdgeVision Stopped")

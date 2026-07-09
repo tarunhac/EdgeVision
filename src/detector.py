@@ -9,58 +9,54 @@ from src.config import config
 class DetectorService:
 
     def __init__(self):
-
         self.model = None
 
     def initialize(self):
-
         model_path = config.detector["model"]
-
         self.model = YOLO(model_path)
-
-        print("[INFO] YOLO loaded.")
+        print("[INFO] YOLO model loaded.")
 
     def detect(self, frame):
 
-    results = self.model(frame, verbose=False)
+        results = self.model(frame, verbose=False)
 
-    detections = []
+        detections = []
 
-    for result in results:
+        for result in results:
 
-        for box in result.boxes:
+            for box in result.boxes:
 
-            cls = int(box.cls[0])
-            conf = float(box.conf[0])
+                cls = int(box.cls[0])
+                conf = float(box.conf[0])
 
-            if cls != config.detector["person_class"]:
-                continue
+                if cls != config.detector["person_class"]:
+                    continue
 
-            if conf < config.detector["confidence"]:
-                continue
+                if conf < config.detector["confidence"]:
+                    continue
 
-            x1, y1, x2, y2 = map(int, box.xyxy[0])
+                x1, y1, x2, y2 = map(int, box.xyxy[0])
 
-            width = x2 - x1
-            height = y2 - y1
+                width = x2 - x1
+                height = y2 - y1
 
-            if width < config.detector["min_width"]:
-                continue
+                if width < config.detector["min_width"]:
+                    continue
 
-            if height < config.detector["min_height"]:
-                continue
+                if height < config.detector["min_height"]:
+                    continue
 
-            aspect_ratio = height / width
+                aspect_ratio = height / width
 
-            if aspect_ratio < config.detector["min_aspect_ratio"]:
-                continue
+                if aspect_ratio < config.detector["min_aspect_ratio"]:
+                    continue
 
-            if aspect_ratio > config.detector["max_aspect_ratio"]:
-                continue
+                if aspect_ratio > config.detector["max_aspect_ratio"]:
+                    continue
 
-            detections.append({
-                "bbox": (x1, y1, x2, y2),
-                "confidence": conf
-            })
+                detections.append({
+                    "bbox": (x1, y1, x2, y2),
+                    "confidence": conf
+                })
 
-    return detections
+        return detections

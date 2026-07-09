@@ -9,7 +9,7 @@ camera:
   fps: 30
 
 detector:
-   model: "models/yolov8n.pt"
+  model: "models/yolov8n.pt"
   confidence: 0.75
   person_class: 0
   device: "cpu"
