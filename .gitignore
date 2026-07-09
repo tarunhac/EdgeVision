@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+
+# VS Code
+.vscode/
+
+# Logs
+logs/
+
+# Unknown face images
+unknown_faces/
+
+# OS files
+.DS_Store
+Thumbs.db

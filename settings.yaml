@@ -1,0 +1,33 @@
+project:
+  name: "EdgeVision"
+  version: "1.0.0"
+
+camera:
+  source: 0
+  width: 1280
+  height: 720
+  fps: 30
+
+detector:
+   model: "models/yolov8n.pt"
+  confidence: 0.75
+  person_class: 0
+  device: "cpu"
+
+  min_width: 80
+  min_height: 150
+
+  min_aspect_ratio: 1.2
+  max_aspect_ratio: 4.5
+
+recognizer:
+  similarity_threshold: 0.50
+
+storage:
+  known_faces: "known_faces"
+  unknown_faces: "unknown_faces"
+  logs: "logs"
+
+display:
+  window_name: "EdgeVision AI Surveillance"
+  show_fps: true
