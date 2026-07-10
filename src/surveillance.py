@@ -10,6 +10,7 @@ from src.detector import DetectorService
 from src.recognizer import RecognizerService
 from src.renderer import RendererService
 from src.config import config
+from src.event_logger import EventLogger
 
 
 class SurveillanceSystem:
@@ -20,9 +21,9 @@ class SurveillanceSystem:
         self.detector = DetectorService()
         self.recognizer = RecognizerService()
         self.renderer = RendererService()
+        self.logger = EventLogger()
 
         self.running = False
-
         self.previous_time = time.time()
 
     def initialize(self):
@@ -30,6 +31,7 @@ class SurveillanceSystem:
         self.camera.initialize()
         self.detector.initialize()
         self.recognizer.initialize()
+        self.logger.initialize()
 
         self.running = True
 
@@ -51,6 +53,12 @@ class SurveillanceSystem:
                 frame,
                 detection
             )
+
+            if detection.name == "Unknown":
+                self.logger.log_unknown(
+                    frame,
+                    detection
+                )
 
         frame = self.renderer.draw_detections(
             frame,
@@ -98,3 +106,7 @@ class SurveillanceSystem:
         self.running = False
 
         self.camera.release()
+
+        cv2.destroyAllWindows()
+
+        print("[INFO] EdgeVision Stopped")
