@@ -10,15 +10,15 @@ camera:
 
 detector:
   model: "models/yolov8n.pt"
-  confidence: 0.75
+  confidence: 0.6
   person_class: 0
-  device: "cpu"
+  device: "cuda"
 
   min_width: 80
   min_height: 150
 
   min_aspect_ratio: 1.2
-  max_aspect_ratio: 4.5
+  max_aspect_ratio: 4.0
 
 recognizer:
   similarity_threshold: 0.50

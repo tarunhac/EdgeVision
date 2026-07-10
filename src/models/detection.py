@@ -1,5 +1,5 @@
 """
-Shared data types for EdgeVision.
+Detection model.
 """
 
 from dataclasses import dataclass
@@ -8,7 +8,7 @@ from dataclasses import dataclass
 @dataclass(slots=True)
 class Detection:
     """
-    Represents one detected person.
+    Represents a detected object.
     """
 
     x1: int

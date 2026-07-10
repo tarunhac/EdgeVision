@@ -3,7 +3,9 @@ EdgeVision Detector Service
 """
 
 from ultralytics import YOLO
+
 from src.config import config
+from src.models.detection import Detection
 
 
 class DetectorService:
@@ -12,13 +14,19 @@ class DetectorService:
         self.model = None
 
     def initialize(self):
-        model_path = config.detector["model"]
-        self.model = YOLO(model_path)
-        print("[INFO] YOLO model loaded.")
+
+        self.model = YOLO(config.detector["model"])
+
+        device = config.detector["device"]
+
+        self.model.to(device)
+
+        print(f"[INFO] YOLO initialized on {device}")
 
     def detect(self, frame):
 
         results = self.model(frame, verbose=False)
+        print(results[0].boxes)
 
         detections = []
 
@@ -26,13 +34,14 @@ class DetectorService:
 
             for box in result.boxes:
 
-                cls = int(box.cls[0])
-                conf = float(box.conf[0])
+                class_id = int(box.cls[0])
 
-                if cls != config.detector["person_class"]:
+                confidence = float(box.conf[0])
+
+                if class_id != config.detector["person_class"]:
                     continue
 
-                if conf < config.detector["confidence"]:
+                if confidence < config.detector["confidence"]:
                     continue
 
                 x1, y1, x2, y2 = map(int, box.xyxy[0])
@@ -40,23 +49,17 @@ class DetectorService:
                 width = x2 - x1
                 height = y2 - y1
 
-                if width < config.detector["min_width"]:
-                    continue
+                detections.append(
 
-                if height < config.detector["min_height"]:
-                    continue
+                    Detection(
+                        x1=x1,
+                        y1=y1,
+                        x2=x2,
+                        y2=y2,
+                        confidence=confidence,
+                        class_id=class_id
+                    )
 
-                aspect_ratio = height / width
-
-                if aspect_ratio < config.detector["min_aspect_ratio"]:
-                    continue
-
-                if aspect_ratio > config.detector["max_aspect_ratio"]:
-                    continue
-
-                detections.append({
-                    "bbox": (x1, y1, x2, y2),
-                    "confidence": conf
-                })
+                )
 
         return detections
