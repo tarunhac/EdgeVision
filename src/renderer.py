@@ -29,27 +29,33 @@ class RendererService:
 
         for detection in detections:
 
+            # Bounding Box
+            color = (0, 255, 0)
+
+            if detection.name == "Unknown":
+                color = (0, 0, 255)
+
             cv2.rectangle(
                 frame,
                 (detection.x1, detection.y1),
                 (detection.x2, detection.y2),
-                (0, 255, 0),
+                color,
                 2
             )
 
-            label = (
-                f"ID {detection.track_id}"
-                if detection.track_id is not None
-                else f"{detection.confidence:.2f}"
-            )
+            # Label
+            if detection.track_id is None:
+                label = detection.name
+            else:
+                label = f"{detection.name} (ID {detection.track_id})"
 
             cv2.putText(
-                 frame,
-                 label,
-                 (detection.x1, detection.y1 - 8),
-                 self.font,
-                 0.6,
-                 (0, 255, 0),
+                frame,
+                label,
+                (detection.x1, detection.y1 - 10),
+                self.font,
+                0.65,
+                color,
                 2
             )
 

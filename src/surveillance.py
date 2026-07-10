@@ -7,6 +7,7 @@ import cv2
 
 from src.camera import CameraService
 from src.detector import DetectorService
+from src.recognizer import RecognizerService
 from src.renderer import RendererService
 from src.config import config
 
@@ -17,15 +18,18 @@ class SurveillanceSystem:
 
         self.camera = CameraService()
         self.detector = DetectorService()
+        self.recognizer = RecognizerService()
         self.renderer = RendererService()
 
         self.running = False
+
         self.previous_time = time.time()
 
     def initialize(self):
 
         self.camera.initialize()
         self.detector.initialize()
+        self.recognizer.initialize()
 
         self.running = True
 
@@ -33,17 +37,30 @@ class SurveillanceSystem:
 
     def process_frame(self, frame):
 
+        current_time = time.time()
+
+        fps = 1 / (current_time - self.previous_time)
+
+        self.previous_time = current_time
+
         detections = self.detector.detect(frame)
 
-        frame = self.renderer.draw_detections(frame, detections)
+        for detection in detections:
 
-        current = time.time()
+            self.recognizer.recognize_detection(
+                frame,
+                detection
+            )
 
-        fps = 1 / (current - self.previous_time)
+        frame = self.renderer.draw_detections(
+            frame,
+            detections
+        )
 
-        self.previous_time = current
-
-        frame = self.renderer.draw_fps(frame, fps)
+        frame = self.renderer.draw_fps(
+            frame,
+            fps
+        )
 
         return frame
 
@@ -56,6 +73,9 @@ class SurveillanceSystem:
             ret, frame = self.camera.read()
 
             if not ret:
+
+                print("[ERROR] Camera read failed.")
+
                 break
 
             frame = self.process_frame(frame)
@@ -65,7 +85,10 @@ class SurveillanceSystem:
                 frame
             )
 
-            if cv2.waitKey(1) & 0xFF == ord("q"):
+            key = cv2.waitKey(1) & 0xFF
+
+            if key == ord("q"):
+
                 break
 
         self.shutdown()
@@ -75,6 +98,3 @@ class SurveillanceSystem:
         self.running = False
 
         self.camera.release()
-
-        print("[INFO] EdgeVision Stopped")
-        
