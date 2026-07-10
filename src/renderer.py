@@ -37,13 +37,19 @@ class RendererService:
                 2
             )
 
+            label = (
+                f"ID {detection.track_id}"
+                if detection.track_id is not None
+                else f"{detection.confidence:.2f}"
+            )
+
             cv2.putText(
-                frame,
-                f"{detection.confidence:.2f}",
-                (detection.x1, detection.y1 - 8),
-                self.font,
-                0.6,
-                (0, 255, 0),
+                 frame,
+                 label,
+                 (detection.x1, detection.y1 - 8),
+                 self.font,
+                 0.6,
+                 (0, 255, 0),
                 2
             )
 

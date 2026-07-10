@@ -31,3 +31,7 @@ storage:
 display:
   window_name: "EdgeVision AI Surveillance"
   show_fps: true
+
+tracker:
+  tracker: "bytetrack.yaml"
+  persist: true

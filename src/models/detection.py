@@ -1,15 +1,8 @@
-"""
-Detection model.
-"""
-
 from dataclasses import dataclass
 
 
 @dataclass(slots=True)
 class Detection:
-    """
-    Represents a detected object.
-    """
 
     x1: int
     y1: int
@@ -17,4 +10,7 @@ class Detection:
     y2: int
 
     confidence: float
+
     class_id: int
+
+    track_id: int | None = None
