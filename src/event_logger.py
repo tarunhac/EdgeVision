@@ -8,6 +8,7 @@ import csv
 
 from src.config import config
 from src.face_snapshot import FaceSnapshotService
+from src.database import DatabaseService
 
 
 class EventLogger:
@@ -21,6 +22,7 @@ class EventLogger:
         self.logged_tracks = set()
 
         self.snapshot = FaceSnapshotService()
+        self.database = DatabaseService()
 
         self.log_dir = Path(config.storage["logs"])
         self.log_file = self.log_dir / "events.csv"
@@ -28,6 +30,7 @@ class EventLogger:
     def initialize(self):
 
         self.snapshot.initialize()
+        self.database.initialize()
 
         self.log_dir.mkdir(
             parents=True,
@@ -66,15 +69,33 @@ class EventLogger:
             detection
         )
 
+        timestamp = datetime.now().strftime(
+            "%Y-%m-%d %H:%M:%S"
+        )
+
+        similarity = round(
+            detection.similarity,
+            3
+        )
+
+        self.database.insert_event(
+            timestamp,
+            detection.track_id,
+            detection.name,
+            similarity,
+            face_path,
+            frame_path
+        )
+
         with open(self.log_file, "a", newline="") as file:
 
             writer = csv.writer(file)
 
             writer.writerow([
-                datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                timestamp,
                 detection.track_id,
                 detection.name,
-                round(detection.similarity, 3),
+                similarity,
                 face_path,
                 frame_path
             ])
@@ -83,3 +104,11 @@ class EventLogger:
             f"[EVENT] Unknown person logged "
             f"(Track {detection.track_id})"
         )
+
+    def shutdown(self):
+
+      
+
+      self.database.close()
+
+    

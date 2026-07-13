@@ -104,6 +104,8 @@ class SurveillanceSystem:
     def shutdown(self):
 
         self.running = False
+        
+        self.logger.shutdown()
 
         self.camera.release()
 
