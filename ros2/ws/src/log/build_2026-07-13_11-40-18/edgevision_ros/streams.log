@@ -1,0 +1,34 @@
+[0.717s] Invoking command in '/home/tarun/surveillance_bot/ros2/ws/src/edgevision_ros': PYTHONPATH=/home/tarun/surveillance_bot/ros2/ws/src/build/edgevision_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tarun/surveillance_bot/ros2/ws/src/install/edgevision_ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/edgevision_ros build --build-base /home/tarun/surveillance_bot/ros2/ws/src/build/edgevision_ros/build install --record /home/tarun/surveillance_bot/ros2/ws/src/build/edgevision_ros/install.log --install-scripts $base/lib/edgevision_ros --single-version-externally-managed install_data
+[0.969s] running egg_info
+[0.969s] creating ../build/edgevision_ros/edgevision_ros.egg-info
+[0.969s] writing ../build/edgevision_ros/edgevision_ros.egg-info/PKG-INFO
+[0.970s] writing dependency_links to ../build/edgevision_ros/edgevision_ros.egg-info/dependency_links.txt
+[0.970s] writing entry points to ../build/edgevision_ros/edgevision_ros.egg-info/entry_points.txt
+[0.970s] writing requirements to ../build/edgevision_ros/edgevision_ros.egg-info/requires.txt
+[0.970s] writing top-level names to ../build/edgevision_ros/edgevision_ros.egg-info/top_level.txt
+[0.971s] writing manifest file '../build/edgevision_ros/edgevision_ros.egg-info/SOURCES.txt'
+[0.973s] reading manifest file '../build/edgevision_ros/edgevision_ros.egg-info/SOURCES.txt'
+[0.973s] adding license file 'LICENSE'
+[0.974s] writing manifest file '../build/edgevision_ros/edgevision_ros.egg-info/SOURCES.txt'
+[0.974s] running build
+[0.974s] running build_py
+[0.974s] creating /home/tarun/surveillance_bot/ros2/ws/src/build/edgevision_ros/build
+[0.975s] creating /home/tarun/surveillance_bot/ros2/ws/src/build/edgevision_ros/build/lib
+[0.975s] creating /home/tarun/surveillance_bot/ros2/ws/src/build/edgevision_ros/build/lib/edgevision_ros
+[0.975s] copying edgevision_ros/__init__.py -> /home/tarun/surveillance_bot/ros2/ws/src/build/edgevision_ros/build/lib/edgevision_ros
+[0.975s] running install
+[0.975s] running install_lib
+[0.976s] creating /home/tarun/surveillance_bot/ros2/ws/src/install/edgevision_ros/lib/python3.10/site-packages/edgevision_ros
+[0.976s] copying /home/tarun/surveillance_bot/ros2/ws/src/build/edgevision_ros/build/lib/edgevision_ros/__init__.py -> /home/tarun/surveillance_bot/ros2/ws/src/install/edgevision_ros/lib/python3.10/site-packages/edgevision_ros
+[0.977s] byte-compiling /home/tarun/surveillance_bot/ros2/ws/src/install/edgevision_ros/lib/python3.10/site-packages/edgevision_ros/__init__.py to __init__.cpython-310.pyc
+[0.977s] running install_data
+[0.977s] creating /home/tarun/surveillance_bot/ros2/ws/src/install/edgevision_ros/share/ament_index
+[0.977s] creating /home/tarun/surveillance_bot/ros2/ws/src/install/edgevision_ros/share/ament_index/resource_index
+[0.978s] creating /home/tarun/surveillance_bot/ros2/ws/src/install/edgevision_ros/share/ament_index/resource_index/packages
+[0.978s] copying resource/edgevision_ros -> /home/tarun/surveillance_bot/ros2/ws/src/install/edgevision_ros/share/ament_index/resource_index/packages
+[0.978s] copying package.xml -> /home/tarun/surveillance_bot/ros2/ws/src/install/edgevision_ros/share/edgevision_ros
+[0.978s] running install_egg_info
+[0.980s] Copying ../build/edgevision_ros/edgevision_ros.egg-info to /home/tarun/surveillance_bot/ros2/ws/src/install/edgevision_ros/lib/python3.10/site-packages/edgevision_ros-0.0.0-py3.10.egg-info
+[0.980s] running install_scripts
+[1.001s] writing list of installed files to '/home/tarun/surveillance_bot/ros2/ws/src/build/edgevision_ros/install.log'
+[1.033s] Invoked command in '/home/tarun/surveillance_bot/ros2/ws/src/edgevision_ros' returned '0': PYTHONPATH=/home/tarun/surveillance_bot/ros2/ws/src/build/edgevision_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tarun/surveillance_bot/ros2/ws/src/install/edgevision_ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/edgevision_ros build --build-base /home/tarun/surveillance_bot/ros2/ws/src/build/edgevision_ros/build install --record /home/tarun/surveillance_bot/ros2/ws/src/build/edgevision_ros/install.log --install-scripts $base/lib/edgevision_ros --single-version-externally-managed install_data

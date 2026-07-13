@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+edgevision_ros/__init__.py
+edgevision_ros/camera_node.py
+edgevision_ros.egg-info/PKG-INFO
+edgevision_ros.egg-info/SOURCES.txt
+edgevision_ros.egg-info/dependency_links.txt
+edgevision_ros.egg-info/entry_points.txt
+edgevision_ros.egg-info/requires.txt
+edgevision_ros.egg-info/top_level.txt
+edgevision_ros.egg-info/zip-safe
+resource/edgevision_ros
