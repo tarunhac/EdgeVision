@@ -3,12 +3,20 @@ file(REMOVE_RECURSE
   "CMakeFiles/edgevision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/edgevision_msgs/msg/detail/dds_fastrtps/detection__type_support.cpp.o.d"
   "CMakeFiles/edgevision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/edgevision_msgs/msg/detail/dds_fastrtps/detection_array__type_support.cpp.o"
   "CMakeFiles/edgevision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/edgevision_msgs/msg/detail/dds_fastrtps/detection_array__type_support.cpp.o.d"
+  "CMakeFiles/edgevision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/edgevision_msgs/msg/detail/dds_fastrtps/tracked_detection__type_support.cpp.o"
+  "CMakeFiles/edgevision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/edgevision_msgs/msg/detail/dds_fastrtps/tracked_detection__type_support.cpp.o.d"
+  "CMakeFiles/edgevision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/edgevision_msgs/msg/detail/dds_fastrtps/tracked_detection_array__type_support.cpp.o"
+  "CMakeFiles/edgevision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/edgevision_msgs/msg/detail/dds_fastrtps/tracked_detection_array__type_support.cpp.o.d"
   "libedgevision_msgs__rosidl_typesupport_fastrtps_cpp.pdb"
   "libedgevision_msgs__rosidl_typesupport_fastrtps_cpp.so"
   "rosidl_typesupport_fastrtps_cpp/edgevision_msgs/msg/detail/dds_fastrtps/detection__type_support.cpp"
   "rosidl_typesupport_fastrtps_cpp/edgevision_msgs/msg/detail/dds_fastrtps/detection_array__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/edgevision_msgs/msg/detail/dds_fastrtps/tracked_detection__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/edgevision_msgs/msg/detail/dds_fastrtps/tracked_detection_array__type_support.cpp"
   "rosidl_typesupport_fastrtps_cpp/edgevision_msgs/msg/detail/detection__rosidl_typesupport_fastrtps_cpp.hpp"
   "rosidl_typesupport_fastrtps_cpp/edgevision_msgs/msg/detail/detection_array__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/edgevision_msgs/msg/detail/tracked_detection__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/edgevision_msgs/msg/detail/tracked_detection_array__rosidl_typesupport_fastrtps_cpp.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

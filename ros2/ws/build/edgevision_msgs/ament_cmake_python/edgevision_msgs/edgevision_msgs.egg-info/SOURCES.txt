@@ -4,6 +4,3 @@ edgevision_msgs.egg-info/PKG-INFO
 edgevision_msgs.egg-info/SOURCES.txt
 edgevision_msgs.egg-info/dependency_links.txt
 edgevision_msgs.egg-info/top_level.txt
-edgevision_msgs/msg/__init__.py
-edgevision_msgs/msg/_detection.py
-edgevision_msgs/msg/_detection_array.py

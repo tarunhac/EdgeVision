@@ -4,6 +4,8 @@ setup.py
 edgevision_ros/__init__.py
 edgevision_ros/camera_node.py
 edgevision_ros/detector_node.py
+edgevision_ros/perception_node.py
+edgevision_ros/tracker_node.py
 edgevision_ros.egg-info/PKG-INFO
 edgevision_ros.egg-info/SOURCES.txt
 edgevision_ros.egg-info/dependency_links.txt

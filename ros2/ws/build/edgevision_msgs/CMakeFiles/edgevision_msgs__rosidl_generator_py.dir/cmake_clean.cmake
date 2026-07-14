@@ -3,6 +3,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/edgevision_msgs__rosidl_generator_py.dir/rosidl_generator_py/edgevision_msgs/msg/_detection_array_s.c.o.d"
   "CMakeFiles/edgevision_msgs__rosidl_generator_py.dir/rosidl_generator_py/edgevision_msgs/msg/_detection_s.c.o"
   "CMakeFiles/edgevision_msgs__rosidl_generator_py.dir/rosidl_generator_py/edgevision_msgs/msg/_detection_s.c.o.d"
+  "CMakeFiles/edgevision_msgs__rosidl_generator_py.dir/rosidl_generator_py/edgevision_msgs/msg/_tracked_detection_array_s.c.o"
+  "CMakeFiles/edgevision_msgs__rosidl_generator_py.dir/rosidl_generator_py/edgevision_msgs/msg/_tracked_detection_array_s.c.o.d"
+  "CMakeFiles/edgevision_msgs__rosidl_generator_py.dir/rosidl_generator_py/edgevision_msgs/msg/_tracked_detection_s.c.o"
+  "CMakeFiles/edgevision_msgs__rosidl_generator_py.dir/rosidl_generator_py/edgevision_msgs/msg/_tracked_detection_s.c.o.d"
   "rosidl_generator_py/edgevision_msgs/libedgevision_msgs__rosidl_generator_py.pdb"
   "rosidl_generator_py/edgevision_msgs/libedgevision_msgs__rosidl_generator_py.so"
 )

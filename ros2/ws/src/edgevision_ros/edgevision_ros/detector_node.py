@@ -5,9 +5,12 @@ from sensor_msgs.msg import Image
 from cv_bridge import CvBridge
 
 from ultralytics import YOLO
-
-from edgevision_msgs.msg import Detection
-from edgevision_msgs.msg import DetectionArray
+from edgevision_msgs.msg import (
+    Detection,
+    DetectionArray,
+    TrackedDetection,
+    TrackedDetectionArray,
+)
 
 import cv2
 

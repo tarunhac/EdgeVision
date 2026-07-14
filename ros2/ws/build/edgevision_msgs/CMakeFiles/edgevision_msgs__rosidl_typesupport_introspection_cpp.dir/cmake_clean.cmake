@@ -3,12 +3,20 @@ file(REMOVE_RECURSE
   "CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/edgevision_msgs/msg/detail/detection__type_support.cpp.o.d"
   "CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/edgevision_msgs/msg/detail/detection_array__type_support.cpp.o"
   "CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/edgevision_msgs/msg/detail/detection_array__type_support.cpp.o.d"
+  "CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/edgevision_msgs/msg/detail/tracked_detection__type_support.cpp.o"
+  "CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/edgevision_msgs/msg/detail/tracked_detection__type_support.cpp.o.d"
+  "CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/edgevision_msgs/msg/detail/tracked_detection_array__type_support.cpp.o"
+  "CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/edgevision_msgs/msg/detail/tracked_detection_array__type_support.cpp.o.d"
   "libedgevision_msgs__rosidl_typesupport_introspection_cpp.pdb"
   "libedgevision_msgs__rosidl_typesupport_introspection_cpp.so"
   "rosidl_typesupport_introspection_cpp/edgevision_msgs/msg/detail/detection__rosidl_typesupport_introspection_cpp.hpp"
   "rosidl_typesupport_introspection_cpp/edgevision_msgs/msg/detail/detection__type_support.cpp"
   "rosidl_typesupport_introspection_cpp/edgevision_msgs/msg/detail/detection_array__rosidl_typesupport_introspection_cpp.hpp"
   "rosidl_typesupport_introspection_cpp/edgevision_msgs/msg/detail/detection_array__type_support.cpp"
+  "rosidl_typesupport_introspection_cpp/edgevision_msgs/msg/detail/tracked_detection__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/edgevision_msgs/msg/detail/tracked_detection__type_support.cpp"
+  "rosidl_typesupport_introspection_cpp/edgevision_msgs/msg/detail/tracked_detection_array__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/edgevision_msgs/msg/detail/tracked_detection_array__type_support.cpp"
 )
 
 # Per-language clean rules from dependency scanning.

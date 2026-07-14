@@ -375,11 +375,23 @@ ament_cmake_symlink_install_files("/home/tarun/surveillance_bot/ros2/ws/src/edge
 # install(FILES "/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_adapter/edgevision_msgs/msg/DetectionArray.idl" "DESTINATION" "share/edgevision_msgs/msg")
 ament_cmake_symlink_install_files("/home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs" FILES "/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_adapter/edgevision_msgs/msg/DetectionArray.idl" "DESTINATION" "share/edgevision_msgs/msg")
 
+# install(FILES "/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_adapter/edgevision_msgs/msg/TrackedDetection.idl" "DESTINATION" "share/edgevision_msgs/msg")
+ament_cmake_symlink_install_files("/home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs" FILES "/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_adapter/edgevision_msgs/msg/TrackedDetection.idl" "DESTINATION" "share/edgevision_msgs/msg")
+
+# install(FILES "/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_adapter/edgevision_msgs/msg/TrackedDetectionArray.idl" "DESTINATION" "share/edgevision_msgs/msg")
+ament_cmake_symlink_install_files("/home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs" FILES "/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_adapter/edgevision_msgs/msg/TrackedDetectionArray.idl" "DESTINATION" "share/edgevision_msgs/msg")
+
 # install(FILES "/home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs/msg/Detection.msg" "DESTINATION" "share/edgevision_msgs/msg")
 ament_cmake_symlink_install_files("/home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs" FILES "/home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs/msg/Detection.msg" "DESTINATION" "share/edgevision_msgs/msg")
 
 # install(FILES "/home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs/msg/DetectionArray.msg" "DESTINATION" "share/edgevision_msgs/msg")
 ament_cmake_symlink_install_files("/home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs" FILES "/home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs/msg/DetectionArray.msg" "DESTINATION" "share/edgevision_msgs/msg")
+
+# install(FILES "/home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs/msg/TrackedDetection.msg" "DESTINATION" "share/edgevision_msgs/msg")
+ament_cmake_symlink_install_files("/home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs" FILES "/home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs/msg/TrackedDetection.msg" "DESTINATION" "share/edgevision_msgs/msg")
+
+# install(FILES "/home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs/msg/TrackedDetectionArray.msg" "DESTINATION" "share/edgevision_msgs/msg")
+ament_cmake_symlink_install_files("/home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs" FILES "/home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs/msg/TrackedDetectionArray.msg" "DESTINATION" "share/edgevision_msgs/msg")
 
 # install(FILES "/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/edgevision_msgs" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs" FILES "/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/edgevision_msgs" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

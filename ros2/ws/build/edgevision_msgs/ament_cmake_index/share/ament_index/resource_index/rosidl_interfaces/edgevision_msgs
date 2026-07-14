@@ -2,3 +2,7 @@ msg/Detection.idl
 msg/Detection.msg
 msg/DetectionArray.idl
 msg/DetectionArray.msg
+msg/TrackedDetection.idl
+msg/TrackedDetection.msg
+msg/TrackedDetectionArray.idl
+msg/TrackedDetectionArray.msg

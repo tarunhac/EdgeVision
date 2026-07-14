@@ -86,8 +86,12 @@ rosidl_generator_rs/edgevision_msgs/rust/src/lib.rs: /opt/ros/humble/share/rosid
 rosidl_generator_rs/edgevision_msgs/rust/src/lib.rs: /opt/ros/humble/share/rosidl_generator_rs/resource/templates/srv_rmw.rs.em
 rosidl_generator_rs/edgevision_msgs/rust/src/lib.rs: rosidl_adapter/edgevision_msgs/msg/Detection.idl
 rosidl_generator_rs/edgevision_msgs/rust/src/lib.rs: rosidl_adapter/edgevision_msgs/msg/DetectionArray.idl
+rosidl_generator_rs/edgevision_msgs/rust/src/lib.rs: rosidl_adapter/edgevision_msgs/msg/TrackedDetection.idl
+rosidl_generator_rs/edgevision_msgs/rust/src/lib.rs: rosidl_adapter/edgevision_msgs/msg/TrackedDetectionArray.idl
 rosidl_generator_rs/edgevision_msgs/rust/src/lib.rs: rosidl_adapter/edgevision_msgs/msg/Detection.idl
 rosidl_generator_rs/edgevision_msgs/rust/src/lib.rs: rosidl_adapter/edgevision_msgs/msg/DetectionArray.idl
+rosidl_generator_rs/edgevision_msgs/rust/src/lib.rs: rosidl_adapter/edgevision_msgs/msg/TrackedDetection.idl
+rosidl_generator_rs/edgevision_msgs/rust/src/lib.rs: rosidl_adapter/edgevision_msgs/msg/TrackedDetectionArray.idl
 rosidl_generator_rs/edgevision_msgs/rust/src/lib.rs: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 rosidl_generator_rs/edgevision_msgs/rust/src/lib.rs: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 rosidl_generator_rs/edgevision_msgs/rust/src/lib.rs: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl

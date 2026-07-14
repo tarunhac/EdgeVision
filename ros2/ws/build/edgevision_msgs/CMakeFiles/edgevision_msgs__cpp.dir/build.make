@@ -76,6 +76,16 @@ CMakeFiles/edgevision_msgs__cpp: rosidl_generator_cpp/edgevision_msgs/msg/detail
 CMakeFiles/edgevision_msgs__cpp: rosidl_generator_cpp/edgevision_msgs/msg/detail/detection_array__struct.hpp
 CMakeFiles/edgevision_msgs__cpp: rosidl_generator_cpp/edgevision_msgs/msg/detail/detection_array__traits.hpp
 CMakeFiles/edgevision_msgs__cpp: rosidl_generator_cpp/edgevision_msgs/msg/detail/detection_array__type_support.hpp
+CMakeFiles/edgevision_msgs__cpp: rosidl_generator_cpp/edgevision_msgs/msg/tracked_detection.hpp
+CMakeFiles/edgevision_msgs__cpp: rosidl_generator_cpp/edgevision_msgs/msg/detail/tracked_detection__builder.hpp
+CMakeFiles/edgevision_msgs__cpp: rosidl_generator_cpp/edgevision_msgs/msg/detail/tracked_detection__struct.hpp
+CMakeFiles/edgevision_msgs__cpp: rosidl_generator_cpp/edgevision_msgs/msg/detail/tracked_detection__traits.hpp
+CMakeFiles/edgevision_msgs__cpp: rosidl_generator_cpp/edgevision_msgs/msg/detail/tracked_detection__type_support.hpp
+CMakeFiles/edgevision_msgs__cpp: rosidl_generator_cpp/edgevision_msgs/msg/tracked_detection_array.hpp
+CMakeFiles/edgevision_msgs__cpp: rosidl_generator_cpp/edgevision_msgs/msg/detail/tracked_detection_array__builder.hpp
+CMakeFiles/edgevision_msgs__cpp: rosidl_generator_cpp/edgevision_msgs/msg/detail/tracked_detection_array__struct.hpp
+CMakeFiles/edgevision_msgs__cpp: rosidl_generator_cpp/edgevision_msgs/msg/detail/tracked_detection_array__traits.hpp
+CMakeFiles/edgevision_msgs__cpp: rosidl_generator_cpp/edgevision_msgs/msg/detail/tracked_detection_array__type_support.hpp
 CMakeFiles/edgevision_msgs__cpp: rosidl_generator_cpp/edgevision_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
 
 rosidl_generator_cpp/edgevision_msgs/msg/detection.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -95,6 +105,8 @@ rosidl_generator_cpp/edgevision_msgs/msg/detection.hpp: /opt/ros/humble/share/ro
 rosidl_generator_cpp/edgevision_msgs/msg/detection.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/edgevision_msgs/msg/detection.hpp: rosidl_adapter/edgevision_msgs/msg/Detection.idl
 rosidl_generator_cpp/edgevision_msgs/msg/detection.hpp: rosidl_adapter/edgevision_msgs/msg/DetectionArray.idl
+rosidl_generator_cpp/edgevision_msgs/msg/detection.hpp: rosidl_adapter/edgevision_msgs/msg/TrackedDetection.idl
+rosidl_generator_cpp/edgevision_msgs/msg/detection.hpp: rosidl_adapter/edgevision_msgs/msg/TrackedDetectionArray.idl
 rosidl_generator_cpp/edgevision_msgs/msg/detection.hpp: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 rosidl_generator_cpp/edgevision_msgs/msg/detection.hpp: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 rosidl_generator_cpp/edgevision_msgs/msg/detection.hpp: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl
@@ -157,6 +169,36 @@ rosidl_generator_cpp/edgevision_msgs/msg/detail/detection_array__traits.hpp: ros
 rosidl_generator_cpp/edgevision_msgs/msg/detail/detection_array__type_support.hpp: rosidl_generator_cpp/edgevision_msgs/msg/detection.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/edgevision_msgs/msg/detail/detection_array__type_support.hpp
 
+rosidl_generator_cpp/edgevision_msgs/msg/tracked_detection.hpp: rosidl_generator_cpp/edgevision_msgs/msg/detection.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/edgevision_msgs/msg/tracked_detection.hpp
+
+rosidl_generator_cpp/edgevision_msgs/msg/detail/tracked_detection__builder.hpp: rosidl_generator_cpp/edgevision_msgs/msg/detection.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/edgevision_msgs/msg/detail/tracked_detection__builder.hpp
+
+rosidl_generator_cpp/edgevision_msgs/msg/detail/tracked_detection__struct.hpp: rosidl_generator_cpp/edgevision_msgs/msg/detection.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/edgevision_msgs/msg/detail/tracked_detection__struct.hpp
+
+rosidl_generator_cpp/edgevision_msgs/msg/detail/tracked_detection__traits.hpp: rosidl_generator_cpp/edgevision_msgs/msg/detection.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/edgevision_msgs/msg/detail/tracked_detection__traits.hpp
+
+rosidl_generator_cpp/edgevision_msgs/msg/detail/tracked_detection__type_support.hpp: rosidl_generator_cpp/edgevision_msgs/msg/detection.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/edgevision_msgs/msg/detail/tracked_detection__type_support.hpp
+
+rosidl_generator_cpp/edgevision_msgs/msg/tracked_detection_array.hpp: rosidl_generator_cpp/edgevision_msgs/msg/detection.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/edgevision_msgs/msg/tracked_detection_array.hpp
+
+rosidl_generator_cpp/edgevision_msgs/msg/detail/tracked_detection_array__builder.hpp: rosidl_generator_cpp/edgevision_msgs/msg/detection.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/edgevision_msgs/msg/detail/tracked_detection_array__builder.hpp
+
+rosidl_generator_cpp/edgevision_msgs/msg/detail/tracked_detection_array__struct.hpp: rosidl_generator_cpp/edgevision_msgs/msg/detection.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/edgevision_msgs/msg/detail/tracked_detection_array__struct.hpp
+
+rosidl_generator_cpp/edgevision_msgs/msg/detail/tracked_detection_array__traits.hpp: rosidl_generator_cpp/edgevision_msgs/msg/detection.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/edgevision_msgs/msg/detail/tracked_detection_array__traits.hpp
+
+rosidl_generator_cpp/edgevision_msgs/msg/detail/tracked_detection_array__type_support.hpp: rosidl_generator_cpp/edgevision_msgs/msg/detection.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/edgevision_msgs/msg/detail/tracked_detection_array__type_support.hpp
+
 edgevision_msgs__cpp: CMakeFiles/edgevision_msgs__cpp
 edgevision_msgs__cpp: rosidl_generator_cpp/edgevision_msgs/msg/detail/detection__builder.hpp
 edgevision_msgs__cpp: rosidl_generator_cpp/edgevision_msgs/msg/detail/detection__struct.hpp
@@ -166,8 +208,18 @@ edgevision_msgs__cpp: rosidl_generator_cpp/edgevision_msgs/msg/detail/detection_
 edgevision_msgs__cpp: rosidl_generator_cpp/edgevision_msgs/msg/detail/detection_array__struct.hpp
 edgevision_msgs__cpp: rosidl_generator_cpp/edgevision_msgs/msg/detail/detection_array__traits.hpp
 edgevision_msgs__cpp: rosidl_generator_cpp/edgevision_msgs/msg/detail/detection_array__type_support.hpp
+edgevision_msgs__cpp: rosidl_generator_cpp/edgevision_msgs/msg/detail/tracked_detection__builder.hpp
+edgevision_msgs__cpp: rosidl_generator_cpp/edgevision_msgs/msg/detail/tracked_detection__struct.hpp
+edgevision_msgs__cpp: rosidl_generator_cpp/edgevision_msgs/msg/detail/tracked_detection__traits.hpp
+edgevision_msgs__cpp: rosidl_generator_cpp/edgevision_msgs/msg/detail/tracked_detection__type_support.hpp
+edgevision_msgs__cpp: rosidl_generator_cpp/edgevision_msgs/msg/detail/tracked_detection_array__builder.hpp
+edgevision_msgs__cpp: rosidl_generator_cpp/edgevision_msgs/msg/detail/tracked_detection_array__struct.hpp
+edgevision_msgs__cpp: rosidl_generator_cpp/edgevision_msgs/msg/detail/tracked_detection_array__traits.hpp
+edgevision_msgs__cpp: rosidl_generator_cpp/edgevision_msgs/msg/detail/tracked_detection_array__type_support.hpp
 edgevision_msgs__cpp: rosidl_generator_cpp/edgevision_msgs/msg/detection.hpp
 edgevision_msgs__cpp: rosidl_generator_cpp/edgevision_msgs/msg/detection_array.hpp
+edgevision_msgs__cpp: rosidl_generator_cpp/edgevision_msgs/msg/tracked_detection.hpp
+edgevision_msgs__cpp: rosidl_generator_cpp/edgevision_msgs/msg/tracked_detection_array.hpp
 edgevision_msgs__cpp: CMakeFiles/edgevision_msgs__cpp.dir/build.make
 .PHONY : edgevision_msgs__cpp
 

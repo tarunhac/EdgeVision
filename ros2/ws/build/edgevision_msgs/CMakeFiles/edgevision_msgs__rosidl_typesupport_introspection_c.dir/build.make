@@ -79,6 +79,8 @@ rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection__rosidl_
 rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em
 rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: rosidl_adapter/edgevision_msgs/msg/Detection.idl
 rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: rosidl_adapter/edgevision_msgs/msg/DetectionArray.idl
+rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: rosidl_adapter/edgevision_msgs/msg/TrackedDetection.idl
+rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: rosidl_adapter/edgevision_msgs/msg/TrackedDetectionArray.idl
 rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl
@@ -117,11 +119,23 @@ rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection__rosidl_
 rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection_array__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection_array__rosidl_typesupport_introspection_c.h
 
+rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection__rosidl_typesupport_introspection_c.h
+
+rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection_array__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection_array__rosidl_typesupport_introspection_c.h
+
 rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection__type_support.c: rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection__type_support.c
 
 rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection_array__type_support.c: rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection_array__type_support.c
+
+rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection__type_support.c: rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection__type_support.c
+
+rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection_array__type_support.c: rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection_array__type_support.c
 
 CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection__type_support.c.o: CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection__type_support.c.o: rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection__type_support.c
@@ -151,16 +165,48 @@ CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesu
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection_array__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection_array__type_support.c -o CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection_array__type_support.c.s
 
+CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection__type_support.c.o: CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection__type_support.c.o: rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection__type_support.c
+CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection__type_support.c.o: CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection__type_support.c.o -MF CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection__type_support.c.o.d -o CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection__type_support.c.o -c /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection__type_support.c
+
+CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection__type_support.c > CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection__type_support.c.i
+
+CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection__type_support.c -o CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection__type_support.c.s
+
+CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection_array__type_support.c.o: CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection_array__type_support.c.o: rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection_array__type_support.c
+CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection_array__type_support.c.o: CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection_array__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection_array__type_support.c.o -MF CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection_array__type_support.c.o.d -o CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection_array__type_support.c.o -c /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection_array__type_support.c
+
+CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection_array__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection_array__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection_array__type_support.c > CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection_array__type_support.c.i
+
+CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection_array__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection_array__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection_array__type_support.c -o CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection_array__type_support.c.s
+
 # Object files for target edgevision_msgs__rosidl_typesupport_introspection_c
 edgevision_msgs__rosidl_typesupport_introspection_c_OBJECTS = \
 "CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection__type_support.c.o" \
-"CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection_array__type_support.c.o"
+"CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection_array__type_support.c.o" \
+"CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection__type_support.c.o" \
+"CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection_array__type_support.c.o"
 
 # External object files for target edgevision_msgs__rosidl_typesupport_introspection_c
 edgevision_msgs__rosidl_typesupport_introspection_c_EXTERNAL_OBJECTS =
 
 libedgevision_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection__type_support.c.o
 libedgevision_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection_array__type_support.c.o
+libedgevision_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection__type_support.c.o
+libedgevision_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection_array__type_support.c.o
 libedgevision_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/build.make
 libedgevision_msgs__rosidl_typesupport_introspection_c.so: libedgevision_msgs__rosidl_generator_c.so
 libedgevision_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
@@ -171,7 +217,7 @@ libedgevision_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/l
 libedgevision_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libedgevision_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librcutils.so
 libedgevision_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libedgevision_msgs__rosidl_typesupport_introspection_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C shared library libedgevision_msgs__rosidl_typesupport_introspection_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -186,6 +232,10 @@ CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/depend: rosid
 CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection__type_support.c
 CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection_array__rosidl_typesupport_introspection_c.h
 CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection_array__type_support.c
+CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection__rosidl_typesupport_introspection_c.h
+CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection__type_support.c
+CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection_array__rosidl_typesupport_introspection_c.h
+CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection_array__type_support.c
 	cd /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs /home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/depend
 

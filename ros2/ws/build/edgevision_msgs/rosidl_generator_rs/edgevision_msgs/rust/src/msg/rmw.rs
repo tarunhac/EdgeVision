@@ -180,3 +180,186 @@ impl rosidl_runtime_rs::RmwMessage for DetectionArray where Self: Sized {
 }
 
 
+#[link(name = "edgevision_msgs__rosidl_typesupport_c")]
+extern "C" {
+    fn rosidl_typesupport_c__get_message_type_support_handle__edgevision_msgs__msg__TrackedDetection() -> *const std::ffi::c_void;
+}
+
+#[link(name = "edgevision_msgs__rosidl_generator_c")]
+extern "C" {
+    fn edgevision_msgs__msg__TrackedDetection__init(msg: *mut TrackedDetection) -> bool;
+    fn edgevision_msgs__msg__TrackedDetection__Sequence__init(seq: *mut rosidl_runtime_rs::Sequence<TrackedDetection>, size: usize) -> bool;
+    fn edgevision_msgs__msg__TrackedDetection__Sequence__fini(seq: *mut rosidl_runtime_rs::Sequence<TrackedDetection>);
+    fn edgevision_msgs__msg__TrackedDetection__Sequence__copy(in_seq: &rosidl_runtime_rs::Sequence<TrackedDetection>, out_seq: *mut rosidl_runtime_rs::Sequence<TrackedDetection>) -> bool;
+}
+
+// Corresponds to edgevision_msgs__msg__TrackedDetection
+#[cfg_attr(feature = "serde", derive(Deserialize, Serialize))]
+
+
+// This struct is not documented.
+#[allow(missing_docs)]
+
+#[repr(C)]
+#[derive(Clone, Debug, PartialEq, PartialOrd)]
+pub struct TrackedDetection {
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub track_id: i32,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub class_name: rosidl_runtime_rs::String,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub confidence: f32,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub x1: i32,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub y1: i32,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub x2: i32,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub y2: i32,
+
+}
+
+
+
+impl Default for TrackedDetection {
+  fn default() -> Self {
+    unsafe {
+      let mut msg = std::mem::zeroed();
+      if !edgevision_msgs__msg__TrackedDetection__init(&mut msg as *mut _) {
+        panic!("Call to edgevision_msgs__msg__TrackedDetection__init() failed");
+      }
+      msg
+    }
+  }
+}
+
+impl rosidl_runtime_rs::SequenceAlloc for TrackedDetection {
+  fn sequence_init(seq: &mut rosidl_runtime_rs::Sequence<Self>, size: usize) -> bool {
+    // SAFETY: This is safe since the pointer is guaranteed to be valid/initialized.
+    unsafe { edgevision_msgs__msg__TrackedDetection__Sequence__init(seq as *mut _, size) }
+  }
+  fn sequence_fini(seq: &mut rosidl_runtime_rs::Sequence<Self>) {
+    // SAFETY: This is safe since the pointer is guaranteed to be valid/initialized.
+    unsafe { edgevision_msgs__msg__TrackedDetection__Sequence__fini(seq as *mut _) }
+  }
+  fn sequence_copy(in_seq: &rosidl_runtime_rs::Sequence<Self>, out_seq: &mut rosidl_runtime_rs::Sequence<Self>) -> bool {
+    // SAFETY: This is safe since the pointer is guaranteed to be valid/initialized.
+    unsafe { edgevision_msgs__msg__TrackedDetection__Sequence__copy(in_seq, out_seq as *mut _) }
+  }
+}
+
+impl rosidl_runtime_rs::Message for TrackedDetection {
+  type RmwMsg = Self;
+  fn into_rmw_message(msg_cow: std::borrow::Cow<'_, Self>) -> std::borrow::Cow<'_, Self::RmwMsg> { msg_cow }
+  fn from_rmw_message(msg: Self::RmwMsg) -> Self { msg }
+}
+
+impl rosidl_runtime_rs::RmwMessage for TrackedDetection where Self: Sized {
+  const TYPE_NAME: &'static str = "edgevision_msgs/msg/TrackedDetection";
+  fn get_type_support() -> *const std::ffi::c_void {
+    // SAFETY: No preconditions for this function.
+    unsafe { rosidl_typesupport_c__get_message_type_support_handle__edgevision_msgs__msg__TrackedDetection() }
+  }
+}
+
+
+#[link(name = "edgevision_msgs__rosidl_typesupport_c")]
+extern "C" {
+    fn rosidl_typesupport_c__get_message_type_support_handle__edgevision_msgs__msg__TrackedDetectionArray() -> *const std::ffi::c_void;
+}
+
+#[link(name = "edgevision_msgs__rosidl_generator_c")]
+extern "C" {
+    fn edgevision_msgs__msg__TrackedDetectionArray__init(msg: *mut TrackedDetectionArray) -> bool;
+    fn edgevision_msgs__msg__TrackedDetectionArray__Sequence__init(seq: *mut rosidl_runtime_rs::Sequence<TrackedDetectionArray>, size: usize) -> bool;
+    fn edgevision_msgs__msg__TrackedDetectionArray__Sequence__fini(seq: *mut rosidl_runtime_rs::Sequence<TrackedDetectionArray>);
+    fn edgevision_msgs__msg__TrackedDetectionArray__Sequence__copy(in_seq: &rosidl_runtime_rs::Sequence<TrackedDetectionArray>, out_seq: *mut rosidl_runtime_rs::Sequence<TrackedDetectionArray>) -> bool;
+}
+
+// Corresponds to edgevision_msgs__msg__TrackedDetectionArray
+#[cfg_attr(feature = "serde", derive(Deserialize, Serialize))]
+
+
+// This struct is not documented.
+#[allow(missing_docs)]
+
+#[repr(C)]
+#[derive(Clone, Debug, PartialEq, PartialOrd)]
+pub struct TrackedDetectionArray {
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub header: std_msgs::msg::rmw::Header,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub detections: rosidl_runtime_rs::Sequence<super::super::msg::rmw::TrackedDetection>,
+
+}
+
+
+
+impl Default for TrackedDetectionArray {
+  fn default() -> Self {
+    unsafe {
+      let mut msg = std::mem::zeroed();
+      if !edgevision_msgs__msg__TrackedDetectionArray__init(&mut msg as *mut _) {
+        panic!("Call to edgevision_msgs__msg__TrackedDetectionArray__init() failed");
+      }
+      msg
+    }
+  }
+}
+
+impl rosidl_runtime_rs::SequenceAlloc for TrackedDetectionArray {
+  fn sequence_init(seq: &mut rosidl_runtime_rs::Sequence<Self>, size: usize) -> bool {
+    // SAFETY: This is safe since the pointer is guaranteed to be valid/initialized.
+    unsafe { edgevision_msgs__msg__TrackedDetectionArray__Sequence__init(seq as *mut _, size) }
+  }
+  fn sequence_fini(seq: &mut rosidl_runtime_rs::Sequence<Self>) {
+    // SAFETY: This is safe since the pointer is guaranteed to be valid/initialized.
+    unsafe { edgevision_msgs__msg__TrackedDetectionArray__Sequence__fini(seq as *mut _) }
+  }
+  fn sequence_copy(in_seq: &rosidl_runtime_rs::Sequence<Self>, out_seq: &mut rosidl_runtime_rs::Sequence<Self>) -> bool {
+    // SAFETY: This is safe since the pointer is guaranteed to be valid/initialized.
+    unsafe { edgevision_msgs__msg__TrackedDetectionArray__Sequence__copy(in_seq, out_seq as *mut _) }
+  }
+}
+
+impl rosidl_runtime_rs::Message for TrackedDetectionArray {
+  type RmwMsg = Self;
+  fn into_rmw_message(msg_cow: std::borrow::Cow<'_, Self>) -> std::borrow::Cow<'_, Self::RmwMsg> { msg_cow }
+  fn from_rmw_message(msg: Self::RmwMsg) -> Self { msg }
+}
+
+impl rosidl_runtime_rs::RmwMessage for TrackedDetectionArray where Self: Sized {
+  const TYPE_NAME: &'static str = "edgevision_msgs/msg/TrackedDetectionArray";
+  fn get_type_support() -> *const std::ffi::c_void {
+    // SAFETY: No preconditions for this function.
+    unsafe { rosidl_typesupport_c__get_message_type_support_handle__edgevision_msgs__msg__TrackedDetectionArray() }
+  }
+}
+
+

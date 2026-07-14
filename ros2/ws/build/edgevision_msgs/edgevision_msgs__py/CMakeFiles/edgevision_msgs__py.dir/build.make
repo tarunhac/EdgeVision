@@ -71,9 +71,13 @@ edgevision_msgs__py/CMakeFiles/edgevision_msgs__py: rosidl_generator_py/edgevisi
 edgevision_msgs__py/CMakeFiles/edgevision_msgs__py: rosidl_generator_py/edgevision_msgs/_edgevision_msgs_s.ep.rosidl_typesupport_c.c
 edgevision_msgs__py/CMakeFiles/edgevision_msgs__py: rosidl_generator_py/edgevision_msgs/msg/_detection.py
 edgevision_msgs__py/CMakeFiles/edgevision_msgs__py: rosidl_generator_py/edgevision_msgs/msg/_detection_array.py
+edgevision_msgs__py/CMakeFiles/edgevision_msgs__py: rosidl_generator_py/edgevision_msgs/msg/_tracked_detection.py
+edgevision_msgs__py/CMakeFiles/edgevision_msgs__py: rosidl_generator_py/edgevision_msgs/msg/_tracked_detection_array.py
 edgevision_msgs__py/CMakeFiles/edgevision_msgs__py: rosidl_generator_py/edgevision_msgs/msg/__init__.py
 edgevision_msgs__py/CMakeFiles/edgevision_msgs__py: rosidl_generator_py/edgevision_msgs/msg/_detection_s.c
 edgevision_msgs__py/CMakeFiles/edgevision_msgs__py: rosidl_generator_py/edgevision_msgs/msg/_detection_array_s.c
+edgevision_msgs__py/CMakeFiles/edgevision_msgs__py: rosidl_generator_py/edgevision_msgs/msg/_tracked_detection_s.c
+edgevision_msgs__py/CMakeFiles/edgevision_msgs__py: rosidl_generator_py/edgevision_msgs/msg/_tracked_detection_array_s.c
 
 rosidl_generator_py/edgevision_msgs/_edgevision_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/edgevision_msgs/_edgevision_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py
@@ -90,6 +94,8 @@ rosidl_generator_py/edgevision_msgs/_edgevision_msgs_s.ep.rosidl_typesupport_fas
 rosidl_generator_py/edgevision_msgs/_edgevision_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/edgevision_msgs/_edgevision_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/edgevision_msgs/msg/Detection.idl
 rosidl_generator_py/edgevision_msgs/_edgevision_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/edgevision_msgs/msg/DetectionArray.idl
+rosidl_generator_py/edgevision_msgs/_edgevision_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/edgevision_msgs/msg/TrackedDetection.idl
+rosidl_generator_py/edgevision_msgs/_edgevision_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/edgevision_msgs/msg/TrackedDetectionArray.idl
 rosidl_generator_py/edgevision_msgs/_edgevision_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 rosidl_generator_py/edgevision_msgs/_edgevision_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 rosidl_generator_py/edgevision_msgs/_edgevision_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl
@@ -137,6 +143,12 @@ rosidl_generator_py/edgevision_msgs/msg/_detection.py: rosidl_generator_py/edgev
 rosidl_generator_py/edgevision_msgs/msg/_detection_array.py: rosidl_generator_py/edgevision_msgs/_edgevision_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/edgevision_msgs/msg/_detection_array.py
 
+rosidl_generator_py/edgevision_msgs/msg/_tracked_detection.py: rosidl_generator_py/edgevision_msgs/_edgevision_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/edgevision_msgs/msg/_tracked_detection.py
+
+rosidl_generator_py/edgevision_msgs/msg/_tracked_detection_array.py: rosidl_generator_py/edgevision_msgs/_edgevision_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/edgevision_msgs/msg/_tracked_detection_array.py
+
 rosidl_generator_py/edgevision_msgs/msg/__init__.py: rosidl_generator_py/edgevision_msgs/_edgevision_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/edgevision_msgs/msg/__init__.py
 
@@ -145,6 +157,12 @@ rosidl_generator_py/edgevision_msgs/msg/_detection_s.c: rosidl_generator_py/edge
 
 rosidl_generator_py/edgevision_msgs/msg/_detection_array_s.c: rosidl_generator_py/edgevision_msgs/_edgevision_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/edgevision_msgs/msg/_detection_array_s.c
+
+rosidl_generator_py/edgevision_msgs/msg/_tracked_detection_s.c: rosidl_generator_py/edgevision_msgs/_edgevision_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/edgevision_msgs/msg/_tracked_detection_s.c
+
+rosidl_generator_py/edgevision_msgs/msg/_tracked_detection_array_s.c: rosidl_generator_py/edgevision_msgs/_edgevision_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/edgevision_msgs/msg/_tracked_detection_array_s.c
 
 edgevision_msgs__py: edgevision_msgs__py/CMakeFiles/edgevision_msgs__py
 edgevision_msgs__py: rosidl_generator_py/edgevision_msgs/_edgevision_msgs_s.ep.rosidl_typesupport_c.c
@@ -155,6 +173,10 @@ edgevision_msgs__py: rosidl_generator_py/edgevision_msgs/msg/_detection.py
 edgevision_msgs__py: rosidl_generator_py/edgevision_msgs/msg/_detection_array.py
 edgevision_msgs__py: rosidl_generator_py/edgevision_msgs/msg/_detection_array_s.c
 edgevision_msgs__py: rosidl_generator_py/edgevision_msgs/msg/_detection_s.c
+edgevision_msgs__py: rosidl_generator_py/edgevision_msgs/msg/_tracked_detection.py
+edgevision_msgs__py: rosidl_generator_py/edgevision_msgs/msg/_tracked_detection_array.py
+edgevision_msgs__py: rosidl_generator_py/edgevision_msgs/msg/_tracked_detection_array_s.c
+edgevision_msgs__py: rosidl_generator_py/edgevision_msgs/msg/_tracked_detection_s.c
 edgevision_msgs__py: edgevision_msgs__py/CMakeFiles/edgevision_msgs__py.dir/build.make
 .PHONY : edgevision_msgs__py
 

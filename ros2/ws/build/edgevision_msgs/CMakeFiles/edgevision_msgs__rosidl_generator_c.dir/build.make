@@ -84,6 +84,8 @@ rosidl_generator_c/edgevision_msgs/msg/detection.h: /opt/ros/humble/share/rosidl
 rosidl_generator_c/edgevision_msgs/msg/detection.h: /opt/ros/humble/share/rosidl_generator_c/resource/srv__type_support.h.em
 rosidl_generator_c/edgevision_msgs/msg/detection.h: rosidl_adapter/edgevision_msgs/msg/Detection.idl
 rosidl_generator_c/edgevision_msgs/msg/detection.h: rosidl_adapter/edgevision_msgs/msg/DetectionArray.idl
+rosidl_generator_c/edgevision_msgs/msg/detection.h: rosidl_adapter/edgevision_msgs/msg/TrackedDetection.idl
+rosidl_generator_c/edgevision_msgs/msg/detection.h: rosidl_adapter/edgevision_msgs/msg/TrackedDetectionArray.idl
 rosidl_generator_c/edgevision_msgs/msg/detection.h: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 rosidl_generator_c/edgevision_msgs/msg/detection.h: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 rosidl_generator_c/edgevision_msgs/msg/detection.h: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl
@@ -140,11 +142,41 @@ rosidl_generator_c/edgevision_msgs/msg/detail/detection_array__struct.h: rosidl_
 rosidl_generator_c/edgevision_msgs/msg/detail/detection_array__type_support.h: rosidl_generator_c/edgevision_msgs/msg/detection.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/edgevision_msgs/msg/detail/detection_array__type_support.h
 
+rosidl_generator_c/edgevision_msgs/msg/tracked_detection.h: rosidl_generator_c/edgevision_msgs/msg/detection.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/edgevision_msgs/msg/tracked_detection.h
+
+rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection__functions.h: rosidl_generator_c/edgevision_msgs/msg/detection.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection__functions.h
+
+rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection__struct.h: rosidl_generator_c/edgevision_msgs/msg/detection.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection__struct.h
+
+rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection__type_support.h: rosidl_generator_c/edgevision_msgs/msg/detection.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection__type_support.h
+
+rosidl_generator_c/edgevision_msgs/msg/tracked_detection_array.h: rosidl_generator_c/edgevision_msgs/msg/detection.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/edgevision_msgs/msg/tracked_detection_array.h
+
+rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection_array__functions.h: rosidl_generator_c/edgevision_msgs/msg/detection.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection_array__functions.h
+
+rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection_array__struct.h: rosidl_generator_c/edgevision_msgs/msg/detection.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection_array__struct.h
+
+rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection_array__type_support.h: rosidl_generator_c/edgevision_msgs/msg/detection.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection_array__type_support.h
+
 rosidl_generator_c/edgevision_msgs/msg/detail/detection__functions.c: rosidl_generator_c/edgevision_msgs/msg/detection.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/edgevision_msgs/msg/detail/detection__functions.c
 
 rosidl_generator_c/edgevision_msgs/msg/detail/detection_array__functions.c: rosidl_generator_c/edgevision_msgs/msg/detection.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/edgevision_msgs/msg/detail/detection_array__functions.c
+
+rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection__functions.c: rosidl_generator_c/edgevision_msgs/msg/detection.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection__functions.c
+
+rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection_array__functions.c: rosidl_generator_c/edgevision_msgs/msg/detection.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection_array__functions.c
 
 CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/detection__functions.c.o: CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/detection__functions.c.o: rosidl_generator_c/edgevision_msgs/msg/detail/detection__functions.c
@@ -174,23 +206,55 @@ CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/detection_array__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_generator_c/edgevision_msgs/msg/detail/detection_array__functions.c -o CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/detection_array__functions.c.s
 
+CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection__functions.c.o: CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection__functions.c.o: rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection__functions.c
+CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection__functions.c.o: CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection__functions.c.o -MF CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection__functions.c.o.d -o CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection__functions.c.o -c /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection__functions.c
+
+CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection__functions.c > CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection__functions.c.i
+
+CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection__functions.c -o CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection__functions.c.s
+
+CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection_array__functions.c.o: CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection_array__functions.c.o: rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection_array__functions.c
+CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection_array__functions.c.o: CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection_array__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection_array__functions.c.o -MF CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection_array__functions.c.o.d -o CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection_array__functions.c.o -c /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection_array__functions.c
+
+CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection_array__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection_array__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection_array__functions.c > CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection_array__functions.c.i
+
+CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection_array__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection_array__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection_array__functions.c -o CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection_array__functions.c.s
+
 # Object files for target edgevision_msgs__rosidl_generator_c
 edgevision_msgs__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/detection__functions.c.o" \
-"CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/detection_array__functions.c.o"
+"CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/detection_array__functions.c.o" \
+"CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection__functions.c.o" \
+"CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection_array__functions.c.o"
 
 # External object files for target edgevision_msgs__rosidl_generator_c
 edgevision_msgs__rosidl_generator_c_EXTERNAL_OBJECTS =
 
 libedgevision_msgs__rosidl_generator_c.so: CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/detection__functions.c.o
 libedgevision_msgs__rosidl_generator_c.so: CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/detection_array__functions.c.o
+libedgevision_msgs__rosidl_generator_c.so: CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection__functions.c.o
+libedgevision_msgs__rosidl_generator_c.so: CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection_array__functions.c.o
 libedgevision_msgs__rosidl_generator_c.so: CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/build.make
 libedgevision_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
 libedgevision_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 libedgevision_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libedgevision_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libedgevision_msgs__rosidl_generator_c.so: CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libedgevision_msgs__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C shared library libedgevision_msgs__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -209,8 +273,18 @@ CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ed
 CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/edgevision_msgs/msg/detail/detection_array__functions.h
 CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/edgevision_msgs/msg/detail/detection_array__struct.h
 CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/edgevision_msgs/msg/detail/detection_array__type_support.h
+CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection__functions.c
+CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection__functions.h
+CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection__struct.h
+CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection__type_support.h
+CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection_array__functions.c
+CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection_array__functions.h
+CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection_array__struct.h
+CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection_array__type_support.h
 CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/edgevision_msgs/msg/detection.h
 CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/edgevision_msgs/msg/detection_array.h
+CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/edgevision_msgs/msg/tracked_detection.h
+CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/edgevision_msgs/msg/tracked_detection_array.h
 	cd /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs /home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/depend
 
