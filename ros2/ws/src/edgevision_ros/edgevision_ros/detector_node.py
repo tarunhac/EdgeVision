@@ -6,6 +6,9 @@ from cv_bridge import CvBridge
 
 from ultralytics import YOLO
 
+from edgevision_msgs.msg import Detection
+from edgevision_msgs.msg import DetectionArray
+
 import cv2
 
 
@@ -25,9 +28,15 @@ class DetectorNode(Node):
             10
         )
 
-        self.publisher = self.create_publisher(
+        self.image_publisher = self.create_publisher(
             Image,
             "/camera/detections/image",
+            10
+        )
+
+        self.detection_publisher = self.create_publisher(
+            DetectionArray,
+            "/detections",
             10
         )
 
@@ -35,27 +44,45 @@ class DetectorNode(Node):
 
     def image_callback(self, msg):
 
-        # Convert ROS Image to OpenCV image
         frame = self.bridge.imgmsg_to_cv2(
             msg,
             desired_encoding="bgr8"
         )
 
-        # Run YOLO inference
         results = self.model(frame)
 
-        # Draw detections
         annotated_frame = results[0].plot()
 
-        # Publish annotated image
         annotated_msg = self.bridge.cv2_to_imgmsg(
             annotated_frame,
             encoding="bgr8"
         )
 
-        self.publisher.publish(annotated_msg)
+        self.image_publisher.publish(annotated_msg)
 
-        # Display image
+        detection_array = DetectionArray()
+        detection_array.header = msg.header
+
+        for box in results[0].boxes:
+
+            detection = Detection()
+
+            cls = int(box.cls[0])
+            detection.class_name = self.model.names[cls]
+
+            detection.confidence = float(box.conf[0])
+
+            x1, y1, x2, y2 = box.xyxy[0].tolist()
+
+            detection.x1 = int(x1)
+            detection.y1 = int(y1)
+            detection.x2 = int(x2)
+            detection.y2 = int(y2)
+
+            detection_array.detections.append(detection)
+
+        self.detection_publisher.publish(detection_array)
+
         cv2.imshow("EdgeVision Detection", annotated_frame)
         cv2.waitKey(1)
 

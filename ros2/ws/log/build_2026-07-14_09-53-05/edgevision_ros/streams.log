@@ -1,0 +1,18 @@
+[1.907s] Invoking command in '/home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros': AMENT_PREFIX_PATH=/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs LD_LIBRARY_PATH=/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/python3.10/site-packages:/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros/build --no-deps symlink_data
+[2.413s] running develop
+[2.737s] running egg_info
+[2.737s] writing edgevision_ros.egg-info/PKG-INFO
+[2.738s] writing dependency_links to edgevision_ros.egg-info/dependency_links.txt
+[2.739s] writing entry points to edgevision_ros.egg-info/entry_points.txt
+[2.739s] writing requirements to edgevision_ros.egg-info/requires.txt
+[2.740s] writing top-level names to edgevision_ros.egg-info/top_level.txt
+[2.744s] reading manifest file 'edgevision_ros.egg-info/SOURCES.txt'
+[2.746s] writing manifest file 'edgevision_ros.egg-info/SOURCES.txt'
+[2.749s] running build_ext
+[2.749s] Creating /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/python3.10/site-packages/edgevision-ros.egg-link (link to .)
+[2.752s] Installing camera_node script to /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/edgevision_ros
+[2.752s] Installing detector_node script to /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/edgevision_ros
+[2.753s] 
+[2.756s] Installed /home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros
+[2.757s] running symlink_data
+[2.835s] Invoked command in '/home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros' returned '0': AMENT_PREFIX_PATH=/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs LD_LIBRARY_PATH=/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/python3.10/site-packages:/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros/build --no-deps symlink_data
