@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "edgevision_msgs__rs",
+		"source" : "/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/edgevision_msgs__rs"
+	}
+}

@@ -1,3 +1,4 @@
 [console_scripts]
 camera_node = edgevision_ros.camera_node:main
+detector_node = edgevision_ros.detector_node:main
 

@@ -1,0 +1,4 @@
+source;share/edgevision_msgs/local_setup.bash
+source;share/edgevision_msgs/local_setup.dsv
+source;share/edgevision_msgs/local_setup.sh
+source;share/edgevision_msgs/local_setup.zsh

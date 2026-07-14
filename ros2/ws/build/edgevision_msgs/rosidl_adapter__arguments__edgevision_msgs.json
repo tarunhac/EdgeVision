@@ -1,0 +1,7 @@
+{
+  "package_name": "edgevision_msgs",
+  "non_idl_tuples": [
+    "/home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs:msg/Detection.msg",
+    "/home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs:msg/DetectionArray.msg"
+  ]
+}

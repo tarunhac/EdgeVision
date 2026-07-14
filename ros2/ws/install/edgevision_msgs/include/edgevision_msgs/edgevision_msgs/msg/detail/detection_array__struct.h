@@ -1,0 +1,1 @@
+/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_generator_c/edgevision_msgs/msg/detail/detection_array__struct.h

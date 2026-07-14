@@ -1,0 +1,4 @@
+source;share/edgevision_msgs/environment/ament_prefix_path.sh
+source;share/edgevision_msgs/environment/library_path.sh
+source;share/edgevision_msgs/environment/path.sh
+source;share/edgevision_msgs/environment/pythonpath.sh
