@@ -193,6 +193,16 @@ pub struct TrackedDetection {
     #[allow(missing_docs)]
     pub y2: i32,
 
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub name: std::string::String,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub similarity: f32,
+
 }
 
 
@@ -216,6 +226,8 @@ impl rosidl_runtime_rs::Message for TrackedDetection {
         y1: msg.y1,
         x2: msg.x2,
         y2: msg.y2,
+        name: msg.name.as_str().into(),
+        similarity: msg.similarity,
       }),
       std::borrow::Cow::Borrowed(msg) => std::borrow::Cow::Owned(Self::RmwMsg {
       track_id: msg.track_id,
@@ -225,6 +237,8 @@ impl rosidl_runtime_rs::Message for TrackedDetection {
       y1: msg.y1,
       x2: msg.x2,
       y2: msg.y2,
+        name: msg.name.as_str().into(),
+      similarity: msg.similarity,
       })
     }
   }
@@ -238,6 +252,8 @@ impl rosidl_runtime_rs::Message for TrackedDetection {
       y1: msg.y1,
       x2: msg.x2,
       y2: msg.y2,
+      name: msg.name.to_string(),
+      similarity: msg.similarity,
     }
   }
 }

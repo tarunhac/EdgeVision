@@ -31,6 +31,7 @@ setup(
             "tracker_node = edgevision_ros.tracker_node:main",
             "perception_node = edgevision_ros.perception_node:main",
             "face_node = edgevision_ros.face_node:main",
+            "event_logger_node = edgevision_ros.event_logger_node:main",
         ],
     },
 )

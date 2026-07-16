@@ -64,6 +64,8 @@ class TrackedDetection(metaclass=Metaclass_TrackedDetection):
         '_y1',
         '_x2',
         '_y2',
+        '_name',
+        '_similarity',
     ]
 
     _fields_and_field_types = {
@@ -74,6 +76,8 @@ class TrackedDetection(metaclass=Metaclass_TrackedDetection):
         'y1': 'int32',
         'x2': 'int32',
         'y2': 'int32',
+        'name': 'string',
+        'similarity': 'float',
     }
 
     SLOT_TYPES = (
@@ -84,6 +88,8 @@ class TrackedDetection(metaclass=Metaclass_TrackedDetection):
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
+        rosidl_parser.definition.UnboundedString(),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -97,6 +103,8 @@ class TrackedDetection(metaclass=Metaclass_TrackedDetection):
         self.y1 = kwargs.get('y1', int())
         self.x2 = kwargs.get('x2', int())
         self.y2 = kwargs.get('y2', int())
+        self.name = kwargs.get('name', str())
+        self.similarity = kwargs.get('similarity', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -140,6 +148,10 @@ class TrackedDetection(metaclass=Metaclass_TrackedDetection):
         if self.x2 != other.x2:
             return False
         if self.y2 != other.y2:
+            return False
+        if self.name != other.name:
+            return False
+        if self.similarity != other.similarity:
             return False
         return True
 
@@ -250,3 +262,31 @@ class TrackedDetection(metaclass=Metaclass_TrackedDetection):
             assert value >= -2147483648 and value < 2147483648, \
                 "The 'y2' field must be an integer in [-2147483648, 2147483647]"
         self._y2 = value
+
+    @builtins.property
+    def name(self):
+        """Message field 'name'."""
+        return self._name
+
+    @name.setter
+    def name(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, str), \
+                "The 'name' field must be of type 'str'"
+        self._name = value
+
+    @builtins.property
+    def similarity(self):
+        """Message field 'similarity'."""
+        return self._similarity
+
+    @similarity.setter
+    def similarity(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'similarity' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'similarity' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._similarity = value

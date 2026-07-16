@@ -19,6 +19,7 @@ extern "C"
 
 // Include directives for member types
 // Member 'class_name'
+// Member 'name'
 #include "rosidl_runtime_c/string.h"
 
 /// Struct defined in msg/TrackedDetection in the package edgevision_msgs.
@@ -31,6 +32,8 @@ typedef struct edgevision_msgs__msg__TrackedDetection
   int32_t y1;
   int32_t x2;
   int32_t y2;
+  rosidl_runtime_c__String name;
+  float similarity;
 } edgevision_msgs__msg__TrackedDetection;
 
 // Struct for a sequence of edgevision_msgs__msg__TrackedDetection.

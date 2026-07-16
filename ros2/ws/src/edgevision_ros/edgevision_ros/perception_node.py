@@ -5,7 +5,7 @@ from sensor_msgs.msg import Image
 from cv_bridge import CvBridge
 
 from ultralytics import YOLO
-
+from edgevision_core.event_logger import EventLogger
 from edgevision_ros.face_recognizer import FaceRecognizer
 
 from edgevision_msgs.msg import (
@@ -26,18 +26,23 @@ class PerceptionNode(Node):
 
         self.bridge = CvBridge()
 
+
         # YOLO model
         self.model = YOLO(
             "yolov8n.pt"
         )
+
 
         # Face recognizer
         self.face_recognizer = FaceRecognizer(
             "/home/tarun/surveillance_bot/known_faces"
         )
 
-        # Track ID -> Name cache
+
         self.identity_cache = {}
+        self.event_logger = EventLogger()
+        self.event_logger.initialize()
+
 
         self.get_logger().info(
             "Face Recognizer Loaded"
@@ -142,7 +147,6 @@ class PerceptionNode(Node):
             )
 
 
-
             tracked = TrackedDetection()
 
 
@@ -172,13 +176,10 @@ class PerceptionNode(Node):
             tracked.y2 = detection.y2
 
 
-            tracked_array.detections.append(
-                tracked
-            )
 
-
-
-            # Person crop
+            # -----------------------------
+            # Face Recognition
+            # -----------------------------
 
             person_roi = frame[
                 detection.y1:detection.y2,
@@ -186,13 +187,13 @@ class PerceptionNode(Node):
             ]
 
 
-            # Recognition cache
-
             if tracked.track_id in self.identity_cache:
 
-                name = self.identity_cache[
-                    tracked.track_id
-                ]
+                name, similarity = (
+                    self.identity_cache[
+                        tracked.track_id
+                    ]
+                )
 
             else:
 
@@ -202,10 +203,52 @@ class PerceptionNode(Node):
                     )
                 )
 
+
                 self.identity_cache[
                     tracked.track_id
-                ] = name
+                ] = (
+                    name,
+                    similarity
+                )
 
+
+
+            # Add recognition data
+
+            tracked.name = name
+
+            tracked.similarity = float(
+                similarity
+            )
+
+            class LoggedDetection:
+                pass
+
+            logged_detection = LoggedDetection()
+
+            logged_detection.track_id = tracked.track_id
+            logged_detection.name = tracked.name
+            logged_detection.similarity = tracked.similarity
+            logged_detection.x1 = detection.x1
+            logged_detection.y1 = detection.y1
+            logged_detection.x2 = detection.x2
+            logged_detection.y2 = detection.y2
+
+            self.event_logger.log_unknown(
+                frame,
+                logged_detection
+            )
+
+            tracked_array.detections.append(
+                tracked
+            )
+            # Log only unknown people
+        if name == "Unknown":
+
+            self.event_logger.log_unknown(
+            frame,
+            tracked
+    )
 
 
             # Draw box
@@ -232,19 +275,18 @@ class PerceptionNode(Node):
                     detection.y1 - 10
                 ),
                 cv2.FONT_HERSHEY_SIMPLEX,
-                0.8,
+                0.7,
                 (255,0,0),
                 2
             )
 
 
 
-        # Publish annotated image
-
         annotated_msg = self.bridge.cv2_to_imgmsg(
             annotated_frame,
             encoding="bgr8"
         )
+
 
         annotated_msg.header = msg.header
 
@@ -269,8 +311,8 @@ class PerceptionNode(Node):
             annotated_frame
         )
 
-        cv2.waitKey(1)
 
+        cv2.waitKey(1)
 
 
 
@@ -295,8 +337,11 @@ def main(args=None):
 
 
     finally:
+        
+        node.event_logger.shutdown()
 
         cv2.destroyAllWindows()
+
 
         if rclpy.ok():
 

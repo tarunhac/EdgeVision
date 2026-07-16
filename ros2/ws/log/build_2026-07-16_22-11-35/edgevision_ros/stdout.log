@@ -1,0 +1,59 @@
+running develop
+Removing /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/python3.10/site-packages/edgevision-ros.egg-link (link to .)
+running egg_info
+writing ../../build/edgevision_ros/edgevision_ros.egg-info/PKG-INFO
+writing dependency_links to ../../build/edgevision_ros/edgevision_ros.egg-info/dependency_links.txt
+writing entry points to ../../build/edgevision_ros/edgevision_ros.egg-info/entry_points.txt
+writing requirements to ../../build/edgevision_ros/edgevision_ros.egg-info/requires.txt
+writing top-level names to ../../build/edgevision_ros/edgevision_ros.egg-info/top_level.txt
+reading manifest file '../../build/edgevision_ros/edgevision_ros.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/edgevision_ros/edgevision_ros.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros/build
+creating /home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros/build/lib
+creating /home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros/build/lib/edgevision_ros
+copying edgevision_ros/camera_node.py -> /home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros/build/lib/edgevision_ros
+copying edgevision_ros/tracker_node.py -> /home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros/build/lib/edgevision_ros
+copying edgevision_ros/face_recognizer.py -> /home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros/build/lib/edgevision_ros
+copying edgevision_ros/perception_node.py -> /home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros/build/lib/edgevision_ros
+copying edgevision_ros/face_node.py -> /home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros/build/lib/edgevision_ros
+copying edgevision_ros/event_logger_node.py -> /home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros/build/lib/edgevision_ros
+copying edgevision_ros/face_database.py -> /home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros/build/lib/edgevision_ros
+copying edgevision_ros/detector_node.py -> /home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros/build/lib/edgevision_ros
+copying edgevision_ros/__init__.py -> /home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros/build/lib/edgevision_ros
+running install
+running install_lib
+creating /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/python3.10/site-packages/edgevision_ros
+copying /home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros/build/lib/edgevision_ros/camera_node.py -> /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/python3.10/site-packages/edgevision_ros
+copying /home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros/build/lib/edgevision_ros/tracker_node.py -> /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/python3.10/site-packages/edgevision_ros
+copying /home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros/build/lib/edgevision_ros/face_recognizer.py -> /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/python3.10/site-packages/edgevision_ros
+copying /home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros/build/lib/edgevision_ros/perception_node.py -> /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/python3.10/site-packages/edgevision_ros
+copying /home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros/build/lib/edgevision_ros/face_node.py -> /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/python3.10/site-packages/edgevision_ros
+copying /home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros/build/lib/edgevision_ros/event_logger_node.py -> /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/python3.10/site-packages/edgevision_ros
+copying /home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros/build/lib/edgevision_ros/face_database.py -> /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/python3.10/site-packages/edgevision_ros
+copying /home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros/build/lib/edgevision_ros/detector_node.py -> /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/python3.10/site-packages/edgevision_ros
+copying /home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros/build/lib/edgevision_ros/__init__.py -> /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/python3.10/site-packages/edgevision_ros
+byte-compiling /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/python3.10/site-packages/edgevision_ros/camera_node.py to camera_node.cpython-310.pyc
+byte-compiling /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/python3.10/site-packages/edgevision_ros/tracker_node.py to tracker_node.cpython-310.pyc
+byte-compiling /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/python3.10/site-packages/edgevision_ros/face_recognizer.py to face_recognizer.cpython-310.pyc
+byte-compiling /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/python3.10/site-packages/edgevision_ros/perception_node.py to perception_node.cpython-310.pyc
+byte-compiling /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/python3.10/site-packages/edgevision_ros/face_node.py to face_node.cpython-310.pyc
+byte-compiling /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/python3.10/site-packages/edgevision_ros/event_logger_node.py to event_logger_node.cpython-310.pyc
+byte-compiling /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/python3.10/site-packages/edgevision_ros/face_database.py to face_database.cpython-310.pyc
+byte-compiling /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/python3.10/site-packages/edgevision_ros/detector_node.py to detector_node.cpython-310.pyc
+byte-compiling /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/python3.10/site-packages/edgevision_ros/__init__.py to __init__.cpython-310.pyc
+running install_data
+copying resource/edgevision_ros -> /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/share/ament_index/resource_index/packages
+copying package.xml -> /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/share/edgevision_ros
+running install_egg_info
+Copying ../../build/edgevision_ros/edgevision_ros.egg-info to /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/python3.10/site-packages/edgevision_ros-0.0.0-py3.10.egg-info
+running install_scripts
+Installing camera_node script to /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/edgevision_ros
+Installing detector_node script to /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/edgevision_ros
+Installing event_logger_node script to /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/edgevision_ros
+Installing face_node script to /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/edgevision_ros
+Installing perception_node script to /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/edgevision_ros
+Installing tracker_node script to /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/edgevision_ros
+writing list of installed files to '/home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros/install.log'

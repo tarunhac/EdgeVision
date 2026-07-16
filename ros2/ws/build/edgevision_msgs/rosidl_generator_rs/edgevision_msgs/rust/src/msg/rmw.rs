@@ -238,6 +238,16 @@ pub struct TrackedDetection {
     #[allow(missing_docs)]
     pub y2: i32,
 
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub name: rosidl_runtime_rs::String,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub similarity: f32,
+
 }
 
 

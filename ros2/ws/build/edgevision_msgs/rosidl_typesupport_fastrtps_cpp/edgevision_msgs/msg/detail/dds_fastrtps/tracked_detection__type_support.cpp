@@ -46,6 +46,10 @@ cdr_serialize(
   cdr << ros_message.x2;
   // Member: y2
   cdr << ros_message.y2;
+  // Member: name
+  cdr << ros_message.name;
+  // Member: similarity
+  cdr << ros_message.similarity;
   return true;
 }
 
@@ -75,6 +79,12 @@ cdr_deserialize(
 
   // Member: y2
   cdr >> ros_message.y2;
+
+  // Member: name
+  cdr >> ros_message.name;
+
+  // Member: similarity
+  cdr >> ros_message.similarity;
 
   return true;
 }  // NOLINT(readability/fn_size)
@@ -129,6 +139,16 @@ get_serialized_size(
   // Member: y2
   {
     size_t item_size = sizeof(ros_message.y2);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: name
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message.name.size() + 1);
+  // Member: similarity
+  {
+    size_t item_size = sizeof(ros_message.similarity);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -223,6 +243,28 @@ max_serialized_size_TrackedDetection(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
+  // Member: name
+  {
+    size_t array_size = 1;
+
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
+  }
+
+  // Member: similarity
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -231,7 +273,7 @@ max_serialized_size_TrackedDetection(
     using DataType = edgevision_msgs::msg::TrackedDetection;
     is_plain =
       (
-      offsetof(DataType, y2) +
+      offsetof(DataType, similarity) +
       last_member_size
       ) == ret_val;
   }

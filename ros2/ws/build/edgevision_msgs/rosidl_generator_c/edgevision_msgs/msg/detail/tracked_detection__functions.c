@@ -13,6 +13,7 @@
 
 // Include directives for member types
 // Member `class_name`
+// Member `name`
 #include "rosidl_runtime_c/string_functions.h"
 
 bool
@@ -32,6 +33,12 @@ edgevision_msgs__msg__TrackedDetection__init(edgevision_msgs__msg__TrackedDetect
   // y1
   // x2
   // y2
+  // name
+  if (!rosidl_runtime_c__String__init(&msg->name)) {
+    edgevision_msgs__msg__TrackedDetection__fini(msg);
+    return false;
+  }
+  // similarity
   return true;
 }
 
@@ -49,6 +56,9 @@ edgevision_msgs__msg__TrackedDetection__fini(edgevision_msgs__msg__TrackedDetect
   // y1
   // x2
   // y2
+  // name
+  rosidl_runtime_c__String__fini(&msg->name);
+  // similarity
 }
 
 bool
@@ -87,6 +97,16 @@ edgevision_msgs__msg__TrackedDetection__are_equal(const edgevision_msgs__msg__Tr
   if (lhs->y2 != rhs->y2) {
     return false;
   }
+  // name
+  if (!rosidl_runtime_c__String__are_equal(
+      &(lhs->name), &(rhs->name)))
+  {
+    return false;
+  }
+  // similarity
+  if (lhs->similarity != rhs->similarity) {
+    return false;
+  }
   return true;
 }
 
@@ -116,6 +136,14 @@ edgevision_msgs__msg__TrackedDetection__copy(
   output->x2 = input->x2;
   // y2
   output->y2 = input->y2;
+  // name
+  if (!rosidl_runtime_c__String__copy(
+      &(input->name), &(output->name)))
+  {
+    return false;
+  }
+  // similarity
+  output->similarity = input->similarity;
   return true;
 }
 

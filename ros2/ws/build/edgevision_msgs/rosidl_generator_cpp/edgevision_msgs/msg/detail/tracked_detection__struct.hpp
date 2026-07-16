@@ -46,11 +46,14 @@ struct TrackedDetection_
       this->y1 = 0l;
       this->x2 = 0l;
       this->y2 = 0l;
+      this->name = "";
+      this->similarity = 0.0f;
     }
   }
 
   explicit TrackedDetection_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : class_name(_alloc)
+  : class_name(_alloc),
+    name(_alloc)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
@@ -62,6 +65,8 @@ struct TrackedDetection_
       this->y1 = 0l;
       this->x2 = 0l;
       this->y2 = 0l;
+      this->name = "";
+      this->similarity = 0.0f;
     }
   }
 
@@ -87,6 +92,12 @@ struct TrackedDetection_
   using _y2_type =
     int32_t;
   _y2_type y2;
+  using _name_type =
+    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+  _name_type name;
+  using _similarity_type =
+    float;
+  _similarity_type similarity;
 
   // setters for named parameter idiom
   Type & set__track_id(
@@ -129,6 +140,18 @@ struct TrackedDetection_
     const int32_t & _arg)
   {
     this->y2 = _arg;
+    return *this;
+  }
+  Type & set__name(
+    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+  {
+    this->name = _arg;
+    return *this;
+  }
+  Type & set__similarity(
+    const float & _arg)
+  {
+    this->similarity = _arg;
     return *this;
   }
 
@@ -193,6 +216,12 @@ struct TrackedDetection_
       return false;
     }
     if (this->y2 != other.y2) {
+      return false;
+    }
+    if (this->name != other.name) {
+      return false;
+    }
+    if (this->similarity != other.similarity) {
       return false;
     }
     return true;

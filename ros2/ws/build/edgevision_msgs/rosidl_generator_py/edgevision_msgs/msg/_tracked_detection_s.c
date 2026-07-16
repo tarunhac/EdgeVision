@@ -122,6 +122,30 @@ bool edgevision_msgs__msg__tracked_detection__convert_from_py(PyObject * _pymsg,
     ros_message->y2 = (int32_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
+  {  // name
+    PyObject * field = PyObject_GetAttrString(_pymsg, "name");
+    if (!field) {
+      return false;
+    }
+    assert(PyUnicode_Check(field));
+    PyObject * encoded_field = PyUnicode_AsUTF8String(field);
+    if (!encoded_field) {
+      Py_DECREF(field);
+      return false;
+    }
+    rosidl_runtime_c__String__assign(&ros_message->name, PyBytes_AS_STRING(encoded_field));
+    Py_DECREF(encoded_field);
+    Py_DECREF(field);
+  }
+  {  // similarity
+    PyObject * field = PyObject_GetAttrString(_pymsg, "similarity");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->similarity = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -221,6 +245,34 @@ PyObject * edgevision_msgs__msg__tracked_detection__convert_to_py(void * raw_ros
     field = PyLong_FromLong(ros_message->y2);
     {
       int rc = PyObject_SetAttrString(_pymessage, "y2", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // name
+    PyObject * field = NULL;
+    field = PyUnicode_DecodeUTF8(
+      ros_message->name.data,
+      strlen(ros_message->name.data),
+      "replace");
+    if (!field) {
+      return NULL;
+    }
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "name", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // similarity
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->similarity);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "similarity", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

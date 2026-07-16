@@ -1,0 +1,329 @@
+[0.020s] Invoking command in '/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --build /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs -- -j8 -l8
+[0.071s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.277s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.304s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.306s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.312s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.372s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.428s] -- Found std_msgs: 4.9.1 (/opt/ros/humble/share/std_msgs/cmake)
+[0.930s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.282s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.702s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.738s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.776s] -- Using PYTHON_EXECUTABLE: /home/tarun/surveillance_bot/.venv/bin/python3
+[1.776s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.776s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.946s] -- Configuring done
+[2.003s] -- Generating done
+[2.021s] -- Build files have been written to: /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs
+[2.062s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.074s] [  2%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[2.078s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.087s] [  4%] Built target ament_cmake_python_symlink_edgevision_msgs
+[2.350s] running egg_info
+[2.370s] writing edgevision_msgs.egg-info/PKG-INFO
+[2.371s] writing dependency_links to edgevision_msgs.egg-info/dependency_links.txt
+[2.371s] writing top-level names to edgevision_msgs.egg-info/top_level.txt
+[2.422s] reading manifest file 'edgevision_msgs.egg-info/SOURCES.txt'
+[2.424s] writing manifest file 'edgevision_msgs.egg-info/SOURCES.txt'
+[2.474s] [  4%] Built target ament_cmake_python_build_edgevision_msgs_egg
+[2.600s] [  4%] Built target edgevision_msgs__rs
+[2.967s] [  4%] Built target edgevision_msgs__cpp
+[2.990s] [  5%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.003s] [  6%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[3.006s] [  8%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.029s] [35m[1mConsolidate compiler generated dependencies of target edgevision_msgs__rosidl_generator_c[0m
+[3.056s] [  9%] [32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/detection__functions.c.o[0m
+[3.056s] [ 11%] [32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/detection_array__functions.c.o[0m
+[3.060s] [ 12%] [32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection__functions.c.o[0m
+[3.063s] [ 13%] [32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection_array__functions.c.o[0m
+[3.068s] [ 15%] [32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/face_detection__functions.c.o[0m
+[3.228s] [ 16%] [32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/face_detection_array__functions.c.o[0m
+[3.314s] [ 18%] [32m[1mLinking C shared library libedgevision_msgs__rosidl_generator_c.so[0m
+[3.398s] [ 18%] Built target edgevision_msgs__rosidl_generator_c
+[3.418s] [ 22%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.418s] [ 22%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.418s] [ 22%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.775s] [35m[1mConsolidate compiler generated dependencies of target edgevision_msgs__rosidl_typesupport_cpp[0m
+[3.830s] [ 23%] [32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/edgevision_msgs/msg/detection_array__type_support.cpp.o[0m
+[3.830s] [ 25%] [32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/edgevision_msgs/msg/detection__type_support.cpp.o[0m
+[3.832s] [ 26%] [32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/edgevision_msgs/msg/tracked_detection__type_support.cpp.o[0m
+[4.127s] [35m[1mConsolidate compiler generated dependencies of target edgevision_msgs__rosidl_typesupport_introspection_cpp[0m
+[4.164s] [35m[1mConsolidate compiler generated dependencies of target edgevision_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[4.177s] [ 27%] [32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/edgevision_msgs/msg/detail/detection__type_support.cpp.o[0m
+[4.197s] [ 29%] [32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/edgevision_msgs/msg/detail/dds_fastrtps/detection__type_support.cpp.o[0m
+[4.293s] [35m[1mConsolidate compiler generated dependencies of target edgevision_msgs__rosidl_typesupport_c[0m
+[4.318s] [ 30%] [32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/edgevision_msgs/msg/detection__type_support.cpp.o[0m
+[4.418s] [ 31%] [32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/edgevision_msgs/msg/detection_array__type_support.cpp.o[0m
+[4.524s] [ 33%] [32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/edgevision_msgs/msg/tracked_detection__type_support.cpp.o[0m
+[4.594s] [ 34%] [32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/edgevision_msgs/msg/tracked_detection_array__type_support.cpp.o[0m
+[4.627s] [ 36%] [32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/edgevision_msgs/msg/face_detection__type_support.cpp.o[0m
+[4.645s] [ 37%] [32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/edgevision_msgs/msg/face_detection_array__type_support.cpp.o[0m
+[4.664s] [ 38%] [32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/edgevision_msgs/msg/tracked_detection_array__type_support.cpp.o[0m
+[4.684s] [ 40%] [32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/edgevision_msgs/msg/face_detection__type_support.cpp.o[0m
+[4.691s] [35m[1mConsolidate compiler generated dependencies of target edgevision_msgs__rosidl_typesupport_introspection_c[0m
+[4.715s] [ 41%] [32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/edgevision_msgs/msg/face_detection_array__type_support.cpp.o[0m
+[4.717s] [ 43%] [32m[1mLinking CXX shared library libedgevision_msgs__rosidl_typesupport_c.so[0m
+[4.723s] [35m[1mConsolidate compiler generated dependencies of target edgevision_msgs__rosidl_typesupport_fastrtps_c[0m
+[4.731s] [ 44%] [32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection__type_support.c.o[0m
+[4.790s] [ 45%] [32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/edgevision_msgs/msg/detail/detection__type_support_c.cpp.o[0m
+[4.824s] [ 47%] [32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection_array__type_support.c.o[0m
+[4.859s] [ 47%] Built target edgevision_msgs__rosidl_typesupport_c
+[4.897s] [ 48%] [32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/edgevision_msgs/msg/detail/detection_array__type_support.cpp.o[0m
+[4.957s] [ 50%] [32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection__type_support.c.o[0m
+[5.024s] [ 51%] [32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/edgevision_msgs/msg/detail/tracked_detection__type_support.cpp.o[0m
+[5.037s] [ 52%] [32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection_array__type_support.c.o[0m
+[5.149s] [ 54%] [32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/edgevision_msgs/msg/detail/dds_fastrtps/detection_array__type_support.cpp.o[0m
+[5.195s] [ 55%] [32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/face_detection__type_support.c.o[0m
+[5.301s] [ 56%] [32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/face_detection_array__type_support.c.o[0m
+[5.303s] [ 58%] [32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/edgevision_msgs/msg/detail/detection_array__type_support_c.cpp.o[0m
+[5.336s] [ 59%] [32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/edgevision_msgs/msg/detail/tracked_detection_array__type_support.cpp.o[0m
+[5.387s] [ 61%] [32m[1mLinking CXX shared library libedgevision_msgs__rosidl_typesupport_cpp.so[0m
+[5.417s] [ 62%] [32m[1mLinking C shared library libedgevision_msgs__rosidl_typesupport_introspection_c.so[0m
+[5.496s] [ 62%] Built target edgevision_msgs__rosidl_typesupport_cpp
+[5.515s] [ 63%] [32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/edgevision_msgs/msg/detail/dds_fastrtps/tracked_detection__type_support.cpp.o[0m
+[5.561s] [ 63%] Built target edgevision_msgs__rosidl_typesupport_introspection_c
+[5.588s] [ 65%] [32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/edgevision_msgs/msg/detail/dds_fastrtps/tracked_detection_array__type_support.cpp.o[0m
+[5.595s] [ 66%] [32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/edgevision_msgs/msg/detail/dds_fastrtps/face_detection__type_support.cpp.o[0m
+[5.957s] [ 68%] [32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/edgevision_msgs/msg/detail/face_detection__type_support.cpp.o[0m
+[5.993s] [ 69%] [32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/edgevision_msgs/msg/detail/dds_fastrtps/face_detection_array__type_support.cpp.o[0m
+[6.069s] [ 70%] [32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/edgevision_msgs/msg/detail/tracked_detection__type_support_c.cpp.o[0m
+[6.220s] [ 72%] [32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/edgevision_msgs/msg/detail/face_detection_array__type_support.cpp.o[0m
+[6.364s] [ 73%] [32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/edgevision_msgs/msg/detail/tracked_detection_array__type_support_c.cpp.o[0m
+[6.415s] [ 75%] [32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/edgevision_msgs/msg/detail/face_detection__type_support_c.cpp.o[0m
+[6.517s] [ 76%] [32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/edgevision_msgs/msg/detail/face_detection_array__type_support_c.cpp.o[0m
+[7.008s] [ 77%] [32m[1mLinking CXX shared library libedgevision_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[7.120s] [ 79%] [32m[1mLinking CXX shared library libedgevision_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[7.142s] [ 80%] [32m[1mLinking CXX shared library libedgevision_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[7.169s] [ 80%] Built target edgevision_msgs__rosidl_typesupport_fastrtps_cpp
+[7.281s] [ 80%] Built target edgevision_msgs__rosidl_typesupport_introspection_cpp
+[7.290s] [ 80%] Built target edgevision_msgs__rosidl_typesupport_fastrtps_c
+[7.316s] [ 80%] Built target edgevision_msgs
+[7.346s] [ 81%] [34m[1mGenerating Python code for ROS interfaces[0m
+[8.312s] [ 81%] Built target edgevision_msgs__py
+[8.326s] [35m[1mConsolidate compiler generated dependencies of target edgevision_msgs__rosidl_generator_py[0m
+[8.348s] [ 83%] [32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_generator_py.dir/rosidl_generator_py/edgevision_msgs/msg/_tracked_detection_s.c.o[0m
+[8.350s] [ 84%] [32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_generator_py.dir/rosidl_generator_py/edgevision_msgs/msg/_detection_array_s.c.o[0m
+[8.350s] [ 86%] [32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_generator_py.dir/rosidl_generator_py/edgevision_msgs/msg/_detection_s.c.o[0m
+[8.350s] [ 87%] [32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_generator_py.dir/rosidl_generator_py/edgevision_msgs/msg/_face_detection_array_s.c.o[0m
+[8.351s] [ 88%] [32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_generator_py.dir/rosidl_generator_py/edgevision_msgs/msg/_tracked_detection_array_s.c.o[0m
+[8.351s] [ 90%] [32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_generator_py.dir/rosidl_generator_py/edgevision_msgs/msg/_face_detection_s.c.o[0m
+[8.543s] [ 91%] [32m[1mLinking C shared library rosidl_generator_py/edgevision_msgs/libedgevision_msgs__rosidl_generator_py.so[0m
+[8.599s] [ 91%] Built target edgevision_msgs__rosidl_generator_py
+[8.614s] [35m[1mConsolidate compiler generated dependencies of target edgevision_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[8.615s] [35m[1mConsolidate compiler generated dependencies of target edgevision_msgs__rosidl_typesupport_c__pyext[0m
+[8.626s] [35m[1mConsolidate compiler generated dependencies of target edgevision_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[8.629s] [ 93%] [32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/edgevision_msgs/_edgevision_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[8.630s] [ 94%] [32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/edgevision_msgs/_edgevision_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[8.650s] [ 95%] [32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/edgevision_msgs/_edgevision_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[8.762s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/edgevision_msgs/edgevision_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[8.771s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/edgevision_msgs/edgevision_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[8.802s] [100%] [32m[1mLinking C shared library rosidl_generator_py/edgevision_msgs/edgevision_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[8.840s] [100%] Built target edgevision_msgs__rosidl_typesupport_c__pyext
+[8.857s] [100%] Built target edgevision_msgs__rosidl_typesupport_introspection_c__pyext
+[8.878s] [100%] Built target edgevision_msgs__rosidl_typesupport_fastrtps_c__pyext
+[8.896s] Invoked command in '/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --build /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs -- -j8 -l8
+[8.909s] Invoking command in '/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --install /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs
+[8.919s] -- Install configuration: ""
+[8.919s] -- Execute custom install script
+[8.920s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/ament_index/resource_index/rosidl_interfaces/edgevision_msgs
+[8.920s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection__functions.h
+[8.921s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection__struct.h
+[8.921s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection__type_support.h
+[8.921s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection_array__functions.h
+[8.921s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection_array__struct.h
+[8.921s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection_array__type_support.h
+[8.921s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection__functions.h
+[8.922s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection__struct.h
+[8.922s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection__type_support.h
+[8.922s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection_array__functions.h
+[8.922s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection_array__struct.h
+[8.922s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection_array__type_support.h
+[8.923s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection__functions.h
+[8.923s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection__struct.h
+[8.923s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection__type_support.h
+[8.923s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection_array__functions.h
+[8.923s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection_array__struct.h
+[8.923s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection_array__type_support.h
+[8.924s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detection.h
+[8.924s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detection_array.h
+[8.924s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/face_detection.h
+[8.924s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/face_detection_array.h
+[8.924s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/rosidl_generator_c__visibility_control.h
+[8.924s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/tracked_detection.h
+[8.925s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/tracked_detection_array.h
+[8.925s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/environment/library_path.sh
+[8.925s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/environment/library_path.dsv
+[8.926s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection__rosidl_typesupport_fastrtps_c.h
+[8.926s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection_array__rosidl_typesupport_fastrtps_c.h
+[8.926s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection__rosidl_typesupport_fastrtps_c.h
+[8.927s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection_array__rosidl_typesupport_fastrtps_c.h
+[8.927s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection__rosidl_typesupport_fastrtps_c.h
+[8.927s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection_array__rosidl_typesupport_fastrtps_c.h
+[8.927s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[8.927s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h
+[8.928s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection_array__rosidl_typesupport_introspection_c.h
+[8.928s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection__rosidl_typesupport_introspection_c.h
+[8.928s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection_array__rosidl_typesupport_introspection_c.h
+[8.928s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection__rosidl_typesupport_introspection_c.h
+[8.929s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection_array__rosidl_typesupport_introspection_c.h
+[8.929s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[8.929s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection__builder.hpp
+[8.930s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection__struct.hpp
+[8.930s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection__traits.hpp
+[8.930s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection__type_support.hpp
+[8.930s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection_array__builder.hpp
+[8.930s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection_array__struct.hpp
+[8.930s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection_array__traits.hpp
+[8.931s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection_array__type_support.hpp
+[8.931s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection__builder.hpp
+[8.931s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection__struct.hpp
+[8.931s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection__traits.hpp
+[8.931s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection__type_support.hpp
+[8.931s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection_array__builder.hpp
+[8.931s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection_array__struct.hpp
+[8.932s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection_array__traits.hpp
+[8.932s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection_array__type_support.hpp
+[8.932s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection__builder.hpp
+[8.932s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection__struct.hpp
+[8.932s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection__traits.hpp
+[8.932s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection__type_support.hpp
+[8.933s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection_array__builder.hpp
+[8.933s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection_array__struct.hpp
+[8.933s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection_array__traits.hpp
+[8.933s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection_array__type_support.hpp
+[8.933s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detection.hpp
+[8.933s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detection_array.hpp
+[8.934s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/face_detection.hpp
+[8.934s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/face_detection_array.hpp
+[8.934s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[8.934s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/tracked_detection.hpp
+[8.934s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/tracked_detection_array.hpp
+[8.935s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection__rosidl_typesupport_fastrtps_cpp.hpp
+[8.935s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection_array__rosidl_typesupport_fastrtps_cpp.hpp
+[8.935s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection__rosidl_typesupport_fastrtps_cpp.hpp
+[8.935s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection_array__rosidl_typesupport_fastrtps_cpp.hpp
+[8.936s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection__rosidl_typesupport_fastrtps_cpp.hpp
+[8.936s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection_array__rosidl_typesupport_fastrtps_cpp.hpp
+[8.936s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[8.936s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection__rosidl_typesupport_introspection_cpp.hpp
+[8.937s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection_array__rosidl_typesupport_introspection_cpp.hpp
+[8.937s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection__rosidl_typesupport_introspection_cpp.hpp
+[8.937s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection_array__rosidl_typesupport_introspection_cpp.hpp
+[8.937s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection__rosidl_typesupport_introspection_cpp.hpp
+[8.937s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection_array__rosidl_typesupport_introspection_cpp.hpp
+[8.937s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/environment/pythonpath.sh
+[8.938s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/environment/pythonpath.dsv
+[8.938s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[8.938s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[8.938s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[8.938s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[8.939s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/__init__.py
+[8.940s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/_edgevision_msgs_s.ep.rosidl_typesupport_c.c
+[8.940s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/_edgevision_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[8.940s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/_edgevision_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[8.940s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/edgevision_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[8.941s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/edgevision_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[8.941s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/edgevision_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[8.941s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/libedgevision_msgs__rosidl_generator_py.so
+[8.941s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/__init__.py
+[8.941s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/_detection.py
+[8.941s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/_detection_array.py
+[8.942s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/_detection_array_s.c
+[8.942s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/_detection_s.c
+[8.942s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/_face_detection.py
+[8.942s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/_face_detection_array.py
+[8.942s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/_face_detection_array_s.c
+[8.942s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/_face_detection_s.c
+[8.943s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/_tracked_detection.py
+[8.943s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/_tracked_detection_array.py
+[8.943s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/_tracked_detection_array_s.c
+[8.943s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/_tracked_detection_s.c
+[8.943s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/edgevision_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[8.944s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/edgevision_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[8.944s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/edgevision_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[8.944s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/ament_index/resource_index/rust_packages/edgevision_msgs
+[8.945s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/rust/Cargo.toml
+[8.945s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/rust/build.rs
+[8.945s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/rust/src/lib.rs
+[8.945s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/rust/src/msg.rs
+[8.945s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/rust/src/msg/rmw.rs
+[8.946s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/msg/Detection.idl
+[8.946s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/msg/DetectionArray.idl
+[8.946s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/msg/TrackedDetection.idl
+[8.946s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/msg/TrackedDetectionArray.idl
+[8.947s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/msg/FaceDetection.idl
+[8.947s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/msg/FaceDetectionArray.idl
+[8.947s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/msg/Detection.msg
+[8.948s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/msg/DetectionArray.msg
+[8.948s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/msg/TrackedDetection.msg
+[8.948s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/msg/TrackedDetectionArray.msg
+[8.949s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/msg/FaceDetection.msg
+[8.949s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/msg/FaceDetectionArray.msg
+[8.949s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/ament_index/resource_index/package_run_dependencies/edgevision_msgs
+[8.949s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/ament_index/resource_index/parent_prefix_path/edgevision_msgs
+[8.950s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/environment/ament_prefix_path.sh
+[8.950s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/environment/ament_prefix_path.dsv
+[8.950s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/environment/path.sh
+[8.950s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/environment/path.dsv
+[8.951s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/local_setup.bash
+[8.951s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/local_setup.sh
+[8.951s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/local_setup.zsh
+[8.951s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/local_setup.dsv
+[8.952s] -- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/package.dsv
+[8.962s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/ament_index/resource_index/packages/edgevision_msgs
+[8.962s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/rosidl_cmake-extras.cmake
+[8.963s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[8.963s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[8.963s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[8.963s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[8.964s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[8.964s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[8.964s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[8.964s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/edgevision_msgsConfig.cmake
+[8.965s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/edgevision_msgsConfig-version.cmake
+[8.965s] -- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/package.xml
+[8.965s] -- Installing: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/libedgevision_msgs__rosidl_generator_c.so
+[8.966s] -- Set runtime path of "/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/libedgevision_msgs__rosidl_generator_c.so" to ""
+[8.966s] -- Installing: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/libedgevision_msgs__rosidl_typesupport_fastrtps_c.so
+[8.966s] -- Set runtime path of "/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/libedgevision_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[8.966s] -- Installing: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/libedgevision_msgs__rosidl_typesupport_introspection_c.so
+[8.967s] -- Set runtime path of "/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/libedgevision_msgs__rosidl_typesupport_introspection_c.so" to ""
+[8.967s] -- Installing: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/libedgevision_msgs__rosidl_typesupport_c.so
+[8.968s] -- Set runtime path of "/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/libedgevision_msgs__rosidl_typesupport_c.so" to ""
+[8.968s] -- Installing: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/libedgevision_msgs__rosidl_typesupport_fastrtps_cpp.so
+[8.969s] -- Set runtime path of "/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/libedgevision_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[8.969s] -- Installing: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/libedgevision_msgs__rosidl_typesupport_introspection_cpp.so
+[8.970s] -- Set runtime path of "/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/libedgevision_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[8.970s] -- Installing: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/libedgevision_msgs__rosidl_typesupport_cpp.so
+[8.970s] -- Set runtime path of "/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/libedgevision_msgs__rosidl_typesupport_cpp.so" to ""
+[9.019s] Listing '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs'...
+[9.019s] Compiling '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/__init__.py'...
+[9.019s] Listing '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg'...
+[9.019s] Compiling '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/__init__.py'...
+[9.019s] Compiling '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/_detection.py'...
+[9.019s] Compiling '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/_detection_array.py'...
+[9.019s] Compiling '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/_face_detection.py'...
+[9.020s] Compiling '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/_face_detection_array.py'...
+[9.020s] Compiling '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/_tracked_detection.py'...
+[9.020s] Compiling '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/_tracked_detection_array.py'...
+[9.026s] -- Installing: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/libedgevision_msgs__rosidl_generator_py.so
+[9.027s] -- Set runtime path of "/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/libedgevision_msgs__rosidl_generator_py.so" to ""
+[9.027s] -- Up-to-date: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/export_edgevision_msgs__rosidl_generator_cExport.cmake
+[9.028s] -- Up-to-date: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/export_edgevision_msgs__rosidl_generator_cExport-noconfig.cmake
+[9.028s] -- Up-to-date: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/export_edgevision_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[9.028s] -- Up-to-date: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/export_edgevision_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[9.028s] -- Up-to-date: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/edgevision_msgs__rosidl_typesupport_introspection_cExport.cmake
+[9.029s] -- Up-to-date: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/edgevision_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[9.029s] -- Up-to-date: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/edgevision_msgs__rosidl_typesupport_cExport.cmake
+[9.029s] -- Up-to-date: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/edgevision_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[9.029s] -- Up-to-date: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/export_edgevision_msgs__rosidl_generator_cppExport.cmake
+[9.030s] -- Up-to-date: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/export_edgevision_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[9.030s] -- Up-to-date: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/export_edgevision_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[9.030s] -- Up-to-date: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/edgevision_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[9.030s] -- Up-to-date: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/edgevision_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[9.030s] -- Up-to-date: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/edgevision_msgs__rosidl_typesupport_cppExport.cmake
+[9.031s] -- Up-to-date: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/edgevision_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[9.031s] -- Up-to-date: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/export_edgevision_msgs__rosidl_generator_pyExport.cmake
+[9.031s] -- Up-to-date: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/export_edgevision_msgs__rosidl_generator_pyExport-noconfig.cmake
+[9.038s] Invoked command in '/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --install /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs
