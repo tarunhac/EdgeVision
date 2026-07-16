@@ -305,3 +305,166 @@ impl rosidl_runtime_rs::Message for TrackedDetectionArray {
 }
 
 
+// Corresponds to edgevision_msgs__msg__FaceDetection
+
+// This struct is not documented.
+#[allow(missing_docs)]
+
+#[cfg_attr(feature = "serde", derive(Deserialize, Serialize))]
+#[derive(Clone, Debug, PartialEq, PartialOrd)]
+pub struct FaceDetection {
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub track_id: i32,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub person_name: std::string::String,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub is_known: bool,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub confidence: f32,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub x1: i32,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub y1: i32,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub x2: i32,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub y2: i32,
+
+}
+
+
+
+impl Default for FaceDetection {
+  fn default() -> Self {
+    <Self as rosidl_runtime_rs::Message>::from_rmw_message(super::msg::rmw::FaceDetection::default())
+  }
+}
+
+impl rosidl_runtime_rs::Message for FaceDetection {
+  type RmwMsg = super::msg::rmw::FaceDetection;
+
+  fn into_rmw_message(msg_cow: std::borrow::Cow<'_, Self>) -> std::borrow::Cow<'_, Self::RmwMsg> {
+    match msg_cow {
+      std::borrow::Cow::Owned(msg) => std::borrow::Cow::Owned(Self::RmwMsg {
+        track_id: msg.track_id,
+        person_name: msg.person_name.as_str().into(),
+        is_known: msg.is_known,
+        confidence: msg.confidence,
+        x1: msg.x1,
+        y1: msg.y1,
+        x2: msg.x2,
+        y2: msg.y2,
+      }),
+      std::borrow::Cow::Borrowed(msg) => std::borrow::Cow::Owned(Self::RmwMsg {
+      track_id: msg.track_id,
+        person_name: msg.person_name.as_str().into(),
+      is_known: msg.is_known,
+      confidence: msg.confidence,
+      x1: msg.x1,
+      y1: msg.y1,
+      x2: msg.x2,
+      y2: msg.y2,
+      })
+    }
+  }
+
+  fn from_rmw_message(msg: Self::RmwMsg) -> Self {
+    Self {
+      track_id: msg.track_id,
+      person_name: msg.person_name.to_string(),
+      is_known: msg.is_known,
+      confidence: msg.confidence,
+      x1: msg.x1,
+      y1: msg.y1,
+      x2: msg.x2,
+      y2: msg.y2,
+    }
+  }
+}
+
+
+// Corresponds to edgevision_msgs__msg__FaceDetectionArray
+
+// This struct is not documented.
+#[allow(missing_docs)]
+
+#[cfg_attr(feature = "serde", derive(Deserialize, Serialize))]
+#[derive(Clone, Debug, PartialEq, PartialOrd)]
+pub struct FaceDetectionArray {
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub header: std_msgs::msg::Header,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub detections: Vec<super::msg::FaceDetection>,
+
+}
+
+
+
+impl Default for FaceDetectionArray {
+  fn default() -> Self {
+    <Self as rosidl_runtime_rs::Message>::from_rmw_message(super::msg::rmw::FaceDetectionArray::default())
+  }
+}
+
+impl rosidl_runtime_rs::Message for FaceDetectionArray {
+  type RmwMsg = super::msg::rmw::FaceDetectionArray;
+
+  fn into_rmw_message(msg_cow: std::borrow::Cow<'_, Self>) -> std::borrow::Cow<'_, Self::RmwMsg> {
+    match msg_cow {
+      std::borrow::Cow::Owned(msg) => std::borrow::Cow::Owned(Self::RmwMsg {
+        header: std_msgs::msg::Header::into_rmw_message(std::borrow::Cow::Owned(msg.header)).into_owned(),
+        detections: msg.detections
+          .into_iter()
+          .map(|elem| super::msg::FaceDetection::into_rmw_message(std::borrow::Cow::Owned(elem)).into_owned())
+          .collect(),
+      }),
+      std::borrow::Cow::Borrowed(msg) => std::borrow::Cow::Owned(Self::RmwMsg {
+        header: std_msgs::msg::Header::into_rmw_message(std::borrow::Cow::Borrowed(&msg.header)).into_owned(),
+        detections: msg.detections
+          .iter()
+          .map(|elem| super::msg::FaceDetection::into_rmw_message(std::borrow::Cow::Borrowed(elem)).into_owned())
+          .collect(),
+      })
+    }
+  }
+
+  fn from_rmw_message(msg: Self::RmwMsg) -> Self {
+    Self {
+      header: std_msgs::msg::Header::from_rmw_message(msg.header),
+      detections: msg.detections
+          .into_iter()
+          .map(super::msg::FaceDetection::from_rmw_message)
+          .collect(),
+    }
+  }
+}
+
+

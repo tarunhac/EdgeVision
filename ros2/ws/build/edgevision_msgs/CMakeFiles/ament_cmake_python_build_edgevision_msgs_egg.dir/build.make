@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_build_edgevision_msgs_egg.dir/compiler_dep
 include CMakeFiles/ament_cmake_python_build_edgevision_msgs_egg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_build_edgevision_msgs_egg:
-	cd /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/ament_cmake_python/edgevision_msgs && /usr/bin/python3 setup.py egg_info
+	cd /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/ament_cmake_python/edgevision_msgs && /home/tarun/surveillance_bot/.venv/bin/python3 setup.py egg_info
 
 ament_cmake_python_build_edgevision_msgs_egg: CMakeFiles/ament_cmake_python_build_edgevision_msgs_egg
 ament_cmake_python_build_edgevision_msgs_egg: CMakeFiles/ament_cmake_python_build_edgevision_msgs_egg.dir/build.make

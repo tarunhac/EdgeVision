@@ -1,0 +1,227 @@
+[0.171s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.172s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7e5a55442710>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7e5a555c2e30>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7e5a555c2e30>>, mixin_verb=('build',))
+[0.379s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.379s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.379s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.379s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.379s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.379s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.379s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/tarun/surveillance_bot/ros2/ws'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extensions ['ignore', 'ignore_ament_install']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extension 'ignore'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) ignored
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/edgevision_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/edgevision_msgs) by extension 'ignore'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/edgevision_msgs) by extension 'ignore_ament_install'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/edgevision_msgs) by extensions ['colcon_pkg']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/edgevision_msgs) by extension 'colcon_pkg'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/edgevision_msgs) by extensions ['colcon_meta']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/edgevision_msgs) by extension 'colcon_meta'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/edgevision_msgs) by extensions ['ros']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/edgevision_msgs) by extension 'ros'
+[0.396s] DEBUG:colcon.colcon_core.package_identification:Package 'src/edgevision_msgs' with type 'ros.ament_cmake' and name 'edgevision_msgs'
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(src/edgevision_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(src/edgevision_ros) by extension 'ignore'
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(src/edgevision_ros) by extension 'ignore_ament_install'
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(src/edgevision_ros) by extensions ['colcon_pkg']
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(src/edgevision_ros) by extension 'colcon_pkg'
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(src/edgevision_ros) by extensions ['colcon_meta']
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(src/edgevision_ros) by extension 'colcon_meta'
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(src/edgevision_ros) by extensions ['ros']
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(src/edgevision_ros) by extension 'ros'
+[0.397s] DEBUG:colcon.colcon_core.package_identification:Package 'src/edgevision_ros' with type 'ros.ament_python' and name 'edgevision_ros'
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['ignore', 'ignore_ament_install']
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'ignore'
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) ignored
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extensions ['ignore', 'ignore_ament_install']
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extension 'ignore'
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) ignored
+[0.398s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.398s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.398s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.398s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.398s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.433s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.433s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.434s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.434s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.434s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.435s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/tarun/surveillance_bot/ros2/ws/install
+[0.436s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 273 installed packages in /opt/ros/humble
+[0.438s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.478s] Level 5:colcon.colcon_core.verb:set package 'edgevision_msgs' build argument 'cmake_args' from command line to 'None'
+[0.478s] Level 5:colcon.colcon_core.verb:set package 'edgevision_msgs' build argument 'cmake_target' from command line to 'None'
+[0.478s] Level 5:colcon.colcon_core.verb:set package 'edgevision_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.478s] Level 5:colcon.colcon_core.verb:set package 'edgevision_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.478s] Level 5:colcon.colcon_core.verb:set package 'edgevision_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.478s] Level 5:colcon.colcon_core.verb:set package 'edgevision_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.478s] Level 5:colcon.colcon_core.verb:set package 'edgevision_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.478s] Level 5:colcon.colcon_core.verb:set package 'edgevision_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.478s] Level 5:colcon.colcon_core.verb:set package 'edgevision_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.479s] DEBUG:colcon.colcon_core.verb:Building package 'edgevision_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs', 'merge_install': False, 'path': '/home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.479s] Level 5:colcon.colcon_core.verb:set package 'edgevision_ros' build argument 'cmake_args' from command line to 'None'
+[0.479s] Level 5:colcon.colcon_core.verb:set package 'edgevision_ros' build argument 'cmake_target' from command line to 'None'
+[0.479s] Level 5:colcon.colcon_core.verb:set package 'edgevision_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.479s] Level 5:colcon.colcon_core.verb:set package 'edgevision_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.479s] Level 5:colcon.colcon_core.verb:set package 'edgevision_ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.479s] Level 5:colcon.colcon_core.verb:set package 'edgevision_ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.479s] Level 5:colcon.colcon_core.verb:set package 'edgevision_ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.479s] Level 5:colcon.colcon_core.verb:set package 'edgevision_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.479s] Level 5:colcon.colcon_core.verb:set package 'edgevision_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.479s] DEBUG:colcon.colcon_core.verb:Building package 'edgevision_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros', 'merge_install': False, 'path': '/home/tarun/surveillance_bot/ros2/ws/src/edgevision_ros', 'symlink_install': True, 'test_result_base': None}
+[0.480s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.481s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.481s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs' with build type 'ament_cmake'
+[0.482s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs'
+[0.484s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.484s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.484s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.496s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros:/opt/ros/humble VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake /home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs
+[3.634s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros:/opt/ros/humble VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake /home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs
+[3.637s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros:/opt/ros/humble VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --build /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs -- -j8 -l8
+[9.552s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros:/opt/ros/humble VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --build /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs -- -j8 -l8
+[9.566s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros:/opt/ros/humble VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --install /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs
+[11.691s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(edgevision_msgs)
+[11.692s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros:/opt/ros/humble VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --install /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs
+[11.694s] Level 1:colcon.colcon_core.environment:checking '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs' for CMake module files
+[11.695s] Level 1:colcon.colcon_core.environment:checking '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs' for CMake config files
+[11.696s] Level 1:colcon.colcon_core.shell:create_environment_hook('edgevision_msgs', 'cmake_prefix_path')
+[11.696s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/hook/cmake_prefix_path.ps1'
+[11.708s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/hook/cmake_prefix_path.dsv'
+[11.709s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/hook/cmake_prefix_path.sh'
+[11.710s] Level 1:colcon.colcon_core.environment:checking '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib'
+[11.710s] Level 1:colcon.colcon_core.shell:create_environment_hook('edgevision_msgs', 'ld_library_path_lib')
+[11.710s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/hook/ld_library_path_lib.ps1'
+[11.711s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/hook/ld_library_path_lib.dsv'
+[11.711s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/hook/ld_library_path_lib.sh'
+[11.711s] Level 1:colcon.colcon_core.environment:checking '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/bin'
+[11.711s] Level 1:colcon.colcon_core.environment:checking '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/pkgconfig/edgevision_msgs.pc'
+[11.711s] Level 1:colcon.colcon_core.environment:checking '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages'
+[11.712s] Level 1:colcon.colcon_core.shell:create_environment_hook('edgevision_msgs', 'pythonpath')
+[11.712s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/hook/pythonpath.ps1'
+[11.712s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/hook/pythonpath.dsv'
+[11.712s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/hook/pythonpath.sh'
+[11.713s] Level 1:colcon.colcon_core.environment:checking '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/bin'
+[11.713s] INFO:colcon.colcon_core.shell:Creating package script '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/package.ps1'
+[11.715s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/package.dsv'
+[11.715s] INFO:colcon.colcon_core.shell:Creating package script '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/package.sh'
+[11.716s] INFO:colcon.colcon_core.shell:Creating package script '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/package.bash'
+[11.717s] INFO:colcon.colcon_core.shell:Creating package script '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/package.zsh'
+[11.717s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/colcon-core/packages/edgevision_msgs)
+[11.718s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(edgevision_msgs)
+[11.718s] Level 1:colcon.colcon_core.environment:checking '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs' for CMake module files
+[11.719s] Level 1:colcon.colcon_core.environment:checking '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs' for CMake config files
+[11.721s] Level 1:colcon.colcon_core.shell:create_environment_hook('edgevision_msgs', 'cmake_prefix_path')
+[11.722s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/hook/cmake_prefix_path.ps1'
+[11.722s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/hook/cmake_prefix_path.dsv'
+[11.723s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/hook/cmake_prefix_path.sh'
+[11.724s] Level 1:colcon.colcon_core.environment:checking '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib'
+[11.724s] Level 1:colcon.colcon_core.shell:create_environment_hook('edgevision_msgs', 'ld_library_path_lib')
+[11.724s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/hook/ld_library_path_lib.ps1'
+[11.725s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/hook/ld_library_path_lib.dsv'
+[11.725s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/hook/ld_library_path_lib.sh'
+[11.726s] Level 1:colcon.colcon_core.environment:checking '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/bin'
+[11.726s] Level 1:colcon.colcon_core.environment:checking '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/pkgconfig/edgevision_msgs.pc'
+[11.726s] Level 1:colcon.colcon_core.environment:checking '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages'
+[11.727s] Level 1:colcon.colcon_core.shell:create_environment_hook('edgevision_msgs', 'pythonpath')
+[11.727s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/hook/pythonpath.ps1'
+[11.728s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/hook/pythonpath.dsv'
+[11.728s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/hook/pythonpath.sh'
+[11.730s] Level 1:colcon.colcon_core.environment:checking '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/bin'
+[11.730s] INFO:colcon.colcon_core.shell:Creating package script '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/package.ps1'
+[11.732s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/package.dsv'
+[11.732s] INFO:colcon.colcon_core.shell:Creating package script '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/package.sh'
+[11.733s] INFO:colcon.colcon_core.shell:Creating package script '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/package.bash'
+[11.734s] INFO:colcon.colcon_core.shell:Creating package script '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/package.zsh'
+[11.735s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/colcon-core/packages/edgevision_msgs)
+[11.735s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/tarun/surveillance_bot/ros2/ws/src/edgevision_ros' with build type 'ament_python'
+[11.736s] Level 1:colcon.colcon_core.shell:create_environment_hook('edgevision_ros', 'ament_prefix_path')
+[11.736s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/share/edgevision_ros/hook/ament_prefix_path.ps1'
+[11.738s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/share/edgevision_ros/hook/ament_prefix_path.dsv'
+[11.738s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/share/edgevision_ros/hook/ament_prefix_path.sh'
+[11.739s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[11.739s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[12.081s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/tarun/surveillance_bot/ros2/ws/src/edgevision_ros'
+[12.082s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[12.082s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[12.508s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: test, clean, rotate, saveopts, bdist_egg, install_egg_info, upload, egg_info, bdist_dumb, install, install_scripts, install_lib, bdist_rpm, bdist, build_scripts, alias, check, bdist_wheel, install_data, build_py, symlink_data, register, upload_docs, install_headers, setopt, develop, dist_info, sdist, build_ext, build_clib, easy_install, build
+[12.847s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --force-installation-into-system-dir, --install-dir, --help, --always-copy, --install-layout, --prefix, --quiet, --no-deps, --uninstall, --egg-path, --record, --exclude-scripts, --multi-version, --build-directory, --local-snapshots-ok, --version, --user, --allow-hosts, --zip-ok, --no-user-cfg, --script-dir, --index-url, --no-find-links, --editable, --find-links, --always-unzip, --optimize, --site-dirs, --verbose, --dry-run, --upgrade
+[12.850s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros': PYTHONPATH=/home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/python3.10/site-packages:/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros/build --no-deps symlink_data
+[13.441s] Level 1:colcon.colcon_core.shell:create_environment_hook('edgevision_ros', 'pythonpath_develop')
+[13.442s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros/share/edgevision_ros/hook/pythonpath_develop.ps1'
+[13.443s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros' returned '0': PYTHONPATH=/home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/python3.10/site-packages:/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros/build --no-deps symlink_data
+[13.443s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros/share/edgevision_ros/hook/pythonpath_develop.dsv'
+[13.444s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros/share/edgevision_ros/hook/pythonpath_develop.sh'
+[13.445s] Level 1:colcon.colcon_core.environment:checking '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros' for CMake module files
+[13.445s] Level 1:colcon.colcon_core.environment:checking '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros' for CMake config files
+[13.446s] Level 1:colcon.colcon_core.environment:checking '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib'
+[13.446s] Level 1:colcon.colcon_core.environment:checking '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/bin'
+[13.446s] Level 1:colcon.colcon_core.environment:checking '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/pkgconfig/edgevision_ros.pc'
+[13.446s] Level 1:colcon.colcon_core.environment:checking '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/python3.10/site-packages'
+[13.446s] Level 1:colcon.colcon_core.shell:create_environment_hook('edgevision_ros', 'pythonpath')
+[13.447s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/share/edgevision_ros/hook/pythonpath.ps1'
+[13.447s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/share/edgevision_ros/hook/pythonpath.dsv'
+[13.448s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/share/edgevision_ros/hook/pythonpath.sh'
+[13.449s] Level 1:colcon.colcon_core.environment:checking '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/bin'
+[13.449s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(edgevision_ros)
+[13.450s] INFO:colcon.colcon_core.shell:Creating package script '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/share/edgevision_ros/package.ps1'
+[13.451s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/share/edgevision_ros/package.dsv'
+[13.451s] INFO:colcon.colcon_core.shell:Creating package script '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/share/edgevision_ros/package.sh'
+[13.452s] INFO:colcon.colcon_core.shell:Creating package script '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/share/edgevision_ros/package.bash'
+[13.453s] INFO:colcon.colcon_core.shell:Creating package script '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/share/edgevision_ros/package.zsh'
+[13.455s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/share/colcon-core/packages/edgevision_ros)
+[13.456s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[13.456s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[13.457s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[13.457s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[13.470s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[13.470s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[13.471s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[13.502s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[13.503s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tarun/surveillance_bot/ros2/ws/install/local_setup.ps1'
+[13.505s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/tarun/surveillance_bot/ros2/ws/install/_local_setup_util_ps1.py'
+[13.508s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tarun/surveillance_bot/ros2/ws/install/setup.ps1'
+[13.510s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tarun/surveillance_bot/ros2/ws/install/local_setup.sh'
+[13.511s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/tarun/surveillance_bot/ros2/ws/install/_local_setup_util_sh.py'
+[13.511s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tarun/surveillance_bot/ros2/ws/install/setup.sh'
+[13.513s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tarun/surveillance_bot/ros2/ws/install/local_setup.bash'
+[13.513s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tarun/surveillance_bot/ros2/ws/install/setup.bash'
+[13.515s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tarun/surveillance_bot/ros2/ws/install/local_setup.zsh'
+[13.515s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tarun/surveillance_bot/ros2/ws/install/setup.zsh'

@@ -2,3 +2,5 @@
 /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_adapter/edgevision_msgs:msg/DetectionArray.idl
 /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_adapter/edgevision_msgs:msg/TrackedDetection.idl
 /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_adapter/edgevision_msgs:msg/TrackedDetectionArray.idl
+/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_adapter/edgevision_msgs:msg/FaceDetection.idl
+/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_adapter/edgevision_msgs:msg/FaceDetectionArray.idl

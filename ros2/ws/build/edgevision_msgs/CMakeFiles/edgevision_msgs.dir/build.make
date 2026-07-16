@@ -70,6 +70,8 @@ CMakeFiles/edgevision_msgs: /home/tarun/surveillance_bot/ros2/ws/src/edgevision_
 CMakeFiles/edgevision_msgs: /home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs/msg/DetectionArray.msg
 CMakeFiles/edgevision_msgs: /home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs/msg/TrackedDetection.msg
 CMakeFiles/edgevision_msgs: /home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs/msg/TrackedDetectionArray.msg
+CMakeFiles/edgevision_msgs: /home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs/msg/FaceDetection.msg
+CMakeFiles/edgevision_msgs: /home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs/msg/FaceDetectionArray.msg
 CMakeFiles/edgevision_msgs: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 CMakeFiles/edgevision_msgs: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 CMakeFiles/edgevision_msgs: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl

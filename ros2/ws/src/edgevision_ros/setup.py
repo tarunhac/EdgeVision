@@ -6,7 +6,9 @@ setup(
     name=package_name,
     version="0.0.0",
     packages=find_packages(),
-    install_requires=["setuptools"],
+    install_requires=[
+        "setuptools",
+    ],
     zip_safe=True,
     maintainer="tarun",
     maintainer_email="tarunvelu72@gmail.com",
@@ -28,6 +30,7 @@ setup(
             "detector_node = edgevision_ros.detector_node:main",
             "tracker_node = edgevision_ros.tracker_node:main",
             "perception_node = edgevision_ros.perception_node:main",
+            "face_node = edgevision_ros.face_node:main",
         ],
     },
 )

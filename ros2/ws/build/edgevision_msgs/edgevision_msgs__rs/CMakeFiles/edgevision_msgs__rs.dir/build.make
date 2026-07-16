@@ -88,10 +88,14 @@ rosidl_generator_rs/edgevision_msgs/rust/src/lib.rs: rosidl_adapter/edgevision_m
 rosidl_generator_rs/edgevision_msgs/rust/src/lib.rs: rosidl_adapter/edgevision_msgs/msg/DetectionArray.idl
 rosidl_generator_rs/edgevision_msgs/rust/src/lib.rs: rosidl_adapter/edgevision_msgs/msg/TrackedDetection.idl
 rosidl_generator_rs/edgevision_msgs/rust/src/lib.rs: rosidl_adapter/edgevision_msgs/msg/TrackedDetectionArray.idl
+rosidl_generator_rs/edgevision_msgs/rust/src/lib.rs: rosidl_adapter/edgevision_msgs/msg/FaceDetection.idl
+rosidl_generator_rs/edgevision_msgs/rust/src/lib.rs: rosidl_adapter/edgevision_msgs/msg/FaceDetectionArray.idl
 rosidl_generator_rs/edgevision_msgs/rust/src/lib.rs: rosidl_adapter/edgevision_msgs/msg/Detection.idl
 rosidl_generator_rs/edgevision_msgs/rust/src/lib.rs: rosidl_adapter/edgevision_msgs/msg/DetectionArray.idl
 rosidl_generator_rs/edgevision_msgs/rust/src/lib.rs: rosidl_adapter/edgevision_msgs/msg/TrackedDetection.idl
 rosidl_generator_rs/edgevision_msgs/rust/src/lib.rs: rosidl_adapter/edgevision_msgs/msg/TrackedDetectionArray.idl
+rosidl_generator_rs/edgevision_msgs/rust/src/lib.rs: rosidl_adapter/edgevision_msgs/msg/FaceDetection.idl
+rosidl_generator_rs/edgevision_msgs/rust/src/lib.rs: rosidl_adapter/edgevision_msgs/msg/FaceDetectionArray.idl
 rosidl_generator_rs/edgevision_msgs/rust/src/lib.rs: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 rosidl_generator_rs/edgevision_msgs/rust/src/lib.rs: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 rosidl_generator_rs/edgevision_msgs/rust/src/lib.rs: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl
@@ -125,7 +129,7 @@ rosidl_generator_rs/edgevision_msgs/rust/src/lib.rs: /opt/ros/humble/share/std_m
 rosidl_generator_rs/edgevision_msgs/rust/src/lib.rs: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_rs/edgevision_msgs/rust/src/lib.rs: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Rust code for ROS interfaces"
-	cd /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/edgevision_msgs__rs && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_rs/cmake/../../../lib/rosidl_generator_rs/rosidl_generator_rs --generator-arguments-file /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_generator_rs__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
+	cd /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/edgevision_msgs__rs && /home/tarun/surveillance_bot/.venv/bin/python3 /opt/ros/humble/share/rosidl_generator_rs/cmake/../../../lib/rosidl_generator_rs/rosidl_generator_rs --generator-arguments-file /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_generator_rs__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
 rosidl_generator_rs/edgevision_msgs/rust/build.rs: rosidl_generator_rs/edgevision_msgs/rust/src/lib.rs
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_rs/edgevision_msgs/rust/build.rs

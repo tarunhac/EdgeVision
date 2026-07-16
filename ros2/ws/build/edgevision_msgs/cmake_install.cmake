@@ -210,8 +210,8 @@ endif()
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   execute_process(
         COMMAND
-        "/usr/bin/python3" "-m" "compileall"
-        "/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/local/lib/python3.10/dist-packages/edgevision_msgs"
+        "/home/tarun/surveillance_bot/.venv/bin/python3" "-m" "compileall"
+        "/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs"
       )
 endif()
 

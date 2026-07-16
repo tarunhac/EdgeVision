@@ -10,8 +10,11 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/DetectionArray.msg"
   "msg/TrackedDetection.msg"
   "msg/TrackedDetectionArray.msg"
-   DEPENDENCIES 
-   std_msgs
+  "msg/FaceDetection.msg"
+  "msg/FaceDetectionArray.msg"
+
+  DEPENDENCIES
+  std_msgs
 )
 
 ament_export_dependencies(rosidl_default_runtime)

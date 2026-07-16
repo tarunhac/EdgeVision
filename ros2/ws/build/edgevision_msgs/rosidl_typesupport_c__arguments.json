@@ -6,7 +6,9 @@
     "/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_adapter/edgevision_msgs:msg/Detection.idl",
     "/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_adapter/edgevision_msgs:msg/DetectionArray.idl",
     "/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_adapter/edgevision_msgs:msg/TrackedDetection.idl",
-    "/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_adapter/edgevision_msgs:msg/TrackedDetectionArray.idl"
+    "/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_adapter/edgevision_msgs:msg/TrackedDetectionArray.idl",
+    "/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_adapter/edgevision_msgs:msg/FaceDetection.idl",
+    "/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_adapter/edgevision_msgs:msg/FaceDetectionArray.idl"
   ],
   "ros_interface_dependencies": [
     "std_msgs:/opt/ros/humble/share/std_msgs/msg/Bool.idl",
@@ -53,6 +55,8 @@
     "/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_adapter/edgevision_msgs/msg/DetectionArray.idl",
     "/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_adapter/edgevision_msgs/msg/TrackedDetection.idl",
     "/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_adapter/edgevision_msgs/msg/TrackedDetectionArray.idl",
+    "/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_adapter/edgevision_msgs/msg/FaceDetection.idl",
+    "/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs/rosidl_adapter/edgevision_msgs/msg/FaceDetectionArray.idl",
     "/opt/ros/humble/share/std_msgs/msg/Bool.idl",
     "/opt/ros/humble/share/std_msgs/msg/Byte.idl",
     "/opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl",

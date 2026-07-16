@@ -4,6 +4,8 @@
     "/home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs:msg/Detection.msg",
     "/home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs:msg/DetectionArray.msg",
     "/home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs:msg/TrackedDetection.msg",
-    "/home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs:msg/TrackedDetectionArray.msg"
+    "/home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs:msg/TrackedDetectionArray.msg",
+    "/home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs:msg/FaceDetection.msg",
+    "/home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs:msg/FaceDetectionArray.msg"
   ]
 }
