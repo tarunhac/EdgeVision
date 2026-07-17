@@ -1,0 +1,573 @@
+[0.000000] (-) TimerEvent: {}
+[0.001300] (edgevision_msgs) JobQueued: {'identifier': 'edgevision_msgs', 'dependencies': OrderedDict()}
+[0.001404] (edgevision_ros) JobQueued: {'identifier': 'edgevision_ros', 'dependencies': OrderedDict([('edgevision_msgs', '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs')])}
+[0.001584] (edgevision_msgs) JobStarted: {'identifier': 'edgevision_msgs'}
+[0.013456] (edgevision_msgs) JobProgress: {'identifier': 'edgevision_msgs', 'progress': 'cmake'}
+[0.014370] (edgevision_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs'], 'cwd': '/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'tarun'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tarun'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/tarun/surveillance_bot/ros2/ws'), ('TERM_PROGRAM_VERSION', '1.128.0'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('PS1', '\\[\x1b]633;A\x07\\](.venv) \\[\x1b]633;A\x07\\]\\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$ \\[\x1b]633;B\x07\\]\\[\x1b]633;B\x07\\]'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1155'), ('BUNDLED_DEBUGPY_PATH', '/home/tarun/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/tarun/surveillance_bot/ros2/ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'tarun'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tarun'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/tarun/surveillance_bot/.venv/bin:/home/tarun/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/tarun/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/humble/bin:/home/tarun/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/tarun/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/tarun-TUF-Gaming-FX505DT-FX505DT:@/tmp/.ICE-unix/1129,unix/tarun-TUF-Gaming-FX505DT-FX505DT:/tmp/.ICE-unix/1129'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d0510f67_75b8_490c_95f4_5ccec489512c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'wayland'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/tarun/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-719030e14fd8947a.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/tarun/.config/Code/User/workspaceStorage/7dc33f88aa8e1a6e0297bceb18243204/ms-python.python/pythonrc.py'), ('VIRTUAL_ENV_PROMPT', '(.venv)'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.E9KDS3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-5356aa5f03.sock'), ('GNOME_TERMINAL_SERVICE', ':1.117'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros:/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VIRTUAL_ENV', '/home/tarun/surveillance_bot/.venv'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('COPILOT_DEBUG_NONCE', '83c486256e58f104af75e9cc936a28cc'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/python3.10/site-packages:/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/tarun/surveillance_bot'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs:/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros:/opt/ros/humble')]), 'shell': False}
+[0.099594] (-) TimerEvent: {}
+[0.133667] (edgevision_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199775] (-) TimerEvent: {}
+[0.295781] (edgevision_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.300389] (-) TimerEvent: {}
+[0.321391] (edgevision_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.400517] (-) TimerEvent: {}
+[0.489301] (edgevision_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.500763] (-) TimerEvent: {}
+[0.513737] (edgevision_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.514484] (edgevision_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.515238] (edgevision_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.521495] (edgevision_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.600860] (-) TimerEvent: {}
+[0.672770] (edgevision_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.696762] (edgevision_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.697391] (edgevision_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.698418] (edgevision_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.700987] (-) TimerEvent: {}
+[0.703072] (edgevision_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.801106] (-) TimerEvent: {}
+[0.901454] (-) TimerEvent: {}
+[1.001854] (-) TimerEvent: {}
+[1.102347] (-) TimerEvent: {}
+[1.202751] (-) TimerEvent: {}
+[1.303223] (-) TimerEvent: {}
+[1.403576] (-) TimerEvent: {}
+[1.469807] (edgevision_msgs) StdoutLine: {'line': b'-- Found Python3: /home/tarun/surveillance_bot/.venv/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.503699] (-) TimerEvent: {}
+[1.571939] (edgevision_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.603874] (-) TimerEvent: {}
+[1.646058] (edgevision_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.651021] (edgevision_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.662511] (edgevision_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.703987] (-) TimerEvent: {}
+[1.738025] (edgevision_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.804111] (-) TimerEvent: {}
+[1.810562] (edgevision_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.9.1 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[1.904212] (-) TimerEvent: {}
+[2.004555] (-) TimerEvent: {}
+[2.104974] (-) TimerEvent: {}
+[2.206410] (-) TimerEvent: {}
+[2.307244] (-) TimerEvent: {}
+[2.407622] (-) TimerEvent: {}
+[2.508099] (-) TimerEvent: {}
+[2.608447] (-) TimerEvent: {}
+[2.625011] (edgevision_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[2.708554] (-) TimerEvent: {}
+[2.808932] (-) TimerEvent: {}
+[2.909319] (-) TimerEvent: {}
+[2.995796] (edgevision_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.009423] (-) TimerEvent: {}
+[3.109718] (-) TimerEvent: {}
+[3.210125] (-) TimerEvent: {}
+[3.310531] (-) TimerEvent: {}
+[3.410888] (-) TimerEvent: {}
+[3.511272] (-) TimerEvent: {}
+[3.531812] (edgevision_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.580469] (edgevision_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /home/tarun/surveillance_bot/.venv/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[3.584156] (edgevision_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[3.611388] (-) TimerEvent: {}
+[3.647072] (edgevision_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[3.647394] (edgevision_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /home/tarun/surveillance_bot/.venv/bin/python3\n'}
+[3.647497] (edgevision_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[3.647585] (edgevision_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[3.685959] (edgevision_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[3.711553] (-) TimerEvent: {}
+[3.812105] (-) TimerEvent: {}
+[3.912512] (-) TimerEvent: {}
+[3.987795] (edgevision_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.012676] (-) TimerEvent: {}
+[4.059947] (edgevision_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[4.091383] (edgevision_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs\n'}
+[4.105655] (edgevision_msgs) CommandEnded: {'returncode': 0}
+[4.107367] (edgevision_msgs) JobProgress: {'identifier': 'edgevision_msgs', 'progress': 'build'}
+[4.109961] (edgevision_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs', '--', '-j8', '-l8'], 'cwd': '/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'tarun'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tarun'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/tarun/surveillance_bot/ros2/ws'), ('TERM_PROGRAM_VERSION', '1.128.0'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('PS1', '\\[\x1b]633;A\x07\\](.venv) \\[\x1b]633;A\x07\\]\\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$ \\[\x1b]633;B\x07\\]\\[\x1b]633;B\x07\\]'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1155'), ('BUNDLED_DEBUGPY_PATH', '/home/tarun/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/tarun/surveillance_bot/ros2/ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'tarun'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tarun'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/tarun/surveillance_bot/.venv/bin:/home/tarun/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/tarun/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/humble/bin:/home/tarun/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/tarun/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/tarun-TUF-Gaming-FX505DT-FX505DT:@/tmp/.ICE-unix/1129,unix/tarun-TUF-Gaming-FX505DT-FX505DT:/tmp/.ICE-unix/1129'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d0510f67_75b8_490c_95f4_5ccec489512c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'wayland'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/tarun/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-719030e14fd8947a.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/tarun/.config/Code/User/workspaceStorage/7dc33f88aa8e1a6e0297bceb18243204/ms-python.python/pythonrc.py'), ('VIRTUAL_ENV_PROMPT', '(.venv)'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.E9KDS3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-5356aa5f03.sock'), ('GNOME_TERMINAL_SERVICE', ':1.117'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros:/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VIRTUAL_ENV', '/home/tarun/surveillance_bot/.venv'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('COPILOT_DEBUG_NONCE', '83c486256e58f104af75e9cc936a28cc'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/python3.10/site-packages:/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/tarun/surveillance_bot'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs:/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros:/opt/ros/humble')]), 'shell': False}
+[4.112734] (-) TimerEvent: {}
+[4.197317] (edgevision_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[4.212891] (-) TimerEvent: {}
+[4.213536] (edgevision_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[4.216013] (edgevision_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[4.241752] (edgevision_msgs) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_symlink_edgevision_msgs\n'}
+[4.313007] (-) TimerEvent: {}
+[4.413354] (-) TimerEvent: {}
+[4.513739] (-) TimerEvent: {}
+[4.614168] (-) TimerEvent: {}
+[4.714577] (-) TimerEvent: {}
+[4.723832] (edgevision_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[4.747955] (edgevision_msgs) StdoutLine: {'line': b'creating edgevision_msgs.egg-info\n'}
+[4.748340] (edgevision_msgs) StdoutLine: {'line': b'writing edgevision_msgs.egg-info/PKG-INFO\n'}
+[4.749132] (edgevision_msgs) StdoutLine: {'line': b'writing dependency_links to edgevision_msgs.egg-info/dependency_links.txt\n'}
+[4.749876] (edgevision_msgs) StdoutLine: {'line': b'writing top-level names to edgevision_msgs.egg-info/top_level.txt\n'}
+[4.750229] (edgevision_msgs) StdoutLine: {'line': b"writing manifest file 'edgevision_msgs.egg-info/SOURCES.txt'\n"}
+[4.814713] (-) TimerEvent: {}
+[4.828624] (edgevision_msgs) StdoutLine: {'line': b"reading manifest file 'edgevision_msgs.egg-info/SOURCES.txt'\n"}
+[4.830843] (edgevision_msgs) StdoutLine: {'line': b"writing manifest file 'edgevision_msgs.egg-info/SOURCES.txt'\n"}
+[4.909727] (edgevision_msgs) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_edgevision_msgs_egg\n'}
+[4.914828] (-) TimerEvent: {}
+[4.919543] (edgevision_msgs) StdoutLine: {'line': b'[  4%] Built target edgevision_msgs__rs\n'}
+[5.014946] (-) TimerEvent: {}
+[5.115345] (-) TimerEvent: {}
+[5.216064] (-) TimerEvent: {}
+[5.317717] (-) TimerEvent: {}
+[5.418679] (-) TimerEvent: {}
+[5.456717] (edgevision_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/detection_array__functions.c.o\x1b[0m\n'}
+[5.457090] (edgevision_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection__functions.c.o\x1b[0m\n'}
+[5.457308] (edgevision_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/detection__functions.c.o\x1b[0m\n'}
+[5.464290] (edgevision_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/tracked_detection_array__functions.c.o\x1b[0m\n'}
+[5.469848] (edgevision_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/face_detection_array__functions.c.o\x1b[0m\n'}
+[5.470221] (edgevision_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_generator_c.dir/rosidl_generator_c/edgevision_msgs/msg/detail/face_detection__functions.c.o\x1b[0m\n'}
+[5.521730] (-) TimerEvent: {}
+[5.622177] (-) TimerEvent: {}
+[5.686908] (edgevision_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32m\x1b[1mLinking C shared library libedgevision_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[5.720403] (edgevision_msgs) StdoutLine: {'line': b'[ 13%] Built target edgevision_msgs__cpp\n'}
+[5.722276] (-) TimerEvent: {}
+[5.741824] (edgevision_msgs) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.743549] (edgevision_msgs) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[5.745041] (edgevision_msgs) StdoutLine: {'line': b'[ 18%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.798135] (edgevision_msgs) StdoutLine: {'line': b'[ 18%] Built target edgevision_msgs__rosidl_generator_c\n'}
+[5.823179] (-) TimerEvent: {}
+[5.829861] (edgevision_msgs) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[5.832608] (edgevision_msgs) StdoutLine: {'line': b'[ 20%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.836701] (edgevision_msgs) StdoutLine: {'line': b'[ 22%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.923311] (-) TimerEvent: {}
+[6.023746] (-) TimerEvent: {}
+[6.124505] (-) TimerEvent: {}
+[6.228727] (-) TimerEvent: {}
+[6.329439] (-) TimerEvent: {}
+[6.429874] (-) TimerEvent: {}
+[6.530509] (-) TimerEvent: {}
+[6.631411] (-) TimerEvent: {}
+[6.732456] (-) TimerEvent: {}
+[6.832909] (-) TimerEvent: {}
+[6.934055] (-) TimerEvent: {}
+[7.034727] (-) TimerEvent: {}
+[7.139972] (-) TimerEvent: {}
+[7.247736] (edgevision_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/edgevision_msgs/msg/detection__type_support.cpp.o\x1b[0m\n'}
+[7.249666] (-) TimerEvent: {}
+[7.266471] (edgevision_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/edgevision_msgs/msg/detection_array__type_support.cpp.o\x1b[0m\n'}
+[7.288813] (edgevision_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/edgevision_msgs/msg/tracked_detection__type_support.cpp.o\x1b[0m\n'}
+[7.310267] (edgevision_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/edgevision_msgs/msg/detection__type_support.cpp.o\x1b[0m\n'}
+[7.351728] (-) TimerEvent: {}
+[7.393579] (edgevision_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/edgevision_msgs/msg/detection_array__type_support.cpp.o\x1b[0m\n'}
+[7.425844] (edgevision_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/edgevision_msgs/msg/tracked_detection_array__type_support.cpp.o\x1b[0m\n'}
+[7.449766] (edgevision_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/edgevision_msgs/msg/tracked_detection__type_support.cpp.o\x1b[0m\n'}
+[7.451871] (-) TimerEvent: {}
+[7.537237] (edgevision_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/edgevision_msgs/msg/face_detection__type_support.cpp.o\x1b[0m\n'}
+[7.551996] (-) TimerEvent: {}
+[7.586475] (edgevision_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/edgevision_msgs/msg/detail/detection__type_support.cpp.o\x1b[0m\n'}
+[7.652143] (-) TimerEvent: {}
+[7.669742] (edgevision_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/edgevision_msgs/msg/face_detection_array__type_support.cpp.o\x1b[0m\n'}
+[7.753748] (-) TimerEvent: {}
+[7.812800] (edgevision_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32m\x1b[1mLinking CXX shared library libedgevision_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[7.853902] (-) TimerEvent: {}
+[7.955995] (-) TimerEvent: {}
+[7.982845] (edgevision_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/edgevision_msgs/msg/detail/detection__type_support_c.cpp.o\x1b[0m\n'}
+[7.999525] (edgevision_msgs) StdoutLine: {'line': b'[ 38%] Built target edgevision_msgs__rosidl_typesupport_c\n'}
+[8.041498] (edgevision_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/edgevision_msgs/msg/detail/detection_array__type_support.cpp.o\x1b[0m\n'}
+[8.056138] (-) TimerEvent: {}
+[8.095992] (edgevision_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection__type_support.c.o\x1b[0m\n'}
+[8.159489] (-) TimerEvent: {}
+[8.189201] (edgevision_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/edgevision_msgs/msg/detail/dds_fastrtps/detection__type_support.cpp.o\x1b[0m\n'}
+[8.212826] (edgevision_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/detection_array__type_support.c.o\x1b[0m\n'}
+[8.261741] (-) TimerEvent: {}
+[8.362249] (-) TimerEvent: {}
+[8.383017] (edgevision_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/edgevision_msgs/msg/detail/tracked_detection__type_support.cpp.o\x1b[0m\n'}
+[8.426124] (edgevision_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection__type_support.c.o\x1b[0m\n'}
+[8.464748] (-) TimerEvent: {}
+[8.509802] (edgevision_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/tracked_detection_array__type_support.c.o\x1b[0m\n'}
+[8.567510] (-) TimerEvent: {}
+[8.640276] (edgevision_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/edgevision_msgs/msg/detail/dds_fastrtps/detection_array__type_support.cpp.o\x1b[0m\n'}
+[8.667708] (-) TimerEvent: {}
+[8.675536] (edgevision_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/face_detection__type_support.c.o\x1b[0m\n'}
+[8.712965] (edgevision_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/edgevision_msgs/msg/tracked_detection_array__type_support.cpp.o\x1b[0m\n'}
+[8.767852] (-) TimerEvent: {}
+[8.842403] (edgevision_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/edgevision_msgs/msg/detail/face_detection_array__type_support.c.o\x1b[0m\n'}
+[8.873753] (-) TimerEvent: {}
+[8.975971] (-) TimerEvent: {}
+[9.076440] (-) TimerEvent: {}
+[9.096738] (edgevision_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking C shared library libedgevision_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[9.177785] (-) TimerEvent: {}
+[9.278313] (-) TimerEvent: {}
+[9.344750] (edgevision_msgs) StdoutLine: {'line': b'[ 55%] Built target edgevision_msgs__rosidl_typesupport_introspection_c\n'}
+[9.378484] (-) TimerEvent: {}
+[9.380710] (edgevision_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/edgevision_msgs/msg/detail/detection_array__type_support_c.cpp.o\x1b[0m\n'}
+[9.401782] (edgevision_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/edgevision_msgs/msg/detail/tracked_detection__type_support_c.cpp.o\x1b[0m\n'}
+[9.407207] (edgevision_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/edgevision_msgs/msg/detail/tracked_detection_array__type_support.cpp.o\x1b[0m\n'}
+[9.463877] (edgevision_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/edgevision_msgs/msg/detail/dds_fastrtps/tracked_detection__type_support.cpp.o\x1b[0m\n'}
+[9.478628] (-) TimerEvent: {}
+[9.579154] (-) TimerEvent: {}
+[9.679576] (-) TimerEvent: {}
+[9.780065] (-) TimerEvent: {}
+[9.881998] (-) TimerEvent: {}
+[9.983258] (-) TimerEvent: {}
+[10.007817] (edgevision_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/edgevision_msgs/msg/detail/tracked_detection_array__type_support_c.cpp.o\x1b[0m\n'}
+[10.070325] (edgevision_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/edgevision_msgs/msg/face_detection__type_support.cpp.o\x1b[0m\n'}
+[10.083749] (-) TimerEvent: {}
+[10.125093] (edgevision_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/edgevision_msgs/msg/face_detection_array__type_support.cpp.o\x1b[0m\n'}
+[10.183888] (-) TimerEvent: {}
+[10.284747] (-) TimerEvent: {}
+[10.385745] (-) TimerEvent: {}
+[10.486239] (-) TimerEvent: {}
+[10.492760] (edgevision_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/edgevision_msgs/msg/detail/face_detection__type_support_c.cpp.o\x1b[0m\n'}
+[10.535853] (edgevision_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/edgevision_msgs/msg/detail/face_detection__type_support.cpp.o\x1b[0m\n'}
+[10.587774] (-) TimerEvent: {}
+[10.661667] (edgevision_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/edgevision_msgs/msg/detail/dds_fastrtps/tracked_detection_array__type_support.cpp.o\x1b[0m\n'}
+[10.689738] (-) TimerEvent: {}
+[10.790470] (-) TimerEvent: {}
+[10.890949] (-) TimerEvent: {}
+[10.991432] (-) TimerEvent: {}
+[11.041766] (edgevision_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/edgevision_msgs/msg/detail/face_detection_array__type_support.cpp.o\x1b[0m\n'}
+[11.073842] (edgevision_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/edgevision_msgs/msg/detail/face_detection_array__type_support_c.cpp.o\x1b[0m\n'}
+[11.090594] (edgevision_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking CXX shared library libedgevision_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[11.091555] (-) TimerEvent: {}
+[11.163458] (edgevision_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/edgevision_msgs/msg/detail/dds_fastrtps/face_detection__type_support.cpp.o\x1b[0m\n'}
+[11.191748] (edgevision_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/edgevision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/edgevision_msgs/msg/detail/dds_fastrtps/face_detection_array__type_support.cpp.o\x1b[0m\n'}
+[11.192082] (-) TimerEvent: {}
+[11.286208] (edgevision_msgs) StdoutLine: {'line': b'[ 76%] Built target edgevision_msgs__rosidl_typesupport_cpp\n'}
+[11.294404] (-) TimerEvent: {}
+[11.399749] (-) TimerEvent: {}
+[11.500615] (-) TimerEvent: {}
+[11.601148] (-) TimerEvent: {}
+[11.701715] (-) TimerEvent: {}
+[11.802200] (-) TimerEvent: {}
+[11.902633] (-) TimerEvent: {}
+[12.003598] (-) TimerEvent: {}
+[12.019447] (edgevision_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libedgevision_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[12.103730] (-) TimerEvent: {}
+[12.123440] (edgevision_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libedgevision_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[12.189786] (edgevision_msgs) StdoutLine: {'line': b'[ 79%] Built target edgevision_msgs__rosidl_typesupport_fastrtps_c\n'}
+[12.203842] (-) TimerEvent: {}
+[12.234095] (edgevision_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX shared library libedgevision_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[12.290120] (edgevision_msgs) StdoutLine: {'line': b'[ 80%] Built target edgevision_msgs__rosidl_typesupport_introspection_cpp\n'}
+[12.303955] (-) TimerEvent: {}
+[12.368520] (edgevision_msgs) StdoutLine: {'line': b'[ 80%] Built target edgevision_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[12.404071] (-) TimerEvent: {}
+[12.407534] (edgevision_msgs) StdoutLine: {'line': b'[ 80%] Built target edgevision_msgs\n'}
+[12.440824] (edgevision_msgs) StdoutLine: {'line': b'[ 81%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[12.504183] (-) TimerEvent: {}
+[12.604582] (-) TimerEvent: {}
+[12.704986] (-) TimerEvent: {}
+[12.805362] (-) TimerEvent: {}
+[12.905718] (-) TimerEvent: {}
+[13.006088] (-) TimerEvent: {}
+[13.106502] (-) TimerEvent: {}
+[13.206941] (-) TimerEvent: {}
+[13.307314] (-) TimerEvent: {}
+[13.407676] (-) TimerEvent: {}
+[13.508084] (-) TimerEvent: {}
+[13.529195] (edgevision_msgs) StdoutLine: {'line': b'[ 81%] Built target edgevision_msgs__py\n'}
+[13.566538] (edgevision_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_generator_py.dir/rosidl_generator_py/edgevision_msgs/msg/_detection_array_s.c.o\x1b[0m\n'}
+[13.567183] (edgevision_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_generator_py.dir/rosidl_generator_py/edgevision_msgs/msg/_detection_s.c.o\x1b[0m\n'}
+[13.567353] (edgevision_msgs) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_generator_py.dir/rosidl_generator_py/edgevision_msgs/msg/_tracked_detection_s.c.o\x1b[0m\n'}
+[13.567490] (edgevision_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_generator_py.dir/rosidl_generator_py/edgevision_msgs/msg/_face_detection_array_s.c.o\x1b[0m\n'}
+[13.569657] (edgevision_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_generator_py.dir/rosidl_generator_py/edgevision_msgs/msg/_tracked_detection_array_s.c.o\x1b[0m\n'}
+[13.570860] (edgevision_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_generator_py.dir/rosidl_generator_py/edgevision_msgs/msg/_face_detection_s.c.o\x1b[0m\n'}
+[13.609749] (-) TimerEvent: {}
+[13.710182] (-) TimerEvent: {}
+[13.810678] (-) TimerEvent: {}
+[13.911104] (-) TimerEvent: {}
+[13.928551] (edgevision_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/edgevision_msgs/libedgevision_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[14.012606] (-) TimerEvent: {}
+[14.069574] (edgevision_msgs) StdoutLine: {'line': b'[ 91%] Built target edgevision_msgs__rosidl_generator_py\n'}
+[14.114749] (-) TimerEvent: {}
+[14.129970] (edgevision_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/edgevision_msgs/_edgevision_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[14.134634] (edgevision_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/edgevision_msgs/_edgevision_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[14.145788] (edgevision_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/edgevision_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/edgevision_msgs/_edgevision_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[14.216737] (-) TimerEvent: {}
+[14.317137] (-) TimerEvent: {}
+[14.400905] (edgevision_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/edgevision_msgs/edgevision_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[14.411208] (edgevision_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/edgevision_msgs/edgevision_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[14.417262] (-) TimerEvent: {}
+[14.424977] (edgevision_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/edgevision_msgs/edgevision_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[14.511839] (edgevision_msgs) StdoutLine: {'line': b'[100%] Built target edgevision_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[14.517405] (-) TimerEvent: {}
+[14.521902] (edgevision_msgs) StdoutLine: {'line': b'[100%] Built target edgevision_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[14.540737] (edgevision_msgs) StdoutLine: {'line': b'[100%] Built target edgevision_msgs__rosidl_typesupport_c__pyext\n'}
+[14.573316] (edgevision_msgs) CommandEnded: {'returncode': 0}
+[14.575472] (edgevision_msgs) JobProgress: {'identifier': 'edgevision_msgs', 'progress': 'install'}
+[14.595629] (edgevision_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs'], 'cwd': '/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'tarun'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tarun'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/tarun/surveillance_bot/ros2/ws'), ('TERM_PROGRAM_VERSION', '1.128.0'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('PS1', '\\[\x1b]633;A\x07\\](.venv) \\[\x1b]633;A\x07\\]\\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$ \\[\x1b]633;B\x07\\]\\[\x1b]633;B\x07\\]'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1155'), ('BUNDLED_DEBUGPY_PATH', '/home/tarun/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/tarun/surveillance_bot/ros2/ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'tarun'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tarun'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/tarun/surveillance_bot/.venv/bin:/home/tarun/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/tarun/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/humble/bin:/home/tarun/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/tarun/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/tarun-TUF-Gaming-FX505DT-FX505DT:@/tmp/.ICE-unix/1129,unix/tarun-TUF-Gaming-FX505DT-FX505DT:/tmp/.ICE-unix/1129'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d0510f67_75b8_490c_95f4_5ccec489512c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'wayland'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/tarun/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-719030e14fd8947a.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/tarun/.config/Code/User/workspaceStorage/7dc33f88aa8e1a6e0297bceb18243204/ms-python.python/pythonrc.py'), ('VIRTUAL_ENV_PROMPT', '(.venv)'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.E9KDS3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-5356aa5f03.sock'), ('GNOME_TERMINAL_SERVICE', ':1.117'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros:/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VIRTUAL_ENV', '/home/tarun/surveillance_bot/.venv'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('COPILOT_DEBUG_NONCE', '83c486256e58f104af75e9cc936a28cc'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/python3.10/site-packages:/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/tarun/surveillance_bot'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs:/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros:/opt/ros/humble')]), 'shell': False}
+[14.614271] (edgevision_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.615738] (edgevision_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[14.616462] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/ament_index/resource_index/rosidl_interfaces/edgevision_msgs\n'}
+[14.617500] (-) TimerEvent: {}
+[14.636225] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection__functions.h\n'}
+[14.655388] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection__struct.h\n'}
+[14.675713] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection__type_support.h\n'}
+[14.701593] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection_array__functions.h\n'}
+[14.717672] (-) TimerEvent: {}
+[14.723111] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection_array__struct.h\n'}
+[14.743936] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection_array__type_support.h\n'}
+[14.770042] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection__functions.h\n'}
+[14.791935] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection__struct.h\n'}
+[14.809031] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection__type_support.h\n'}
+[14.817860] (-) TimerEvent: {}
+[14.833067] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection_array__functions.h\n'}
+[14.854126] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection_array__struct.h\n'}
+[14.876173] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection_array__type_support.h\n'}
+[14.894450] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection__functions.h\n'}
+[14.911142] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection__struct.h\n'}
+[14.917991] (-) TimerEvent: {}
+[14.926757] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection__type_support.h\n'}
+[14.942787] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection_array__functions.h\n'}
+[14.960997] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection_array__struct.h\n'}
+[14.983548] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection_array__type_support.h\n'}
+[15.003101] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detection.h\n'}
+[15.018097] (-) TimerEvent: {}
+[15.021968] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detection_array.h\n'}
+[15.039405] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/face_detection.h\n'}
+[15.068122] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/face_detection_array.h\n'}
+[15.089506] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[15.108947] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/tracked_detection.h\n'}
+[15.118254] (-) TimerEvent: {}
+[15.127285] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/tracked_detection_array.h\n'}
+[15.146616] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/environment/library_path.sh\n'}
+[15.166434] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/environment/library_path.dsv\n'}
+[15.187198] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection__rosidl_typesupport_fastrtps_c.h\n'}
+[15.207898] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection_array__rosidl_typesupport_fastrtps_c.h\n'}
+[15.218375] (-) TimerEvent: {}
+[15.226523] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection__rosidl_typesupport_fastrtps_c.h\n'}
+[15.244093] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection_array__rosidl_typesupport_fastrtps_c.h\n'}
+[15.261131] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection__rosidl_typesupport_fastrtps_c.h\n'}
+[15.280584] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection_array__rosidl_typesupport_fastrtps_c.h\n'}
+[15.299603] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[15.318542] (-) TimerEvent: {}
+[15.323382] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h\n'}
+[15.342141] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection_array__rosidl_typesupport_introspection_c.h\n'}
+[15.364179] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection__rosidl_typesupport_introspection_c.h\n'}
+[15.386329] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection_array__rosidl_typesupport_introspection_c.h\n'}
+[15.405357] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection__rosidl_typesupport_introspection_c.h\n'}
+[15.418675] (-) TimerEvent: {}
+[15.422423] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection_array__rosidl_typesupport_introspection_c.h\n'}
+[15.437223] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[15.456988] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection__builder.hpp\n'}
+[15.475936] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection__struct.hpp\n'}
+[15.491913] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection__traits.hpp\n'}
+[15.508594] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection__type_support.hpp\n'}
+[15.518789] (-) TimerEvent: {}
+[15.523374] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection_array__builder.hpp\n'}
+[15.541358] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection_array__struct.hpp\n'}
+[15.558105] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection_array__traits.hpp\n'}
+[15.573838] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection_array__type_support.hpp\n'}
+[15.593116] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection__builder.hpp\n'}
+[15.608476] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection__struct.hpp\n'}
+[15.618938] (-) TimerEvent: {}
+[15.629496] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection__traits.hpp\n'}
+[15.645293] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection__type_support.hpp\n'}
+[15.661424] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection_array__builder.hpp\n'}
+[15.678981] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection_array__struct.hpp\n'}
+[15.695019] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection_array__traits.hpp\n'}
+[15.710569] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection_array__type_support.hpp\n'}
+[15.719051] (-) TimerEvent: {}
+[15.728082] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection__builder.hpp\n'}
+[15.744800] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection__struct.hpp\n'}
+[15.762329] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection__traits.hpp\n'}
+[15.785262] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection__type_support.hpp\n'}
+[15.806045] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection_array__builder.hpp\n'}
+[15.819171] (-) TimerEvent: {}
+[15.822383] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection_array__struct.hpp\n'}
+[15.838083] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection_array__traits.hpp\n'}
+[15.858727] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection_array__type_support.hpp\n'}
+[15.873733] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detection.hpp\n'}
+[15.889546] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detection_array.hpp\n'}
+[15.910380] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/face_detection.hpp\n'}
+[15.919308] (-) TimerEvent: {}
+[15.928421] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/face_detection_array.hpp\n'}
+[15.946190] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[15.962596] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/tracked_detection.hpp\n'}
+[15.980821] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/tracked_detection_array.hpp\n'}
+[15.998720] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.015188] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.019417] (-) TimerEvent: {}
+[16.030882] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.056486] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.080849] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.101764] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.119552] (-) TimerEvent: {}
+[16.123744] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[16.148445] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.167103] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/detection_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.187305] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.203113] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/face_detection_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.219726] (-) TimerEvent: {}
+[16.220482] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.234045] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/include/edgevision_msgs/edgevision_msgs/msg/detail/tracked_detection_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.247612] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/environment/pythonpath.sh\n'}
+[16.261246] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/environment/pythonpath.dsv\n'}
+[16.274979] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[16.291141] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[16.303669] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[16.315277] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[16.319851] (-) TimerEvent: {}
+[16.330942] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/__init__.py\n'}
+[16.345326] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/_edgevision_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[16.358609] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/_edgevision_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[16.371465] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/_edgevision_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[16.385782] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/edgevision_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[16.397901] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/edgevision_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[16.410305] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/edgevision_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[16.419967] (-) TimerEvent: {}
+[16.429607] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/libedgevision_msgs__rosidl_generator_py.so\n'}
+[16.443770] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/__init__.py\n'}
+[16.456866] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/_detection.py\n'}
+[16.469104] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/_detection_array.py\n'}
+[16.485490] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/_detection_array_s.c\n'}
+[16.496951] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/_detection_s.c\n'}
+[16.508876] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/_face_detection.py\n'}
+[16.520089] (-) TimerEvent: {}
+[16.520801] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/_face_detection_array.py\n'}
+[16.533989] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/_face_detection_array_s.c\n'}
+[16.548478] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/_face_detection_s.c\n'}
+[16.567460] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/_tracked_detection.py\n'}
+[16.585456] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/_tracked_detection_array.py\n'}
+[16.599737] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/_tracked_detection_array_s.c\n'}
+[16.614307] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/_tracked_detection_s.c\n'}
+[16.620211] (-) TimerEvent: {}
+[16.627599] (edgevision_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/edgevision_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[16.628294] (edgevision_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/edgevision_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[16.629073] (edgevision_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/edgevision_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[16.629641] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/ament_index/resource_index/rust_packages/edgevision_msgs\n'}
+[16.643781] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/rust/Cargo.toml\n'}
+[16.656085] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/rust/build.rs\n'}
+[16.669526] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/rust/src/lib.rs\n'}
+[16.690678] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/rust/src/msg.rs\n'}
+[16.702342] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/rust/src/msg/rmw.rs\n'}
+[16.715312] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/msg/Detection.idl\n'}
+[16.720327] (-) TimerEvent: {}
+[16.728610] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/msg/DetectionArray.idl\n'}
+[16.742295] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/msg/TrackedDetection.idl\n'}
+[16.759945] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/msg/TrackedDetectionArray.idl\n'}
+[16.773005] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/msg/FaceDetection.idl\n'}
+[16.791973] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/msg/FaceDetectionArray.idl\n'}
+[16.804531] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/msg/Detection.msg\n'}
+[16.819432] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/msg/DetectionArray.msg\n'}
+[16.820391] (-) TimerEvent: {}
+[16.840776] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/msg/TrackedDetection.msg\n'}
+[16.854180] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/msg/TrackedDetectionArray.msg\n'}
+[16.867249] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/msg/FaceDetection.msg\n'}
+[16.890004] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/msg/FaceDetectionArray.msg\n'}
+[16.907934] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/ament_index/resource_index/package_run_dependencies/edgevision_msgs\n'}
+[16.920535] (-) TimerEvent: {}
+[16.920989] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/ament_index/resource_index/parent_prefix_path/edgevision_msgs\n'}
+[16.934317] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/environment/ament_prefix_path.sh\n'}
+[16.953805] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/environment/ament_prefix_path.dsv\n'}
+[16.969025] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/environment/path.sh\n'}
+[16.983793] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/environment/path.dsv\n'}
+[17.000174] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/local_setup.bash\n'}
+[17.020187] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/local_setup.sh\n'}
+[17.020609] (-) TimerEvent: {}
+[17.033032] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/local_setup.zsh\n'}
+[17.046776] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/local_setup.dsv\n'}
+[17.060548] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/package.dsv\n'}
+[17.074260] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/ament_index/resource_index/packages/edgevision_msgs\n'}
+[17.094932] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[17.107852] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[17.119689] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[17.120680] (-) TimerEvent: {}
+[17.132262] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[17.146102] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[17.160979] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[17.178744] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[17.194426] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/rosidl_cmake_aggregate_target-extras.cmake\n'}
+[17.208131] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/edgevision_msgsConfig.cmake\n'}
+[17.220824] (-) TimerEvent: {}
+[17.221397] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/edgevision_msgsConfig-version.cmake\n'}
+[17.234571] (edgevision_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/package.xml\n'}
+[17.255431] (edgevision_msgs) StdoutLine: {'line': b'-- Installing: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/libedgevision_msgs__rosidl_generator_c.so\n'}
+[17.256993] (edgevision_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/libedgevision_msgs__rosidl_generator_c.so" to ""\n'}
+[17.257220] (edgevision_msgs) StdoutLine: {'line': b'-- Installing: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/libedgevision_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[17.258792] (edgevision_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/libedgevision_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[17.259077] (edgevision_msgs) StdoutLine: {'line': b'-- Installing: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/libedgevision_msgs__rosidl_typesupport_introspection_c.so\n'}
+[17.260238] (edgevision_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/libedgevision_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[17.260451] (edgevision_msgs) StdoutLine: {'line': b'-- Installing: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/libedgevision_msgs__rosidl_typesupport_c.so\n'}
+[17.261569] (edgevision_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/libedgevision_msgs__rosidl_typesupport_c.so" to ""\n'}
+[17.261795] (edgevision_msgs) StdoutLine: {'line': b'-- Installing: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/libedgevision_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[17.263531] (edgevision_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/libedgevision_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[17.263760] (edgevision_msgs) StdoutLine: {'line': b'-- Installing: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/libedgevision_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[17.265453] (edgevision_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/libedgevision_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[17.265674] (edgevision_msgs) StdoutLine: {'line': b'-- Installing: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/libedgevision_msgs__rosidl_typesupport_cpp.so\n'}
+[17.266870] (edgevision_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/libedgevision_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[17.321049] (-) TimerEvent: {}
+[17.330099] (edgevision_msgs) StdoutLine: {'line': b"Listing '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs'...\n"}
+[17.330388] (edgevision_msgs) StdoutLine: {'line': b"Compiling '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/__init__.py'...\n"}
+[17.330520] (edgevision_msgs) StdoutLine: {'line': b"Listing '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg'...\n"}
+[17.330655] (edgevision_msgs) StdoutLine: {'line': b"Compiling '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/__init__.py'...\n"}
+[17.330791] (edgevision_msgs) StdoutLine: {'line': b"Compiling '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/_detection.py'...\n"}
+[17.330894] (edgevision_msgs) StdoutLine: {'line': b"Compiling '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/_detection_array.py'...\n"}
+[17.330993] (edgevision_msgs) StdoutLine: {'line': b"Compiling '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/_face_detection.py'...\n"}
+[17.331134] (edgevision_msgs) StdoutLine: {'line': b"Compiling '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/_face_detection_array.py'...\n"}
+[17.331235] (edgevision_msgs) StdoutLine: {'line': b"Compiling '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/_tracked_detection.py'...\n"}
+[17.331336] (edgevision_msgs) StdoutLine: {'line': b"Compiling '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages/edgevision_msgs/msg/_tracked_detection_array.py'...\n"}
+[17.337916] (edgevision_msgs) StdoutLine: {'line': b'-- Installing: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/libedgevision_msgs__rosidl_generator_py.so\n'}
+[17.339473] (edgevision_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/libedgevision_msgs__rosidl_generator_py.so" to ""\n'}
+[17.339732] (edgevision_msgs) StdoutLine: {'line': b'-- Installing: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/export_edgevision_msgs__rosidl_generator_cExport.cmake\n'}
+[17.340298] (edgevision_msgs) StdoutLine: {'line': b'-- Installing: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/export_edgevision_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[17.340964] (edgevision_msgs) StdoutLine: {'line': b'-- Installing: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/export_edgevision_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[17.341487] (edgevision_msgs) StdoutLine: {'line': b'-- Installing: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/export_edgevision_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[17.342161] (edgevision_msgs) StdoutLine: {'line': b'-- Installing: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/edgevision_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[17.342726] (edgevision_msgs) StdoutLine: {'line': b'-- Installing: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/edgevision_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[17.343390] (edgevision_msgs) StdoutLine: {'line': b'-- Installing: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/edgevision_msgs__rosidl_typesupport_cExport.cmake\n'}
+[17.343912] (edgevision_msgs) StdoutLine: {'line': b'-- Installing: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/edgevision_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[17.344482] (edgevision_msgs) StdoutLine: {'line': b'-- Installing: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/export_edgevision_msgs__rosidl_generator_cppExport.cmake\n'}
+[17.345051] (edgevision_msgs) StdoutLine: {'line': b'-- Installing: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/export_edgevision_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[17.345584] (edgevision_msgs) StdoutLine: {'line': b'-- Installing: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/export_edgevision_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[17.346150] (edgevision_msgs) StdoutLine: {'line': b'-- Installing: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/edgevision_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[17.346701] (edgevision_msgs) StdoutLine: {'line': b'-- Installing: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/edgevision_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[17.347244] (edgevision_msgs) StdoutLine: {'line': b'-- Installing: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/edgevision_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[17.347781] (edgevision_msgs) StdoutLine: {'line': b'-- Installing: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/edgevision_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[17.348303] (edgevision_msgs) StdoutLine: {'line': b'-- Installing: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/export_edgevision_msgs__rosidl_generator_pyExport.cmake\n'}
+[17.348825] (edgevision_msgs) StdoutLine: {'line': b'-- Installing: /home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/share/edgevision_msgs/cmake/export_edgevision_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[17.355798] (edgevision_msgs) CommandEnded: {'returncode': 0}
+[17.411920] (edgevision_msgs) JobEnded: {'identifier': 'edgevision_msgs', 'rc': 0}
+[17.413067] (edgevision_ros) JobStarted: {'identifier': 'edgevision_ros'}
+[17.421183] (-) TimerEvent: {}
+[17.521575] (-) TimerEvent: {}
+[17.622021] (-) TimerEvent: {}
+[17.722371] (-) TimerEvent: {}
+[17.822734] (-) TimerEvent: {}
+[17.923149] (-) TimerEvent: {}
+[18.023498] (-) TimerEvent: {}
+[18.123870] (-) TimerEvent: {}
+[18.224369] (-) TimerEvent: {}
+[18.325582] (-) TimerEvent: {}
+[18.425948] (-) TimerEvent: {}
+[18.526395] (-) TimerEvent: {}
+[18.626888] (-) TimerEvent: {}
+[18.727368] (-) TimerEvent: {}
+[18.827861] (-) TimerEvent: {}
+[18.832619] (edgevision_ros) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros/build', '--no-deps', 'symlink_data'], 'cwd': '/home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros', 'env': {'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_IN:en', 'USER': 'tarun', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/tarun', 'CHROME_DESKTOP': 'code.desktop', 'OLDPWD': '/home/tarun/surveillance_bot/ros2/ws', 'TERM_PROGRAM_VERSION': '1.128.0', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'PS1': '\\[\x1b]633;A\x07\\](.venv) \\[\x1b]633;A\x07\\]\\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$ \\[\x1b]633;B\x07\\]\\[\x1b]633;B\x07\\]', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '1155', 'BUNDLED_DEBUGPY_PATH': '/home/tarun/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/tarun/surveillance_bot/ros2/ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'tarun', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'tarun', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/tarun/surveillance_bot/.venv/bin:/home/tarun/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/tarun/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/humble/bin:/home/tarun/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/tarun/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/tarun-TUF-Gaming-FX505DT-FX505DT:@/tmp/.ICE-unix/1129,unix/tarun-TUF-Gaming-FX505DT-FX505DT:/tmp/.ICE-unix/1129', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/d0510f67_75b8_490c_95f4_5ccec489512c', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'wayland', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/tarun/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-719030e14fd8947a.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'PYTHONSTARTUP': '/home/tarun/.config/Code/User/workspaceStorage/7dc33f88aa8e1a6e0297bceb18243204/ms-python.python/pythonrc.py', 'VIRTUAL_ENV_PROMPT': '(.venv)', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.E9KDS3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-5356aa5f03.sock', 'GNOME_TERMINAL_SERVICE': ':1.117', 'TERM_PROGRAM': 'vscode', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros:/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VIRTUAL_ENV': '/home/tarun/surveillance_bot/.venv', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'COPILOT_DEBUG_NONCE': '83c486256e58f104af75e9cc936a28cc', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/python3.10/site-packages:/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs/lib/python3.10/site-packages:/home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/tarun/surveillance_bot', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/tarun/surveillance_bot/ros2/ws/install/edgevision_msgs'}, 'shell': False}
+[18.928021] (-) TimerEvent: {}
+[19.028533] (-) TimerEvent: {}
+[19.128982] (-) TimerEvent: {}
+[19.229350] (-) TimerEvent: {}
+[19.298921] (edgevision_ros) StdoutLine: {'line': b'running develop\n'}
+[19.329483] (-) TimerEvent: {}
+[19.430023] (-) TimerEvent: {}
+[19.530621] (-) TimerEvent: {}
+[19.581067] (edgevision_ros) StdoutLine: {'line': b'running egg_info\n'}
+[19.581527] (edgevision_ros) StdoutLine: {'line': b'creating edgevision_ros.egg-info\n'}
+[19.581733] (edgevision_ros) StdoutLine: {'line': b'writing edgevision_ros.egg-info/PKG-INFO\n'}
+[19.581955] (edgevision_ros) StdoutLine: {'line': b'writing dependency_links to edgevision_ros.egg-info/dependency_links.txt\n'}
+[19.582165] (edgevision_ros) StdoutLine: {'line': b'writing entry points to edgevision_ros.egg-info/entry_points.txt\n'}
+[19.582376] (edgevision_ros) StdoutLine: {'line': b'writing requirements to edgevision_ros.egg-info/requires.txt\n'}
+[19.582563] (edgevision_ros) StdoutLine: {'line': b'writing top-level names to edgevision_ros.egg-info/top_level.txt\n'}
+[19.582751] (edgevision_ros) StdoutLine: {'line': b"writing manifest file 'edgevision_ros.egg-info/SOURCES.txt'\n"}
+[19.585185] (edgevision_ros) StdoutLine: {'line': b"reading manifest file 'edgevision_ros.egg-info/SOURCES.txt'\n"}
+[19.586293] (edgevision_ros) StdoutLine: {'line': b"writing manifest file 'edgevision_ros.egg-info/SOURCES.txt'\n"}
+[19.588572] (edgevision_ros) StdoutLine: {'line': b'running build_ext\n'}
+[19.588918] (edgevision_ros) StdoutLine: {'line': b'Creating /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/python3.10/site-packages/edgevision-ros.egg-link (link to .)\n'}
+[19.590268] (edgevision_ros) StdoutLine: {'line': b'Installing camera_node script to /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/edgevision_ros\n'}
+[19.590623] (edgevision_ros) StdoutLine: {'line': b'Installing detector_node script to /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/edgevision_ros\n'}
+[19.590930] (edgevision_ros) StdoutLine: {'line': b'Installing event_logger_node script to /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/edgevision_ros\n'}
+[19.591230] (edgevision_ros) StdoutLine: {'line': b'Installing face_node script to /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/edgevision_ros\n'}
+[19.591564] (edgevision_ros) StdoutLine: {'line': b'Installing perception_node script to /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/edgevision_ros\n'}
+[19.591977] (edgevision_ros) StdoutLine: {'line': b'Installing tracker_node script to /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/lib/edgevision_ros\n'}
+[19.592316] (edgevision_ros) StdoutLine: {'line': b'\n'}
+[19.592553] (edgevision_ros) StdoutLine: {'line': b'Installed /home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros\n'}
+[19.592859] (edgevision_ros) StdoutLine: {'line': b'running symlink_data\n'}
+[19.593070] (edgevision_ros) StdoutLine: {'line': b'creating /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/share/ament_index\n'}
+[19.593268] (edgevision_ros) StdoutLine: {'line': b'creating /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/share/ament_index/resource_index\n'}
+[19.593462] (edgevision_ros) StdoutLine: {'line': b'creating /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/share/ament_index/resource_index/packages\n'}
+[19.593677] (edgevision_ros) StdoutLine: {'line': b'symbolically linking /home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros/resource/edgevision_ros -> /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/share/ament_index/resource_index/packages\n'}
+[19.593946] (edgevision_ros) StdoutLine: {'line': b'symbolically linking /home/tarun/surveillance_bot/ros2/ws/build/edgevision_ros/package.xml -> /home/tarun/surveillance_bot/ros2/ws/install/edgevision_ros/share/edgevision_ros\n'}
+[19.630802] (-) TimerEvent: {}
+[19.654741] (edgevision_ros) CommandEnded: {'returncode': 0}
+[19.676683] (edgevision_ros) JobEnded: {'identifier': 'edgevision_ros', 'rc': 0}
+[19.678446] (-) EventReactorShutdown: {}
