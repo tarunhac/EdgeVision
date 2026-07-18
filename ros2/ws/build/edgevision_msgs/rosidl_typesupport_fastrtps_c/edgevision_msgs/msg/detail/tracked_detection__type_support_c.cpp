@@ -34,8 +34,8 @@ extern "C"
 {
 #endif
 
-#include "rosidl_runtime_c/string.h"  // class_name, name
-#include "rosidl_runtime_c/string_functions.h"  // class_name, name
+#include "rosidl_runtime_c/string.h"  // class_name, face_image, frame_image, name
+#include "rosidl_runtime_c/string_functions.h"  // class_name, face_image, frame_image, name
 
 // forward declare type support functions
 
@@ -112,6 +112,34 @@ static bool _TrackedDetection__cdr_serialize(
   // Field name: similarity
   {
     cdr << ros_message->similarity;
+  }
+
+  // Field name: face_image
+  {
+    const rosidl_runtime_c__String * str = &ros_message->face_image;
+    if (str->capacity == 0 || str->capacity <= str->size) {
+      fprintf(stderr, "string capacity not greater than size\n");
+      return false;
+    }
+    if (str->data[str->size] != '\0') {
+      fprintf(stderr, "string not null-terminated\n");
+      return false;
+    }
+    cdr << str->data;
+  }
+
+  // Field name: frame_image
+  {
+    const rosidl_runtime_c__String * str = &ros_message->frame_image;
+    if (str->capacity == 0 || str->capacity <= str->size) {
+      fprintf(stderr, "string capacity not greater than size\n");
+      return false;
+    }
+    if (str->data[str->size] != '\0') {
+      fprintf(stderr, "string not null-terminated\n");
+      return false;
+    }
+    cdr << str->data;
   }
 
   return true;
@@ -193,6 +221,38 @@ static bool _TrackedDetection__cdr_deserialize(
     cdr >> ros_message->similarity;
   }
 
+  // Field name: face_image
+  {
+    std::string tmp;
+    cdr >> tmp;
+    if (!ros_message->face_image.data) {
+      rosidl_runtime_c__String__init(&ros_message->face_image);
+    }
+    bool succeeded = rosidl_runtime_c__String__assign(
+      &ros_message->face_image,
+      tmp.c_str());
+    if (!succeeded) {
+      fprintf(stderr, "failed to assign string into field 'face_image'\n");
+      return false;
+    }
+  }
+
+  // Field name: frame_image
+  {
+    std::string tmp;
+    cdr >> tmp;
+    if (!ros_message->frame_image.data) {
+      rosidl_runtime_c__String__init(&ros_message->frame_image);
+    }
+    bool succeeded = rosidl_runtime_c__String__assign(
+      &ros_message->frame_image,
+      tmp.c_str());
+    if (!succeeded) {
+      fprintf(stderr, "failed to assign string into field 'frame_image'\n");
+      return false;
+    }
+  }
+
   return true;
 }  // NOLINT(readability/fn_size)
 
@@ -260,6 +320,14 @@ size_t get_serialized_size_edgevision_msgs__msg__TrackedDetection(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
+  // field.name face_image
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message->face_image.size + 1);
+  // field.name frame_image
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message->frame_image.size + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -369,6 +437,30 @@ size_t max_serialized_size_edgevision_msgs__msg__TrackedDetection(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
+  // member: face_image
+  {
+    size_t array_size = 1;
+
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
+  }
+  // member: frame_image
+  {
+    size_t array_size = 1;
+
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
+  }
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -378,7 +470,7 @@ size_t max_serialized_size_edgevision_msgs__msg__TrackedDetection(
     using DataType = edgevision_msgs__msg__TrackedDetection;
     is_plain =
       (
-      offsetof(DataType, similarity) +
+      offsetof(DataType, frame_image) +
       last_member_size
       ) == ret_val;
   }

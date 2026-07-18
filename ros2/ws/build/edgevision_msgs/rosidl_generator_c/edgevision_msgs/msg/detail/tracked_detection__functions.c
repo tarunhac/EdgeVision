@@ -14,6 +14,8 @@
 // Include directives for member types
 // Member `class_name`
 // Member `name`
+// Member `face_image`
+// Member `frame_image`
 #include "rosidl_runtime_c/string_functions.h"
 
 bool
@@ -39,6 +41,16 @@ edgevision_msgs__msg__TrackedDetection__init(edgevision_msgs__msg__TrackedDetect
     return false;
   }
   // similarity
+  // face_image
+  if (!rosidl_runtime_c__String__init(&msg->face_image)) {
+    edgevision_msgs__msg__TrackedDetection__fini(msg);
+    return false;
+  }
+  // frame_image
+  if (!rosidl_runtime_c__String__init(&msg->frame_image)) {
+    edgevision_msgs__msg__TrackedDetection__fini(msg);
+    return false;
+  }
   return true;
 }
 
@@ -59,6 +71,10 @@ edgevision_msgs__msg__TrackedDetection__fini(edgevision_msgs__msg__TrackedDetect
   // name
   rosidl_runtime_c__String__fini(&msg->name);
   // similarity
+  // face_image
+  rosidl_runtime_c__String__fini(&msg->face_image);
+  // frame_image
+  rosidl_runtime_c__String__fini(&msg->frame_image);
 }
 
 bool
@@ -107,6 +123,18 @@ edgevision_msgs__msg__TrackedDetection__are_equal(const edgevision_msgs__msg__Tr
   if (lhs->similarity != rhs->similarity) {
     return false;
   }
+  // face_image
+  if (!rosidl_runtime_c__String__are_equal(
+      &(lhs->face_image), &(rhs->face_image)))
+  {
+    return false;
+  }
+  // frame_image
+  if (!rosidl_runtime_c__String__are_equal(
+      &(lhs->frame_image), &(rhs->frame_image)))
+  {
+    return false;
+  }
   return true;
 }
 
@@ -144,6 +172,18 @@ edgevision_msgs__msg__TrackedDetection__copy(
   }
   // similarity
   output->similarity = input->similarity;
+  // face_image
+  if (!rosidl_runtime_c__String__copy(
+      &(input->face_image), &(output->face_image)))
+  {
+    return false;
+  }
+  // frame_image
+  if (!rosidl_runtime_c__String__copy(
+      &(input->frame_image), &(output->frame_image)))
+  {
+    return false;
+  }
   return true;
 }
 

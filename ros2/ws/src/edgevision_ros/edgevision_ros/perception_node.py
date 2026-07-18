@@ -72,6 +72,11 @@ class PerceptionNode(Node):
             "/tracked_objects",
             10
         )
+        self.unknown_publisher = self.create_publisher(
+            TrackedDetection,
+            "/unknown_person",
+            10
+        )
 
         self.get_logger().info(
             "Perception Node Started"
@@ -172,13 +177,8 @@ class PerceptionNode(Node):
             # -----------------------------
 
             if tracked.name == "Unknown":
-                print("=" * 60)
-                print("UNKNOWN PERSON DETECTED")
-                print(f"Track ID : {tracked.track_id}")
-                print(f"Name     : {tracked.name}")
-                print(f"Similarity : {tracked.similarity}")
-                print("=" * 60)
                 
+
                 class LoggedDetection:
                     pass
 
@@ -193,10 +193,13 @@ class PerceptionNode(Node):
                 logged_detection.x2 = detection.x2
                 logged_detection.y2 = detection.y2
 
-                self.event_logger.log_unknown(
-                    frame,
-                    logged_detection
-                )
+
+                tracked.face_image = ""
+                tracked.frame_image = ""
+                
+                self.unknown_publisher.publish(
+                   tracked
+               )
 
             tracked_array.detections.append(
                 tracked
@@ -281,7 +284,8 @@ def main(args=None):
 
             node.destroy_node()
 
-            rclpy.shutdown()
+            if rclpy.ok():
+                rclpy.shutdown()
 
 
 if __name__ == "__main__":

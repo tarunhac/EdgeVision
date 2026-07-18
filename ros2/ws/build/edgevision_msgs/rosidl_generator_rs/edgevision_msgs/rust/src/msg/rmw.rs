@@ -248,6 +248,16 @@ pub struct TrackedDetection {
     #[allow(missing_docs)]
     pub similarity: f32,
 
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub face_image: rosidl_runtime_rs::String,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub frame_image: rosidl_runtime_rs::String,
+
 }
 
 

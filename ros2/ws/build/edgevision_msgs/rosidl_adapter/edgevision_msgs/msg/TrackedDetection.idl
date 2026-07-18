@@ -23,6 +23,10 @@ module edgevision_msgs {
       string name;
 
       float similarity;
+
+      string face_image;
+
+      string frame_image;
     };
   };
 };

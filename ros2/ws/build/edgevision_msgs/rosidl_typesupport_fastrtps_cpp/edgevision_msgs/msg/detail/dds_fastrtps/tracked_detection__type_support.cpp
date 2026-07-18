@@ -50,6 +50,10 @@ cdr_serialize(
   cdr << ros_message.name;
   // Member: similarity
   cdr << ros_message.similarity;
+  // Member: face_image
+  cdr << ros_message.face_image;
+  // Member: frame_image
+  cdr << ros_message.frame_image;
   return true;
 }
 
@@ -85,6 +89,12 @@ cdr_deserialize(
 
   // Member: similarity
   cdr >> ros_message.similarity;
+
+  // Member: face_image
+  cdr >> ros_message.face_image;
+
+  // Member: frame_image
+  cdr >> ros_message.frame_image;
 
   return true;
 }  // NOLINT(readability/fn_size)
@@ -152,6 +162,14 @@ get_serialized_size(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
+  // Member: face_image
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message.face_image.size() + 1);
+  // Member: frame_image
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message.frame_image.size() + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -265,6 +283,32 @@ max_serialized_size_TrackedDetection(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
+  // Member: face_image
+  {
+    size_t array_size = 1;
+
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
+  }
+
+  // Member: frame_image
+  {
+    size_t array_size = 1;
+
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
+  }
+
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -273,7 +317,7 @@ max_serialized_size_TrackedDetection(
     using DataType = edgevision_msgs::msg::TrackedDetection;
     is_plain =
       (
-      offsetof(DataType, similarity) +
+      offsetof(DataType, frame_image) +
       last_member_size
       ) == ret_val;
   }

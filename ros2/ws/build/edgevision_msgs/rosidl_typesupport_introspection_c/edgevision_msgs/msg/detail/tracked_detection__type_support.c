@@ -15,6 +15,8 @@
 // Include directives for member types
 // Member `class_name`
 // Member `name`
+// Member `face_image`
+// Member `frame_image`
 #include "rosidl_runtime_c/string_functions.h"
 
 #ifdef __cplusplus
@@ -36,7 +38,7 @@ void edgevision_msgs__msg__TrackedDetection__rosidl_typesupport_introspection_c_
   edgevision_msgs__msg__TrackedDetection__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember edgevision_msgs__msg__TrackedDetection__rosidl_typesupport_introspection_c__TrackedDetection_message_member_array[9] = {
+static rosidl_typesupport_introspection_c__MessageMember edgevision_msgs__msg__TrackedDetection__rosidl_typesupport_introspection_c__TrackedDetection_message_member_array[11] = {
   {
     "track_id",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
@@ -189,13 +191,47 @@ static rosidl_typesupport_introspection_c__MessageMember edgevision_msgs__msg__T
     NULL,  // fetch(index, &value) function pointer
     NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
+  },
+  {
+    "face_image",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(edgevision_msgs__msg__TrackedDetection, face_image),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "frame_image",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(edgevision_msgs__msg__TrackedDetection, frame_image),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers edgevision_msgs__msg__TrackedDetection__rosidl_typesupport_introspection_c__TrackedDetection_message_members = {
   "edgevision_msgs__msg",  // message namespace
   "TrackedDetection",  // message name
-  9,  // number of fields
+  11,  // number of fields
   sizeof(edgevision_msgs__msg__TrackedDetection),
   edgevision_msgs__msg__TrackedDetection__rosidl_typesupport_introspection_c__TrackedDetection_message_member_array,  // message members
   edgevision_msgs__msg__TrackedDetection__rosidl_typesupport_introspection_c__TrackedDetection_init_function,  // function to initialize message memory (memory has to be allocated)

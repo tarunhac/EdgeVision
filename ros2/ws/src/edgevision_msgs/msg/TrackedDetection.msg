@@ -10,3 +10,5 @@ int32 y2
 
 string name
 float32 similarity
+string face_image
+string frame_image

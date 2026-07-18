@@ -48,12 +48,16 @@ struct TrackedDetection_
       this->y2 = 0l;
       this->name = "";
       this->similarity = 0.0f;
+      this->face_image = "";
+      this->frame_image = "";
     }
   }
 
   explicit TrackedDetection_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
   : class_name(_alloc),
-    name(_alloc)
+    name(_alloc),
+    face_image(_alloc),
+    frame_image(_alloc)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
@@ -67,6 +71,8 @@ struct TrackedDetection_
       this->y2 = 0l;
       this->name = "";
       this->similarity = 0.0f;
+      this->face_image = "";
+      this->frame_image = "";
     }
   }
 
@@ -98,6 +104,12 @@ struct TrackedDetection_
   using _similarity_type =
     float;
   _similarity_type similarity;
+  using _face_image_type =
+    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+  _face_image_type face_image;
+  using _frame_image_type =
+    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+  _frame_image_type frame_image;
 
   // setters for named parameter idiom
   Type & set__track_id(
@@ -152,6 +164,18 @@ struct TrackedDetection_
     const float & _arg)
   {
     this->similarity = _arg;
+    return *this;
+  }
+  Type & set__face_image(
+    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+  {
+    this->face_image = _arg;
+    return *this;
+  }
+  Type & set__frame_image(
+    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+  {
+    this->frame_image = _arg;
     return *this;
   }
 
@@ -222,6 +246,12 @@ struct TrackedDetection_
       return false;
     }
     if (this->similarity != other.similarity) {
+      return false;
+    }
+    if (this->face_image != other.face_image) {
+      return false;
+    }
+    if (this->frame_image != other.frame_image) {
       return false;
     }
     return true;

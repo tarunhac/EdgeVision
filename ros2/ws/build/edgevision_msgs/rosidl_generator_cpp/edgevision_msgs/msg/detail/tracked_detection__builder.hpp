@@ -21,16 +21,48 @@ namespace msg
 namespace builder
 {
 
+class Init_TrackedDetection_frame_image
+{
+public:
+  explicit Init_TrackedDetection_frame_image(::edgevision_msgs::msg::TrackedDetection & msg)
+  : msg_(msg)
+  {}
+  ::edgevision_msgs::msg::TrackedDetection frame_image(::edgevision_msgs::msg::TrackedDetection::_frame_image_type arg)
+  {
+    msg_.frame_image = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::edgevision_msgs::msg::TrackedDetection msg_;
+};
+
+class Init_TrackedDetection_face_image
+{
+public:
+  explicit Init_TrackedDetection_face_image(::edgevision_msgs::msg::TrackedDetection & msg)
+  : msg_(msg)
+  {}
+  Init_TrackedDetection_frame_image face_image(::edgevision_msgs::msg::TrackedDetection::_face_image_type arg)
+  {
+    msg_.face_image = std::move(arg);
+    return Init_TrackedDetection_frame_image(msg_);
+  }
+
+private:
+  ::edgevision_msgs::msg::TrackedDetection msg_;
+};
+
 class Init_TrackedDetection_similarity
 {
 public:
   explicit Init_TrackedDetection_similarity(::edgevision_msgs::msg::TrackedDetection & msg)
   : msg_(msg)
   {}
-  ::edgevision_msgs::msg::TrackedDetection similarity(::edgevision_msgs::msg::TrackedDetection::_similarity_type arg)
+  Init_TrackedDetection_face_image similarity(::edgevision_msgs::msg::TrackedDetection::_similarity_type arg)
   {
     msg_.similarity = std::move(arg);
-    return std::move(msg_);
+    return Init_TrackedDetection_face_image(msg_);
   }
 
 private:
