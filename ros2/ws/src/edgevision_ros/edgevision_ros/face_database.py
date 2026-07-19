@@ -1,11 +1,6 @@
-"""
-EdgeVision ROS2 Face Database
-"""
-
-from pathlib import Path
-
 import cv2
 import numpy as np
+from pathlib import Path
 
 from insightface.app import FaceAnalysis
 
@@ -14,100 +9,84 @@ class FaceDatabase:
 
     def __init__(self):
 
-        self.app = FaceAnalysis(
+        self.face_app = FaceAnalysis(
             providers=["CPUExecutionProvider"]
         )
 
-        self.app.prepare(
+        self.face_app.prepare(
             ctx_id=0,
             det_size=(640, 640)
         )
 
-        self.database = {}
+        self.embeddings = []
+
+        self.threshold = 0.50
 
 
     def load(self, known_faces_dir):
-
-        self.database.clear()
+        self.embeddings.clear()
 
         known_faces_dir = Path(known_faces_dir)
 
+        print("=" * 60)
+        print("Loading Face Database")
+        print("Directory :", known_faces_dir)
+        print("=" * 60)
+
         if not known_faces_dir.exists():
-            print("[WARNING] known_faces directory not found.")
+            print("Directory does not exist!")
             return
 
+        image_files = []
 
-        for person_dir in known_faces_dir.iterdir():
+        for extension in ("*.jpg", "*.jpeg", "*.png"):
+            image_files.extend(
+                known_faces_dir.rglob(extension)
+            )
 
-            if not person_dir.is_dir():
+        print(f"Found {len(image_files)} image(s)")
+
+        if len(image_files) == 0:
+            print("ERROR: No images found!")
+            return
+
+        for image_path in image_files:
+
+            print(f"Loading: {image_path}")
+
+            image = cv2.imread(str(image_path))
+
+            if image is None:
+                print(f"Could not read {image_path.name}")
                 continue
 
+            faces = self.face_app.get(image)
 
-            embeddings = []
+            if len(faces) == 0:
+                print(f"No face detected in {image_path.name}")
+                continue
 
+            embedding = faces[0].embedding
 
-            for image_path in person_dir.iterdir():
+            person_name = image_path.parent.name
 
-                image = cv2.imread(
-                    str(image_path)
-                )
-
-                if image is None:
-                    continue
-
-
-                faces = self.app.get(image)
-
-
-                if len(faces) == 0:
-                    continue
-
-
-                embedding = faces[0].embedding
-
-                embedding = (
-                    embedding /
-                    np.linalg.norm(embedding)
-                )
-
-                embeddings.append(
+            self.embeddings.append(
+                (
+                    person_name,
                     embedding
                 )
-
-
-            if len(embeddings) == 0:
-                continue
-
-
-            average_embedding = np.mean(
-                embeddings,
-                axis=0
             )
 
+            print(f"Loaded face for {person_name}")
 
-            average_embedding = (
-                average_embedding /
-                np.linalg.norm(average_embedding)
-            )
-
-
-            self.database[
-                person_dir.name
-            ] = average_embedding
+        print("=" * 60)
+        print(f"Loaded {len(self.embeddings)} known face(s)")
+        print("=" * 60)
 
 
-        print(
-            f"[INFO] Loaded {len(self.database)} identities."
-        )
+    def match(self, query_embedding):
 
-
-    def match(
-        self,
-        embedding,
-        threshold=0.45
-    ):
-
-        if len(self.database) == 0:
+        if len(self.embeddings) == 0:
 
             return (
                 "Unknown",
@@ -115,42 +94,49 @@ class FaceDatabase:
                 False
             )
 
-
-        embedding = (
-            embedding /
-            np.linalg.norm(embedding)
+        query_embedding = (
+            query_embedding /
+            np.linalg.norm(query_embedding)
         )
 
-
         best_name = "Unknown"
+
         best_similarity = -1.0
+       
 
+        for name, embedding in self.embeddings:
 
-        for name, known_embedding in self.database.items():
+            embedding = (
+                embedding /
+                np.linalg.norm(embedding)
+            )
 
             similarity = float(
                 np.dot(
-                    embedding,
-                    known_embedding
+                    query_embedding,
+                    embedding
                 )
             )
-
 
             if similarity > best_similarity:
 
                 best_similarity = similarity
+
                 best_name = name
+        print(f"Best Match: {best_name}")
+        print(f"Similarity: {best_similarity:.4f}")
+        print(f"Threshold: {self.threshold}")
+        print(
+            f"Best Match : {best_name} ({best_similarity:.3f})"
+        )
 
-
-
-        if best_similarity >= threshold:
+        if best_similarity >= self.threshold:
 
             return (
                 best_name,
                 best_similarity,
                 True
             )
-
 
         return (
             "Unknown",

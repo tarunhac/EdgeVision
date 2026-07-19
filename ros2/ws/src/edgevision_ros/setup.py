@@ -23,6 +23,10 @@ setup(
             "share/" + package_name,
             ["package.xml"],
         ),
+        (
+            "share/edgevision_ros/launch",
+            ["launch/edgevision.launch.py"],
+        ),
     ],
     entry_points={
         "console_scripts": [

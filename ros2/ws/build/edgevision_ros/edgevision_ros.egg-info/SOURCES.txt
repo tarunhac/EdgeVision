@@ -17,4 +17,5 @@ edgevision_ros.egg-info/entry_points.txt
 edgevision_ros.egg-info/requires.txt
 edgevision_ros.egg-info/top_level.txt
 edgevision_ros.egg-info/zip-safe
+launch/edgevision.launch.py
 resource/edgevision_ros
