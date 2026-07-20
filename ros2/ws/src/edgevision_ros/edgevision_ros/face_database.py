@@ -20,7 +20,7 @@ class FaceDatabase:
 
         self.embeddings = []
 
-        self.threshold = 0.50
+        self.threshold = 0.40
 
 
     def load(self, known_faces_dir):

@@ -4,11 +4,10 @@ EdgeVision Camera Node
 
 import os
 import sys
-
+from edgevision_core.camera import CameraService
 # Add the main project directory to Python's import path
-PROJECT_ROOT = os.path.abspath(
-    os.path.join(os.path.dirname(__file__), "../../../../../")
-)
+
+PROJECT_ROOT = os.path.expanduser("~/surveillance_bot")
 
 if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
