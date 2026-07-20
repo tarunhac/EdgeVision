@@ -8,6 +8,7 @@ edgevision_ros/event_logger_node.py
 edgevision_ros/face_database.py
 edgevision_ros/face_node.py
 edgevision_ros/face_recognizer.py
+edgevision_ros/paths.py
 edgevision_ros/perception_node.py
 edgevision_ros/tracker_node.py
 edgevision_ros.egg-info/PKG-INFO

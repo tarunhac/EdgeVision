@@ -1,9 +1,10 @@
 import rclpy
 from rclpy.node import Node
 
+from ros2.ws.src.edgevision_ros.edgevision_ros.paths import KNOWN_FACES_DIR
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge
-
+from edgevision_ros.paths import KNOWN_FACES_DIR
 from ultralytics import YOLO
 
 from edgevision_core.event_logger import EventLogger
@@ -34,7 +35,7 @@ class PerceptionNode(Node):
 
         # Face recognizer
         self.face_recognizer = FaceRecognizer(
-            "/home/tarun/surveillance_bot/known_faces"
+            str(KNOWN_FACES_DIR)
         )
 
         # Cache recognized identities
