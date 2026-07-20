@@ -2,7 +2,7 @@ import rclpy
 from rclpy.node import Node
 
 from edgevision_msgs.msg import TrackedDetection
-
+from edgevision_ros.paths import DATABASE_PATH
 import sqlite3
 from datetime import datetime
 from pathlib import Path
@@ -23,10 +23,8 @@ class EventLoggerNode(Node):
 
 
         # Database path
-
-        self.db_path = (
-            "/home/tarun/surveillance_bot/logs/events.db"
-        )
+        self.db_path = str(DATABASE_PATH)
+        Path(self.db_path).parent.mkdir(parents=True, exist_ok=True)
 
         self.bridge = CvBridge()
 
@@ -36,8 +34,6 @@ class EventLoggerNode(Node):
         self.snapshot.initialize()
         self.create_database()
         self.logged_tracks = set()
-        self.snapshot = FaceSnapshotService()
-        self.snapshot.initialize()
 
 
         self.subscription = self.create_subscription(
