@@ -60,14 +60,17 @@ class FaceDatabase:
                 print(f"Could not read {image_path.name}")
                 continue
 
-            faces = self.face_app.get(image)
+            try:
+                faces = self.face_app.get(image)
+            except Exception as e:
+                print(f"ERROR processing {image_path.name}: {e}")
+                continue
 
             if len(faces) == 0:
                 print(f"No face detected in {image_path.name}")
                 continue
 
             embedding = faces[0].embedding
-
             person_name = image_path.parent.name
 
             self.embeddings.append(
