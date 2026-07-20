@@ -27,7 +27,13 @@ def generate_launch_description():
                 executable="event_logger_node",
                 name="event_logger_node",
                 output="screen"
-            )
+            ),
+            Node(
+                package="edgevision_ros",
+                executable="tracker_node",
+                name="tracker_node",
+                output="screen"
+             ),
 
         ]
 
