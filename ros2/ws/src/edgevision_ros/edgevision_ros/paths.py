@@ -1,16 +1,25 @@
 from pathlib import Path
 
 
+from pathlib import Path
+
+
 def find_project_root():
     current = Path(__file__).resolve()
 
     while current != current.parent:
-        if (current / "known_faces").exists():
+
+        # Repository root
+        if (
+            (current / "ros2").exists()
+            and
+            (current / ".git").exists()
+        ):
             return current
+
         current = current.parent
 
     raise RuntimeError("Could not locate project root.")
-
 
 PROJECT_ROOT = find_project_root()
 
