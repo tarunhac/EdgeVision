@@ -17,3 +17,15 @@ unknown_faces/
 # OS files
 .DS_Store
 Thumbs.db
+# ROS2 generated files
+ros2/ws/build/
+ros2/ws/install/
+ros2/ws/log/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Local streaming TLS credentials
+stream_test/auto.key
+stream_test/auto.crt

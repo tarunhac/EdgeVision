@@ -1,9 +1,0 @@
-source;share/edgevision_ros/hook/pythonpath.ps1
-source;share/edgevision_ros/hook/pythonpath.dsv
-source;share/edgevision_ros/hook/pythonpath.sh
-source;share/edgevision_ros/hook/ament_prefix_path.ps1
-source;share/edgevision_ros/hook/ament_prefix_path.dsv
-source;share/edgevision_ros/hook/ament_prefix_path.sh
-source;../../build/edgevision_ros/share/edgevision_ros/hook/pythonpath_develop.ps1
-source;../../build/edgevision_ros/share/edgevision_ros/hook/pythonpath_develop.dsv
-source;../../build/edgevision_ros/share/edgevision_ros/hook/pythonpath_develop.sh

@@ -31,6 +31,7 @@ setup(
     entry_points={
         "console_scripts": [
             "camera_node = edgevision_ros.camera_node:main",
+            "network_camera_node = edgevision_ros.network_camera_node:main",
             "detector_node = edgevision_ros.detector_node:main",
             "tracker_node = edgevision_ros.tracker_node:main",
             "perception_node = edgevision_ros.perception_node:main",

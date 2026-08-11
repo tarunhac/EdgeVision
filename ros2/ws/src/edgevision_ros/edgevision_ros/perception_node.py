@@ -1,14 +1,15 @@
+import cv2
 import rclpy
-from rclpy.node import Node
 
-from ros2.ws.src.edgevision_ros.edgevision_ros.paths import KNOWN_FACES_DIR
+from rclpy.node import Node
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge
-from edgevision_ros.paths import KNOWN_FACES_DIR
 from ultralytics import YOLO
 
-from edgevision_core.event_logger import EventLogger
+from edgevision_ros.paths import KNOWN_FACES_DIR
 from edgevision_ros.face_recognizer import FaceRecognizer
+
+from edgevision_core.event_logger import EventLogger
 
 from edgevision_msgs.msg import (
     Detection,
@@ -16,8 +17,6 @@ from edgevision_msgs.msg import (
     TrackedDetection,
     TrackedDetectionArray,
 )
-
-import cv2
 
 
 class PerceptionNode(Node):
@@ -28,26 +27,37 @@ class PerceptionNode(Node):
 
         self.bridge = CvBridge()
 
-        # YOLO model
-        self.model = YOLO(
-            "yolov8n.pt"
-        )
+        # -----------------------------
+        # YOLO Model
+        # -----------------------------
 
-        # Face recognizer
+        self.model = YOLO("yolov8n.pt")
+
+        # -----------------------------
+        # Face Recognition
+        # -----------------------------
+
         self.face_recognizer = FaceRecognizer(
             str(KNOWN_FACES_DIR)
         )
-
+        self.unknown_tracks = set()
         # Cache recognized identities
         self.identity_cache = {}
 
-        # Event logger
+        # -----------------------------
+        # Event Logger
+        # -----------------------------
+
         self.event_logger = EventLogger()
         self.event_logger.initialize()
 
         self.get_logger().info(
             "Face Recognizer Loaded"
         )
+
+        # -----------------------------
+        # Camera Subscription
+        # -----------------------------
 
         self.subscription = self.create_subscription(
             Image,
@@ -56,11 +66,19 @@ class PerceptionNode(Node):
             10
         )
 
+        # -----------------------------
+        # Annotated Image Publisher
+        # -----------------------------
+
         self.image_publisher = self.create_publisher(
             Image,
             "/camera/detections/image",
             10
         )
+
+        # -----------------------------
+        # Detection Publisher
+        # -----------------------------
 
         self.detection_publisher = self.create_publisher(
             DetectionArray,
@@ -68,11 +86,20 @@ class PerceptionNode(Node):
             10
         )
 
+        # -----------------------------
+        # Tracking Publisher
+        # -----------------------------
+
         self.tracked_publisher = self.create_publisher(
             TrackedDetectionArray,
             "/tracked_objects",
             10
         )
+
+        # -----------------------------
+        # Unknown Person Publisher
+        # -----------------------------
+
         self.unknown_publisher = self.create_publisher(
             TrackedDetection,
             "/unknown_person",
@@ -85,10 +112,18 @@ class PerceptionNode(Node):
 
     def image_callback(self, msg):
 
+        # -----------------------------
+        # Convert ROS Image -> OpenCV
+        # -----------------------------
+
         frame = self.bridge.imgmsg_to_cv2(
             msg,
             desired_encoding="bgr8"
         )
+
+        # -----------------------------
+        # YOLO Detection + Tracking
+        # -----------------------------
 
         results = self.model.track(
             frame,
@@ -99,11 +134,19 @@ class PerceptionNode(Node):
 
         annotated_frame = frame.copy()
 
+        # -----------------------------
+        # Create Detection Messages
+        # -----------------------------
+
         detection_array = DetectionArray()
         detection_array.header = msg.header
 
         tracked_array = TrackedDetectionArray()
         tracked_array.header = msg.header
+
+        # -----------------------------
+        # Process Each Detection
+        # -----------------------------
 
         for box in results[0].boxes:
 
@@ -125,6 +168,10 @@ class PerceptionNode(Node):
                 detection
             )
 
+            # -----------------------------
+            # Create Tracked Detection
+            # -----------------------------
+
             tracked = TrackedDetection()
 
             if box.id is not None:
@@ -141,13 +188,17 @@ class PerceptionNode(Node):
             tracked.y2 = detection.y2
 
             # -----------------------------
-            # Face Recognition
+            # Extract Person ROI
             # -----------------------------
 
             person_roi = frame[
                 detection.y1:detection.y2,
                 detection.x1:detection.x2
             ]
+
+            # -----------------------------
+            # Face Recognition
+            # -----------------------------
 
             if tracked.track_id in self.identity_cache:
 
@@ -174,33 +225,33 @@ class PerceptionNode(Node):
             tracked.similarity = float(similarity)
 
             # -----------------------------
-            # Log Unknown Person
+            # Unknown Person
             # -----------------------------
 
             if tracked.name == "Unknown":
-                
 
-                class LoggedDetection:
-                    pass
+                # Publish only once for each track ID
+                if tracked.track_id not in self.unknown_tracks:
 
-                logged_detection = LoggedDetection()
+                    tracked.face_image = ""
+                    tracked.frame_image = ""
 
-                logged_detection.track_id = tracked.track_id
-                logged_detection.name = tracked.name
-                logged_detection.similarity = tracked.similarity
+                    self.unknown_publisher.publish(
+                        tracked
+                    )
 
-                logged_detection.x1 = detection.x1
-                logged_detection.y1 = detection.y1
-                logged_detection.x2 = detection.x2
-                logged_detection.y2 = detection.y2
+                    self.unknown_tracks.add(
+                        tracked.track_id
+                    )
 
+                    self.get_logger().info(
+                        f"Unknown Person Event Published: "
+                        f"ID {tracked.track_id}"
+                    )
 
-                tracked.face_image = ""
-                tracked.frame_image = ""
-                
-                self.unknown_publisher.publish(
-                   tracked
-               )
+            # -----------------------------
+            # Add To Tracked Array
+            # -----------------------------
 
             tracked_array.detections.append(
                 tracked
@@ -235,12 +286,20 @@ class PerceptionNode(Node):
                 2
             )
 
+        # -----------------------------
+        # Convert OpenCV -> ROS Image
+        # -----------------------------
+
         annotated_msg = self.bridge.cv2_to_imgmsg(
             annotated_frame,
             encoding="bgr8"
         )
 
         annotated_msg.header = msg.header
+
+        # -----------------------------
+        # Publish Results
+        # -----------------------------
 
         self.image_publisher.publish(
             annotated_msg
@@ -254,12 +313,17 @@ class PerceptionNode(Node):
             tracked_array
         )
 
+        # -----------------------------
+        # Display
+        # -----------------------------
+
         cv2.imshow(
             "EdgeVision Detection",
             annotated_frame
         )
 
         cv2.waitKey(1)
+
 
 def main(args=None):
 

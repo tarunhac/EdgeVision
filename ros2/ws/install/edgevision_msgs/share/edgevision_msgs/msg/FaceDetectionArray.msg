@@ -1,1 +1,0 @@
-/home/tarun/surveillance_bot/ros2/ws/src/edgevision_msgs/msg/FaceDetectionArray.msg

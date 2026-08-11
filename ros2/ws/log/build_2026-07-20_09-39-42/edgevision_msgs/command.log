@@ -1,4 +1,0 @@
-Invoking command in '/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --build /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs -- -j8 -l8
-Invoked command in '/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --build /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs -- -j8 -l8
-Invoking command in '/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --install /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs
-Invoked command in '/home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --install /home/tarun/surveillance_bot/ros2/ws/build/edgevision_msgs
