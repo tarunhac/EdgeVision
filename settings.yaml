@@ -3,10 +3,10 @@ project:
   version: "1.0.0"
 
 camera:
-  source:  "rtsp://10.20.23.73:8554/pi_camera"
+  source: "rtsp://edgevision-pi.local:8554/pi_camera"
   width: 1280
   height: 720
-  fps: 30
+  fps: 25
 
 detector:
   model: "models/yolov8n.pt"

@@ -4,25 +4,17 @@ EdgeVision Database Service
 
 from pathlib import Path
 import sqlite3
+import threading
 
 from edgevision_core.config import config
 
 
 class DatabaseService:
     """
-    Handles all SQLite database operations.
+    Handles SQLite database operations.
 
-    Responsibilities:
-    - Create/open the database
-    - Create required tables
-    - Insert events
-    - Close the database
-
-    This service does NOT:
-    - Save images
-    - Perform recognition
-    - Perform detection
-    - Log events
+    SQLite connection is protected by a lock so that
+    Event Logger worker threads can safely use the database.
     """
 
     def __init__(self):
@@ -31,7 +23,7 @@ class DatabaseService:
         self.db_path = self.db_dir / "events.db"
 
         self.connection = None
-        self.cursor = None
+        self.lock = threading.Lock()
 
     def initialize(self):
 
@@ -40,13 +32,13 @@ class DatabaseService:
             exist_ok=True
         )
 
+        # Allow the connection to be used by the Event Logger worker.
         self.connection = sqlite3.connect(
-            self.db_path
+            self.db_path,
+            check_same_thread=False
         )
 
-        self.cursor = self.connection.cursor()
-
-        self.cursor.execute(
+        self.connection.execute(
             """
             CREATE TABLE IF NOT EXISTS events (
 
@@ -81,38 +73,41 @@ class DatabaseService:
         frame_image
     ):
 
-        self.cursor.execute(
-            """
-            INSERT INTO events (
+        if self.connection is None:
+            return
 
-                timestamp,
-                track_id,
-                name,
-                similarity,
-                face_image,
-                frame_image
+        with self.lock:
 
+            self.connection.execute(
+                """
+                INSERT INTO events (
+                    timestamp,
+                    track_id,
+                    name,
+                    similarity,
+                    face_image,
+                    frame_image
+                )
+                VALUES (?, ?, ?, ?, ?, ?)
+                """,
+                (
+                    timestamp,
+                    track_id,
+                    name,
+                    similarity,
+                    face_image,
+                    frame_image
+                )
             )
 
-            VALUES (?, ?, ?, ?, ?, ?)
-            """,
-            (
-                timestamp,
-                track_id,
-                name,
-                similarity,
-                face_image,
-                frame_image
-            )
-        )
-
-        self.connection.commit()
+            self.connection.commit()
 
     def close(self):
 
-        if self.connection:
+        if self.connection is not None:
 
-            self.connection.close()
+            with self.lock:
 
-            self.connection = None
-            self.cursor = None
+                self.connection.close()
+
+                self.connection = None

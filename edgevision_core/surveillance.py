@@ -1,5 +1,25 @@
+
 """
 EdgeVision Surveillance System
+
+Real-time surveillance pipeline.
+
+Pipeline:
+
+Camera
+    ↓
+Latest-frame capture
+    ↓
+YOLO detection + tracking
+    ↓
+Asynchronous face recognition
+    ↓
+Rendering
+    ↓
+Display
+
+Event logging is triggered only when a recognition result
+has actually been produced.
 """
 
 import time
@@ -24,7 +44,18 @@ class SurveillanceSystem:
         self.logger = EventLogger()
 
         self.running = False
+
         self.previous_time = time.time()
+
+        # ---------------------------------------------------------
+        # Performance monitoring
+        # ---------------------------------------------------------
+
+        self.frame_count = 0
+
+        self.fps_start_time = time.time()
+
+        self.average_fps = 0.0
 
     def initialize(self):
 
@@ -39,13 +70,22 @@ class SurveillanceSystem:
 
     def process_frame(self, frame):
 
-        current_time = time.time()
+        frame_start = time.time()
 
-        fps = 1 / (current_time - self.previous_time)
-
-        self.previous_time = current_time
+        # ---------------------------------------------------------
+        # YOLO detection + tracking
+        # ---------------------------------------------------------
 
         detections = self.detector.detect(frame)
+
+        # ---------------------------------------------------------
+        # Face recognition
+        #
+        # IMPORTANT:
+        # recognize_detection() is asynchronous.
+        #
+        # It does NOT block the YOLO loop.
+        # ---------------------------------------------------------
 
         for detection in detections:
 
@@ -54,21 +94,84 @@ class SurveillanceSystem:
                 detection
             )
 
-            if detection.name == "Unknown":
+        # ---------------------------------------------------------
+        # Event logging
+        #
+        # Only log a detection when it has a valid recognition
+        # result.
+        #
+        # The recognizer uses similarity > 0 to indicate that
+        # InsightFace has actually produced a result.
+        # ---------------------------------------------------------
+
+        for detection in detections:
+
+            if (
+                detection.name == "Unknown"
+                and detection.similarity > 0.0
+            ):
+
                 self.logger.log_unknown(
                     frame,
                     detection
                 )
+
+        # ---------------------------------------------------------
+        # Rendering
+        # ---------------------------------------------------------
 
         frame = self.renderer.draw_detections(
             frame,
             detections
         )
 
+        # ---------------------------------------------------------
+        # Performance calculation
+        # ---------------------------------------------------------
+
+        frame_time = time.time() - frame_start
+
+        if frame_time > 0:
+
+            instant_fps = 1.0 / frame_time
+
+        else:
+
+            instant_fps = 0.0
+
+        # ---------------------------------------------------------
+        # Smooth FPS measurement
+        # ---------------------------------------------------------
+
+        self.frame_count += 1
+
+        elapsed = time.time() - self.fps_start_time
+
+        if elapsed >= 2.0:
+
+            self.average_fps = (
+                self.frame_count / elapsed
+            )
+
+            print(
+                f"[PERFORMANCE] Average FPS: "
+                f"{self.average_fps:.2f}"
+            )
+
+            self.frame_count = 0
+
+            self.fps_start_time = time.time()
+
+        # ---------------------------------------------------------
+        # Draw FPS
+        # ---------------------------------------------------------
+
         frame = self.renderer.draw_fps(
             frame,
-            fps
+            self.average_fps
         )
+
+        self.previous_time = time.time()
 
         return frame
 
@@ -78,15 +181,39 @@ class SurveillanceSystem:
 
         while self.running:
 
+            # -----------------------------------------------------
+            # Get newest available frame
+            # -----------------------------------------------------
+
             ret, frame = self.camera.read()
 
             if not ret:
 
-                print("[ERROR] Camera read failed.")
+                print(
+                    "[ERROR] Camera connection lost."
+                )
 
                 break
 
+            # -----------------------------------------------------
+            # No frame available yet
+            # -----------------------------------------------------
+
+            if frame is None:
+
+                time.sleep(0.001)
+
+                continue
+
+            # -----------------------------------------------------
+            # Process newest frame
+            # -----------------------------------------------------
+
             frame = self.process_frame(frame)
+
+            # -----------------------------------------------------
+            # Display
+            # -----------------------------------------------------
 
             self.renderer.show(
                 config.display["window_name"],
@@ -104,11 +231,26 @@ class SurveillanceSystem:
     def shutdown(self):
 
         self.running = False
-        
+
+        # ---------------------------------------------------------
+        # Stop recognition worker
+        # ---------------------------------------------------------
+
+        self.recognizer.shutdown()
+
+        # ---------------------------------------------------------
+        # Stop event logger worker
+        # ---------------------------------------------------------
+
         self.logger.shutdown()
+
+        # ---------------------------------------------------------
+        # Release camera
+        # ---------------------------------------------------------
 
         self.camera.release()
 
         cv2.destroyAllWindows()
 
-        print("[INFO] EdgeVision Stopped")
+        print("[INFO] EdgeVision stopped.")
+

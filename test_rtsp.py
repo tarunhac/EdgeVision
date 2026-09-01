@@ -1,6 +1,6 @@
 import cv2
 
-RTSP_URL = "rtsp://10.26.205.62:8554/laptop"
+RTSP_URL = "rtsp://10.20.23.73:8554/pi_camera"
 
 cap = cv2.VideoCapture(RTSP_URL, cv2.CAP_FFMPEG)
 
@@ -17,7 +17,7 @@ while True:
         print("ERROR: Failed to read frame")
         break
 
-    cv2.imshow("Raspberry Pi Camera", frame)
+    cv2.imshow("EdgeVision Pi Camera", frame)
 
     if cv2.waitKey(1) & 0xFF == ord("q"):
         break
